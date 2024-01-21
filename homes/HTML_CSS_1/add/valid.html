@@ -1,11 +1,531 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>valid</title>
 </head>
+
 <body>
-    <h1>Тэги</h1>
+
+    <h1 style="text-align: center;">Теги HTML</h1>
+
+    <h3>Тег &lt;dl&gt;</h3>
+
+    <p>Тег <span style="color: blue;"> &lt;dl&gt; </span> входит в тройку
+        элементов <span style="color: blue;">&lt;dl&gt;</span>, <span style="color: blue;">&lt;dt&gt;</span>,
+        <span style="color: blue;">&lt;dd&gt; </span>, предназначенных для создания списка определений.Каждый
+        такой список начинается с контейнера <span style="color: blue;">&lt;dl&gt;</span>, куда входит тег
+        <span style="color: blue;">&lt;dt&gt;</span> создающий термин и тег <span style="color: blue;">&lt;dd&gt;</span>
+        задающий определение этого термина.
+    </p>
+
+    <p>Теги <span style="color: blue;">&lt;dl&gt;</span>, <span style="color: blue;">&lt;dt&gt;</span>,
+        <span style="color: blue;">&lt;dd&gt;</span>, являются парными. Закрывающий тег: обязателен.
+    </p>
+
+    <p>
+        Для тега доступны универсальные <a href="https://htmlbook.ru/html/attr/common" target="_blank">атрибуты</a> и
+        <a href="https://htmlbook.ru/html/attr/event" target="_blank">события</a>.
+    </p>
+
+    <p><strong>Пример</strong></p>
+
+    <dl>
+        <dt><strong>HTML</strong></dt>
+        <dd>Hypertext Markup Language (язык гипертекстовой разметки) - это код, который используется для
+            структурирования и отображения веб-страницы и её контента. Например,
+            контент может быть структурирован внутри множества параграфов,
+            маркированных списков или с использованием изображений и таблиц данных.</dd>
+        <dt><strong>CSS</strong></dt>
+        <dd>Cascading Style Sheets («каскадные таблицы стилей») — формальный язык декорирования и описания
+            внешнего вида документа (веб-страницы), написанного с использованием языка разметки (чаще всего
+            HTML или XHTML).</dd>
+    </dl>
+    <br>
+    <hr>
+    <br>
+
+
+    <h3>Тег &lt;pre&gt;</h3>
+
+    <p>
+        Элемент <span style="color: blue;"> &lt;pre&gt;</span> определяет блок предварительно форматированного текста.
+        Такой текст отображается обычно моноширинным шрифтом и со всеми пробелами между словами. По умолчанию,
+        любое количество пробелов идущих в коде подряд, на веб-странице показывается как один.
+        Тег <span style="color: blue;"> &lt;pre&gt;</span> позволяет обойти эту особенность
+        и отображать текст как требуется разработчику. В отличие от тега <span style="color: blue;">
+            &lt;plaintext&gt;</span>,
+        использование которого осуждается в HTML 4, внутри контейнера <span style="color: blue;"> &lt;pre&gt;</span>
+        допустимо применять любые теги кроме следующих:
+        <span style="color: rgb(255, 72, 0);"> &lt;big&gt;</span>, <span style="color: blue;"> &lt;img&gt;</span>,
+        <span style="color: blue;"> &lt;object&gt;</span>, <span style="color: blue;"> &lt;small&gt;</span>,
+        <span style="color: blue;"> &lt;sub&gt;</span> и <span style="color: blue;"> &lt;sup&gt;</span>.
+    </p>
+
+    <p>
+        Тег <span style="color: blue;"> &lt;pre&gt;</span>, является парным. Закрывающий тег: обязателен.
+    </p>
+
+    <p>
+        Для тега доступны универсальные <a href="https://htmlbook.ru/html/attr/common" target="_blank">атрибуты</a> и
+        <a href="https://htmlbook.ru/html/attr/event" target="_blank">события</a>.
+    </p>
+
+    <p><strong>Пример</strong></p>
+
+    <pre>
+        -                -----  
+        -----           |-----
+       ||----|          ----||  
+       ||-----         -----||  
+       ||-----|       |-----||
+       || -----       ------||
+       ||- ----|     |------||
+       ||---||--     -------||
+       ||--|| --|   |-------||
+       || -|| |--   --- - --||
+       || -||  --|-|--| - ---|
+       |---||  |-----| |-----|
+       |---||   |----  |-----| 
+       |----|    ---   |-----|
+       |-----          ------| 
+    </pre>
+
+    <br>
+    <hr>
+    <br>
+
+    <h3>Тег &lt;code&gt;</h3>
+
+    <p>
+        Тег <span style="color: blue;"> &lt;code&gt;</span> предназначен для отображения одной или
+        нескольких строк текста, который представляет собой программный код. Сюда
+        относятся имена переменных, ключевые слова, тексты функции и т.д. Браузеры обычно
+        отображают содержимое контейнера <span style="color: blue;"> &lt;code&gt;</span>
+        как моноширинный текст уменьшенного размера. В отличие от тега <span style="color: blue;"> &lt;pre&gt;</span>
+        дополнительные пробелы внутри контейнера <span style="color: blue;"> &lt;code&gt;</span> не учитываются,
+        так же, как и переносы текста. Поэтому используйте тег <span style="color: blue;"> &lt;br&gt;</span> или
+        <span style="color: blue;"> &lt;p&gt;</span> для создания переносов.
+    </p>
+
+    <p>
+        Тег <span style="color: blue;"> &lt;code&gt;</span>, является парным. Закрывающий тег: обязателен.
+    </p>
+
+    <p>
+        Для тега доступны универсальные <a href="https://htmlbook.ru/html/attr/common" target="_blank">атрибуты</a> и
+        <a href="https://htmlbook.ru/html/attr/event" target="_blank">события</a>.
+    </p>
+
+    <p><strong>Пример</strong></p>
+
+    <p>Код программы</p>
+    <p><code>
+    function checkParent (src, dest) {<Br>
+     while (src != null) {<Br>
+       if (src.tagName == dest) return src<Br>
+        src = src.parentElement<Br>
+     }<Br>
+     return null<Br>
+    }</code></p>
+    <br>
+    <hr>
+    <br>
+
+
+    <h3>Тег &lt;tt&gt;</h3>
+
+    <p>Контейнер <span style="color: rgb(255, 72, 0);"> &lt;tt&gt;</span> отображает текст моноширинным
+        текстом. Этот тег относится к группе тегов физического форматирования.</p>
+
+    <p>
+        Тег <span style="color: blue;"> &lt;tt&gt;</span>, является парным. Закрывающий тег: обязателен.
+    </p>
+
+    <p>
+        Для тега нету атрибутов.
+    </p>
+
+    <p><strong>Пример</strong></p>
+
+    <p><tt>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus molestias, labore nulla quo at tempore,
+            recusandae maxime reiciendis natus iusto minima veritatis ipsam eveniet nesciunt facilis, a repudiandae quos
+            harum sequi? Voluptas pariatur doloribus similique.</tt></p>
+
+    <br>
+    <hr>
+    <br>
+
+    <h3>Тег &lt;kbd&gt;</h3>
+
+    <p>Тег <span style="color: blue;"> &lt;kbd&gt;</span> используется для обозначения текста, который набирается на
+        клавиатуре или для названия
+        клавиш. Браузеры обычно помечают текст в контейнере <span style="color: blue;"> &lt;kbd&gt;</span> моноширинным
+        шрифтом.</p>
+
+    <p>
+        Тег <span style="color: blue;"> &lt;kbd&gt;</span>, является парным. Закрывающий тег: обязателен.
+    </p>
+
+    <p>
+        Для тега доступны универсальные <a href="https://htmlbook.ru/html/attr/common" target="_blank">атрибуты</a> и
+        <a href="https://htmlbook.ru/html/attr/event" target="_blank">события</a>.
+    </p>
+
+    <p><strong>Пример</strong></p>
+
+    <p>Для быстрого закрашивания выделенной области цветом переднего плана
+        используйте комбинацию клавиш <kbd>&lt;Alt&gt;+&lt;Backspace&gt;</kbd>
+        или <kbd>&lt;Alt&gt;+&lt;Delete&gt;</kbd>.
+        Для закрашивания выделенной области фоновым цветом
+        воспользуйтесь комбинацией
+        <kbd>&lt;Ctrl&gt;+&lt;Backspace&gt;</kbd> или
+        <kbd>&lt;Ctrl&gt;+&lt;Delete&gt;</kbd>.
+    </p>
+
+    <br>
+    <hr>
+    <br>
+
+    <h3>Тег &lt;var&gt;</h3>
+
+    <p>
+        Тег <span style="color: blue;"></span>var&gt;</span> используется для выделения переменных компьютерных
+        программ. Браузеры обычно помечают текст в контейнере <span style="color: blue;"></span>var&gt;</span>
+        курсивным начертанием.
+    </p>
+
+    <p>
+        Тег <span style="color: blue;"> &lt;var&gt;</span>, является парным. Закрывающий тег: обязателен.
+    </p>
+
+    <p>
+        Для тега доступны универсальные <a href="https://htmlbook.ru/html/attr/common" target="_blank">атрибуты</a> и
+        <a href="https://htmlbook.ru/html/attr/event" target="_blank">события</a>.
+    </p>
+
+    <p><strong>Пример</strong></p>
+
+    <p>В данном примере делается запрос к базе данных для получения поля <var>content_title</var>
+        из таблицы <var>content</var>, причем должно удовлетворяться условие
+        <code>section_id = 1</code>.
+    </p>
+
+    <br>
+    <hr>
+    <br>
+
+    <h3>Тег &lt;sup&gt;</h3>
+
+    <p>Отображает шрифт в виде верхнего индекса. Шрифт при этом отображается выше базовой линии текста и уменьшенного
+        размера.
+    </p>
+
+    <p>
+        Тег <span style="color: blue;"> &lt;sup&gt;</span>, является парным. Закрывающий тег: обязателен.
+    </p>
+
+    <p>
+        Для тега доступны универсальные <a href="https://htmlbook.ru/html/attr/common" target="_blank">атрибуты</a> и
+        <a href="https://htmlbook.ru/html/attr/event" target="_blank">события</a>.
+    </p>
+
+    <p>
+        Аналог CSS <a href="https://htmlbook.ru/css/vertical-align" target="_blank">vertical-align</a>
+    </p>
+
+    <p><strong>Пример</strong></p>
+
+    <p><b>Великая теорема Ферма</b></p>
+    <p><i>X <sup><small>n</small></sup> + Y <sup><small>n</small></sup>
+            = Z <sup><small>n</small></sup></i></p>
+    <p>где n - целое число > 2</p>
+
+    <br>
+    <hr>
+    <br>
+
+    <h3>Тег &lt;sub&gt;</h3>
+
+    <p>Отображает шрифт в виде нижнего индекса. Текст при этом располагается ниже базовой линии
+        остальных символов строки и уменьшенного размера.
+    </p>
+
+    <p>
+        Тег <span style="color: blue;"> &lt;sub&gt;</span>, является парным. Закрывающий тег: обязателен.
+    </p>
+
+    <p>
+        Для тега доступны универсальные <a href="https://htmlbook.ru/html/attr/common" target="_blank">атрибуты</a> и
+        <a href="https://htmlbook.ru/html/attr/event" target="_blank">события</a>.
+    </p>
+
+    <p>
+        Аналог CSS <a href="https://htmlbook.ru/css/vertical-align" target="_blank">vertical-align</a>
+    </p>
+
+    <p><strong>Пример</strong></p>
+
+    <p>Под действием гидроксиламина альдегиды превращаются в оксимы:
+        СН<sub>3</sub>СНО + NH<sub>2</sub>OH =
+        CH<sub>3</sub>C(=NOH)H + H<sub>2</sub>O</p>
+
+    <br>
+    <hr>
+    <br>
+
+    <h3>Тег &lt;blockquote&gt;</h3>
+
+    <p>Тег <span style="color: blue;"> &lt;blockquote&gt;</span> предназначен для выделения длинных цитат внутри
+        документа.
+        Текст, обозначенный этим тегом, традиционно отображается как выровненный блок
+        с отступами слева и справа (примерно по 40 пикселов), а также с отбивкой сверху и снизу.
+    </p>
+
+    <p>
+        Тег <span style="color: blue;"> &lt;blockquote&gt;</span>, является парным. Закрывающий тег: обязателен.
+    </p>
+
+    <p>
+        Для тега доступны атрибуты <span style="color: blueviolet;"> cite</span> - адрес, который указывает на источник
+        цитаты.
+    </p>
+
+    <p>
+        Для тега доступны универсальные <a href="https://htmlbook.ru/html/attr/common" target="_blank">атрибуты</a> и
+        <a href="https://htmlbook.ru/html/attr/event" target="_blank">события</a>.
+    </p>
+
+
+    <p><strong>Пример</strong></p>
+
+    <blockquote class='quote'>
+        <p>Все дело в мыслях. Мысль — начало всего. И мыслями можно управлять. И поэтому
+            главное дело совершенствования: работать над мыслями.</p>
+        <cite>Лев Толстой</cite>
+    </blockquote>
+
+
+    <br>
+    <hr>
+    <br>
+
+    <h3>Тег &lt;q&gt;</h3>
+
+    <p>Q сокращение от «quote». Он предназначен для выделения цитат внутри предложения. Является строчным.
+        Текст внутри этого тега браузер автоматически обрамляет кавычками, поэтому добавлять кавычки вручную не нужно.
+    </p>
+
+    <p>
+        Тег <span style="color: blue;"> &lt;q&gt;</span>, является парным. Закрывающий тег: обязателен.
+    </p>
+
+    <p>
+        Для тега доступны атрибуты <span style="color: blueviolet;"> cite</span> - адрес, который указывает на источник
+        цитаты.
+    </p>
+
+    <p>
+        Для тега доступны универсальные <a href="https://htmlbook.ru/html/attr/common" target="_blank">атрибуты</a> и
+        <a href="https://htmlbook.ru/html/attr/event" target="_blank">события</a>.
+    </p>
+
+
+    <p><strong>Пример</strong></p>
+
+    <p>Станислав Лец утверждал: <q>Чаще всего выход там, где был
+            вход</q>.</p>
+
+    <br>
+    <hr>
+    <br>
+
+    <h3>Тег &lt;ins&gt;</h3>
+
+    <p>Тег <span style="color: blue;"> &lt;ins&gt;</span> предназначен для выделения текста, который был добавлен в
+        новую
+        версию документа. Подобное форматирование позволяет отследить, какие изменения в тексте документа были сделаны.
+
+        Браузеры обычно помечают текст в контейнере <span style="color: blue;"> &lt;ins&gt;</span> как подчеркнутый.
+    </p>
+
+    <p>
+        Тег <span style="color: blue;"> &lt;ins&gt;</span>, является парным. Закрывающий тег: обязателен.
+    </p>
+
+    <p>
+        Для тега доступны атрибуты <a href="https://htmlbook.ru/html/ins/cite">cite</a> cite - указывает ссылку
+        на документ, где приведена причина редактирования текста и другие подробности, <a
+            href="https://htmlbook.ru/html/ins/datetime">datetime
+        </a> - дата и и время редактирования текста.
+
+    <p>
+        Для тега также доступны универсальные <a href="https://htmlbook.ru/html/attr/common"
+            target="_blank">атрибуты</a> и
+        <a href="https://htmlbook.ru/html/attr/event" target="_blank">события</a>.
+    </p>
+
+
+    <p><strong>Пример</strong></p>
+
+    <p>Заметим, что схожий результат с Firefox показывает и браузер
+        Opera, но, как видно на рис. 1, в последующих версиях <del>этот
+            недостаток был устранен</del> <ins>подход разработчиков этого
+            браузера был изменен</ins>.</p>
+
+    <br>
+    <hr>
+    <br>
+
+
+    <h3>Тег &lt;del&gt;</h3>
+
+    <p>Тег <span style="color: blue;"> &lt;del&gt;</span> используется для выделения текста, который был удален в новой
+        версии документа.
+        Подобное форматирование позволяет отследить, какие изменения в тексте документа были сделаны. Браузеры обычно
+        помечают текст в контейнере <del> как перечеркнутый. Подобное форматирование позволяет отследить, какие
+            изменения в тексте документа были сделаны.
+
+            Браузеры обычно помечают текст в контейнере <span style="color: blue;"> &lt;del&gt;</span> как зачеркнутый.
+    </p>
+
+    <p>
+        Тег <span style="color: blue;"> &lt;del&gt;</span>, является парным. Закрывающий тег: обязателен.
+    </p>
+
+    <p>
+        Для тега доступны атрибуты <a href="https://htmlbook.ru/html/ins/cite">cite</a> cite - указывает ссылку
+        на документ, где приведена причина редактирования текста и другие подробности, <a
+            href="https://htmlbook.ru/html/ins/datetime">datetime
+        </a> - дата и и время редактирования текста.
+
+    <p>
+        Для тега также доступны универсальные <a href="https://htmlbook.ru/html/attr/common"
+            target="_blank">атрибуты</a> и
+        <a href="https://htmlbook.ru/html/attr/event" target="_blank">события</a>.
+    </p>
+
+
+    <p><strong>Пример</strong></p>
+
+    <p>Заметим, что схожий результат с Netscape показывает и браузер
+        Opera, но, как видно на рис. 1, в последующих версиях
+        <del>этот недостаток был устранен</del> <ins>подход разработчиков
+            этого браузера был изменен</ins>.
+    </p>
+
+
+    <br>
+    <hr>
+    <br>
+
+    <h3>Тег &lt;address&gt;</h3>
+
+    <p>Тег <span style="color: blue;"> &lt;address&gt;</span>предназначен
+        для хранения информации об авторе и может включать в себя любые элементы
+        HTML вроде ссылок, текста, выделений и т.д. Планируется, что поисковые системы
+        будут анализировать содержимое этого тега для сбора информации об авторах сайтов.
+
+        По умолчанию текст внутри контейнера <span style="color: blue;"> &lt;address&gt;</span> отображается
+        курсивным начертанием. Если эта особенность не требуется, используйте стили для изменения начертания шрифта.
+    </p>
+
+    <p>
+        Тег <span style="color: blue;"> &lt;address&gt;</span>, является парным. Закрывающий тег: обязателен.
+    </p>
+
+    <p>Для тега доступны универсальные <a href="https://htmlbook.ru/html/attr/common" target="_blank">атрибуты</a> и
+        <a href="https://htmlbook.ru/html/attr/event" target="_blank">события</a>.
+    </p>
+
+
+    <p><strong>Пример</strong></p>
+
+    <address>ул. Скрыганова 14, Минск, Минская область 220002</address>
+
+    <br>
+    <hr>
+    <br>
+
+    <h3>Тег &lt;nobr&gt;</h3>
+
+    <p>Тег <span style="color: blue;"> &lt;nobr&gt;</span> уведомляет браузер отображать текст
+        без переносов. Если этого тега в коде документа нет, а также имеются переводы строки, они
+        игнорируются и текст выравнивается по левому краю окна браузера или родительского элемента.
+        При этом браузер переводы строк расставляет автоматически, чтобы текст полностью поместился
+        по ширине окна. Использование тега <span style="color: blue;"> &lt;nobr&gt;</span> заставляет
+        отображать текст без переносов, одной строкой, что может привести к появлению горизонтальной полосы прокрутки.
+        Пользователям
+        придется прокручивать текст по горизонтали, чтобы увидеть его полностью, чего обычно делать никто не любит.
+    </p>
+
+    <p>
+        Тег <span style="color: blue;"> &lt;nobr&gt;</span>, является парным. Закрывающий тег: обязателен.
+    </p>
+
+    <p>Для тега нету атрибутов.
+    </p>
+
+    <p>
+        Аналог CSS <a href="https://htmlbook.ru/css/white-space" target="_blank">white-space</a>
+    </p>
+
+    <p><strong>Внимание!</strong>Этот тег не входит в спецификацию HTML и его наличие приведет к невалидному коду.</p>
+
+    <p><strong>Пример</strong></p>
+
+    <h1>
+        <nobr>Lorem ipsum dolor sit amet,
+            consectetuer adipiscing elit</nobr>
+    </h1>
+
+    <p>
+        <nobr>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+            sed diem nonummy nibh euismod tincidunt ut lacreet dolore
+            magna aliguam erat volutpat.</nobr> Ut wisis enim ad minim veniam,
+        quis nostrud exerci tution ullamcorper suscipit lobortis nisl
+        ut aliquip ex ea commodo consequat.
+    </p>
+
+    <br>
+    <hr>
+    <br>
+
+
+    <h3>Тег &lt;wbr&gt;</h3>
+
+    <p>Тег <span style="color: blue;"> &lt;wbr&gt;</span>указывает браузеру место,
+        где допускается делать перенос строки в тексте, если этого требует ширина родительского элемента.
+    </p>
+
+    <p>
+        Закрывающий тег: Не требуется..
+    </p>
+
+    <p>Для тега нету атрибутов.
+    </p>
+
+    <p><strong>Внимание!</strong> ни один браузер при переносе текста не добавляет символ дефиса.
+        При необходимости дефис можно имитировать, заменив тег <wbr> на символ мягкого переноса &shy;.
+
+                Internet Explorer 8 и Opera до версии 11.7 не делают переносы длинной строки, пока в стилях
+                для wbr не указано свойство display со значением inline-block, как показано в примере.</p>
+
+    <p><strong>Пример</strong></p>
+
+    <p>Самое длинное слово из химии</p>
+    <p>Lorem ipsum dolor sit amet consectetur, <wbr>adipisicing elit. A, minima id architecto autem unde
+                 quos omnis similique voluptatem, <wbr>assumenda ab reprehenderit sint!<wbr> Aut eius possimus rerum
+                 voluptatem harum id placeat suscipit amet maiores veniam, cumque ducimus odit corrupti sed earum assumenda? Odit,<wbr>
+                 aperiam repellat assumenda debitis qui quam adipisci doloremque.</p>
+
+    <br>
+    <hr>
+    <br>
+
+
 </body>
+
 </html>
