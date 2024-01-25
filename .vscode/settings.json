@@ -1,3 +1,14 @@
 {
-    "liveServer.settings.port": 5501
+    "liveServer.settings.port": 5501,
+    "mikas.tinypngApiKey": "W7H1fM3227Fj0M3XC5W2ndhbDZXqVjdQ",
+    "ddy-compress.tinifyKey": "m1Xpkm3PCCthHj4WKsqhqG4fBWJTBHQL",
+    "image-manager.compress.replace": false,
+    "image-manager.compress.quality": 80,
+    "image-manager.compress.method": "sharp",
+    "image-manager.exclude": [
+
+    ],
+    "imagemin.png.quality.max": 0.8,
+    "imagemin.png.quality.min": 0.8,
+    "imagemin.png.speed": 11
 }
