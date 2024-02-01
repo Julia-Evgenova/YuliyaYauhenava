@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/stylesheet.css">
+
+    <title>AREA</title>
+</head>
+
+<body>
+    <h1>Тег &lt;area&gt;</h1>
+
+    <p style="font-family: 'Roboto', sans-serif; font-size: 20px;">Каждый элемент &lt;area&gt; определяет активные
+        области изображения, которые являются ссылками. Рисунок с
+        привязанными к нему активными областями называется в совокупности картой-изображением. Такая карта по внешнему
+        виду ничем не отличается от обычного изображения, но при этом оно может быть разбито на невидимые зоны разной
+        формы, где каждая из областей служит ссылкой. Тег <area> задает форму области, ее размеры, устанавливает адрес
+        документа, на который следует сделать ссылку, а также имя окна или фрейма, куда браузер будет загружать
+        документ. Этот тег всегда располагается в контейнере <map>, который связывает координаты областей с
+        изображением. </p>
+
+    <p style="font-family: 'Roboto', sans-serif; font-size: 20px;">Несколько областей могут перекрывать друг друга,
+        сверху будет та, которая в коде HTML располагается выше.
+    </p>
+
+    <ul style="list-style-type: none; line-height: 1.5; font-size: 20px;"><strong>Атрибуты тега</strong> &lt;area&gt;:
+
+        <li><a href="https://htmlbook.ru/html/area/accesskey" title="shape" target="_blank">shape</a> &mdash; форма
+            области. Может быть <var>rect</var> (прямоугольник), <var>circle</var> (круг) или <var>poly</var>
+            (многоугольник).</li>
+        <li><a href="https://htmlbook.ru/html/area/coords" title="coords" target="_blank">coords</a> — координаты
+            области. Зависят от значения <var>shape</var>. Для прямоугольника указываются координаты левого верхнего
+            угла и правого нижнего угла <var>(x1,y1,x2,y2)</var>.
+            Для круга указывается координаты центра и радиус <var>(x,y,r)</var>. Для многоугольника указываются
+            координаты всех точек (x1,y1,x2,y2,x3,y3,...).</li>
+        <li><a href="https://htmlbook.ru/html/area/alt" target="_blank">alt</a> &mdash; описание области для
+            пользователей, которые не могут визуально увидеть карту изображения.</li>
+        <li> <a href="https://msiter.ru/references/html-reference/area/download" title="download"
+                target="_blank">download</a> — предлагает скачать по ссылке целевой ресурс, указанный в <var>href</var>,
+            вместо его отображения в браузере.</li>
+        <li><a href="https://htmlbook.ru/html/area/href" title="href" target="_blank">href</a> &mdash; адрес, на который
+            будет переходить пользователь при клике на область.</li>
+        <li><a href="https://htmlbook.ru/html/area/hreflang" title="hreflang" target="_blank">hreflang</a> &mdash; язык,
+            на котором написана целевая страница.</li>
+        <li><a href="https://msiter.ru/references/html-reference/area/media" title="media" target="_blank">media</a>
+            &mdash; условия, которые должны быть выполнены для применения стиля к целевой странице.</li>
+        <li><a href="https://webref.ru/html/area/referrerpolicy" title="referrerpolicy"
+                target="_blank">referrerpolicy</a> &mdash; политика отправки referrer при переходе по ссылке. Это влияет
+            на то, как информация о странице-источнике передается на страницу-назначение.</li>
+        <li><a href="https://msiter.ru/references/html-reference/area/rel" title="rel" target="_blank">rel</a> &mdash;
+            определяет отношение между текущей страницей и целевой страницей.</li>
+        <li><a href="https://htmlbook.ru/html/area" title="target" target="_blank">target</a> &mdash; указывает, как
+            будет открыта целевая страница. Значения: _self (в текущем окне), _blank (в новом окне), _parent (в
+            родительском фрейме) или _top (во всем окне браузера).</li>
+    </ul>
+
+
+    <p style=" font-family: 'El Messiri', sans-serif; font-size: 20px;
+    border-style: solid; border-color: rgba(99, 99, 99,0.5); width: 750px;">Если необходимо задать несколько ссылок
+        на одну и ту же страницу, можно использовать несколько областей с разными координатами на одной картинке,
+        либо использовать атрибуты <var>rel</var> и <var>hreflang</var> для каждой ссылки.</p>
+
+    <p style="font-family: 'Roboto', sans-serif; font-size: 20px;">Также для этого тега доступны <a
+            href="https://htmlbook.ru/html/attr/common" title="универсальные атрибуты" target="_blank">универсальные
+            атрибуты</a>
+        и <a href="https://htmlbook.ru/html/attr/event" title="события" target="_blank">события</a>.</p>
+
+    <p style="font-family: 'Roboto', sans-serif; font-size: 20px;">Закрывающий тег не требуется.</p>
+
+    <h3 style="font-size: 20px;">Синтаксис:</h3>
+
+    <pre style="font-size: 20px;">
+    1. <code style="color: blue;">&lt;map&gt;</code> <br>
+    2.   <code style="color: blue;">&lt;area&gt; href=<spane style="color: green;">"адрес"/&gt;</spane></code> <br>
+    3. <code style="color: blue;">&lt;/map&gt;</code><br>
+    </pre>
+
+    <h3 style="font-size: 20px;">Примеры:</h3>
+
+    <map name="infographic">
+        <area shape="poly" coords="129,0,260,95,129,138" href="https://developer.mozilla.org/docs/Web/HTTP"
+            target="_blank" alt="HTTP" />
+        <area shape="poly" coords="260,96,209,249,130,138" href="https://developer.mozilla.org/docs/Web/HTML"
+            target="_blank" alt="HTML" />
+        <area shape="poly" coords="209,249,49,249,130,139" href="https://developer.mozilla.org/docs/Web/JavaScript"
+            target="_blank" alt="JavaScript" />
+        <area shape="poly" coords="48,249,0,96,129,138" href="https://developer.mozilla.org/docs/Web/API"
+            target="_blank" alt="Web APIs" />
+        <area shape="poly" coords="0,95,128,0,128,137" href="https://developer.mozilla.org/docs/Web/CSS" target="_blank"
+            alt="CSS" />
+    </map>
+    <img usemap="#infographic" src="images/mdn-info.png" alt="MDN infographic" />
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <img src="images/46.png" usemap="#image_map">
+<map name="image_map">
+  <area alt="Circle" target="_blank" title="Circle" href="https://ru.wikipedia.org/wiki/%D0%9A%D1%80%D1%83%D0%B3" coords="510,108,104" shape="circle">
+  <area alt="Rect" target="_blank" title="Rect" href="https://ru.wikipedia.org/wiki/%D0%9A%D0%B2%D0%B0%D0%B4%D1%80%D0%B0%D1%82" coords="766,11,959,199" shape="rect">
+  <area alt="Poly" target="_blank" title="Poly" href="https://ru.wikipedia.org/wiki/%D0%A2%D1%80%D0%B5%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA" coords="138,5 25,208 261,208 " shape="polygon">
+</map>
+   
+
+</body>
+
+</html>
