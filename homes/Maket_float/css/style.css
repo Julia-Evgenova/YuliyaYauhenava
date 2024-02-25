@@ -309,7 +309,113 @@ float: left;
     margin-top: 40px;
 }
 
-.beds-list {
-    display: inline-block;
+
+.beds {
+    float: left;
+    margin-top: 28px;
+    margin-right: 19px;
+
+}
+
+.vigodno {
+    color: #fff;
+    font-size: 10px;
+    font-weight: 700;
+    border-radius: 4px;
+    background: #B3B3FF;
+    width: 77px;
+    height: 24px;
+    text-align: center;
+    padding-top: 7px;
+    
+}
+
+.circle{
+    text-align: center;
+    margin-left: 75px;
+}
+
+.cost1 span {
+    font-size: 10px;
+    color: #888888;
+    font-weight: 700;
+    margin: 15px 0 3px 5px;
+}
+
+.cost1 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.bed-dins {
+    font-size: 12px;
+    font-weight: 400;
+    color: #888888;
+    margin-bottom: 15px;
+    
+}
+
+.inbasket1 {
+    color: #fff;
+    font-size: 10px;
+    font-weight: 900;
+    text-align: center;
+    background: #BA257D;
+    height: 26px;
+    width: 108px;
+    padding-top: 8px;
+    border-radius: 4px;
+    margin-top: 15px;
+}
+
+.skidka-30 {
+    color: #fff;
+    font-size: 10px;
+    font-weight: 700;
+    border-radius: 4px;
+    background: #FF0000;
+    width: 77px;
+    height: 24px;
+    text-align: center;
+    padding-top: 7px;
+    
+}
+
+.best-cost {
+    color: #000000;
+    font-size: 10px;
+    font-weight: 700;
+    border-radius: 4px;
+    background: #FAED38;
+    width: 92px;
+    height: 24px;
+    text-align: center;
+    padding-top: 7px;
+}
+
+.beds-last {
+    float: left;
     margin-top: 28px;
 }
+
+
+.sofas {
+   
+    border: #BA257D 1px solid;
+    border-radius: 4px;
+    float: left;
+    width: 197px;
+    height: 267.59px;
+    
+    margin-top: 20px;
+}
+.border {
+    
+    background: url(../img/yellow-back.png) no-repeat;
+    margin: 5px;
+    width: 184px;
+    height: 254.46px;
+}
+
+

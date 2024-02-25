@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+.display-inline_block li {
+    margin: 10px;
+    margin-left: 0;
+    display: inline-block;
+
+}
+
+
+
+.display-inline_block a {
+    
+    text-align: center;
+    color: green;
+    
+}
+
+.display-inline_block li:not(:last-child) {
+    border-right: solid red 3px;
+    padding: 10px 15px;
+
+
+}
+
+a:hover {
+    color: #CE242B;
+
+}
+
+
+
+.float-left ul {
+    overflow: hidden;
+    width: 100%;
+}
+
+.float-left li {
+    margin: 10px;
+    margin-left: 3px;
+    float: left;
+    border-right: solid red 3px;
+    
+}
+
+.float-left  li:last-child {
+    border-right: none;
+    }
+
+.float-left a {
+    display: block;
+    text-align: center;
+    color: green;
+    padding: 10px 15px;
+}
+
+
+
+.display-inline li {
+    margin-left: 0;
+    display: inline;
+
+}
+
+.display-inline a {
+    text-align: center;
+    color: green;
+    padding: 10px 15px;
+
+}
+
+.display-inline ul li + li:before {
+    color: red;
+    content:"|";
+   
+}
