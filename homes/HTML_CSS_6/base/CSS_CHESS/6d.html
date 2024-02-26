@@ -5,9 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-
-<body>
 
     <style>
         * {
@@ -16,33 +13,47 @@
             box-sizing: border-box;
         }
 
-        p {
-            display: inline-block;
+        .clearfix::after {
+            content: "";
+            display: block;
+            clear: both;
         }
-        a.star {
+
+        .container {
             float: left;
-            background: url(../image/star0.png) repeat-x;
-            width: 75px;
-            height: 95px;
-            
         }
 
-        a.star:hover {
-           
-            background: url(../image/star1.png) repeat-x;
+        .star {
+            margin: 5px;
+            display: block;
+            float: right;
+            width: 125px;
+            height: 130px;
+            background-image: url('../image/star0.png');
+            background-size: cover;
+            cursor: pointer;
         }
 
-
-
+        .star:hover,
+        .star:hover~.star {
+            background-image: url('../image/star1.png');
+        }
     </style>
 
-    <p><a href="#" class="star"></a></p>
-    <p><a href="#" class="star"></a></p>
-    <p><a href="#" class="star"></a></p>
-    <p><a href="#" class="star"></a></p>
-    <p><a href="#" class="star"></a></p>
-    
-    
+</head>
+
+<body>
+
+
+    <div class="container clearfix">
+        <span class="star" rating="1"></span>
+        <span class="star" rating="2"></span>
+        <span class="star" rating="3"></span>
+        <span class="star" rating="4"></span>
+        <span class="star" rating="5"></span>
+    </div>
+
+
 </body>
 
 </html>
