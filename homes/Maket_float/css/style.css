@@ -4,7 +4,7 @@
 }
 
 body {
-    background: F5F5F5;
+    background: #F5F5F5;
     color: #333333;
 }
 
@@ -126,7 +126,6 @@ body {
 }
 
 .header_icon {
-
     float: right;
     font-size: 10px;
     font-weight: 300;
@@ -289,14 +288,11 @@ body {
 }
 
 .novelty {
-float: left;
-}
-
-.novelty  h2 {
+    float: left;
     margin-top: 40px;
     padding-right: 20px;
-    display: inline-block;
-    font-size: 31px;
+    
+    font-size: 32px;
     font-weight: 700;
 }
 
@@ -309,11 +305,17 @@ float: left;
     margin-top: 40px;
 }
 
+.new-beds {
+    
+    margin-top: 28px;
+    margin-right: -9px;
+    margin-left: -9px;
+}
 
 .beds {
     float: left;
-    margin-top: 28px;
-    margin-right: 19px;
+    margin-right: 9px;
+    margin-left: 9px;
 
 }
 
@@ -399,23 +401,259 @@ float: left;
     margin-top: 28px;
 }
 
-
-.sofas {
-   
+.sofas-six {
+    margin-right: 9px;
+    margin-left: 9px;
     border: #BA257D 1px solid;
     border-radius: 4px;
     float: left;
     width: 197px;
     height: 267.59px;
-    
     margin-top: 20px;
 }
+
+.sofas {
+    margin-left: -9px;
+    margin-right: -9px;
+}
+
 .border {
-    
     background: url(../img/yellow-back.png) no-repeat;
     margin: 5px;
     width: 184px;
     height: 254.46px;
 }
 
+.logotip-memi {
+    margin: 15px 52px 45px 44px;  
+}
 
+.border p {
+    margin: 0 45px 60px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.border span {
+    font-weight: 700;
+}
+
+.sofa-img  {
+    margin: 0 14px 1px 12px;
+}
+
+.popular_categories {
+     
+    color: #333333;
+    font-size: 32px;
+    font-weight: 700;
+    margin: 30px 0 10px 0px;
+}
+
+.popular-furniture{
+    margin-right: -8px;
+    margin-left: -8px;
+}
+
+.furniture {
+    float: left;
+    margin-right: 8px;
+    margin-left: 8px;
+    margin-top: 13px;
+    border-radius: 4px;
+    background-color: #fff;
+    height: 160px;
+    width: 305px;
+}
+
+.soft-furniture {
+    border-radius: 4px;
+    color: #333333;
+    width: 305px;
+    height: 160px;
+    background: url(../img/soft-furniture.png) no-repeat;
+    
+}
+
+.quantity {
+    font-weight: 400;
+    font-size: 9px;
+    color: #888888;
+    padding-left: 130px;
+    padding-top: 16px;
+}
+
+.soft {
+    margin: 0 18px;
+    font-weight: 700;
+    font-size: 14px;
+    
+}
+
+.rubles {
+    font-weight: 700;
+    font-size: 19px;
+    margin: 85px 185px 25px 18px;
+}
+
+.living-rooms {
+    border-radius: 4px;
+    background: url(../img/p102-removebg-preview1.png) no-repeat right top;
+    background-color: #fff;
+    height: 159px;
+    width: 305px;
+}
+
+.quantity1 {
+    padding-left: 89px;
+    font-weight: 400;
+    font-size: 9px;
+    color: #888888;
+    padding-top: 16px;
+}
+
+.bedrooms {
+    background: url(../img/bedrooms.png) no-repeat right bottom;
+    
+}
+
+.mattresses {
+    background: url(../img/mattresses.png) no-repeat right bottom;
+}
+
+.childrens {
+    background: url(../img/childrens.png) no-repeat 180px bottom;
+}
+
+.quantity2 {
+    padding-left: 80px;
+    font-weight: 400;
+    font-size: 9px;
+    color: #888888;
+    padding-top: 16px;
+}
+
+.hallways {
+    background: url(../img/hallways.png) no-repeat 215px top;
+    
+}
+
+.cabinets {
+    background: url(../img/cabinets.png) no-repeat 170px top;
+}
+
+.kitchens {
+    background: url(../img/kitchens.png) no-repeat right bottom;
+}
+
+.tables-chair {
+background: url(../img/chair.png) no-repeat 215px bottom;
+}
+
+.office-furniture {
+background: url(../img/office.png) no-repeat 175px bottom;
+}
+
+.small-furniture {
+    background: url(../img/small.png) no-repeat right bottom;
+}
+
+.technique {
+    background: url(../img/technique.png) no-repeat right bottom;
+}
+
+.recomend {
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 38px;
+}
+
+.beds1 {
+    float: left;
+    margin-top: 15px;
+    margin-right: 19px;
+    margin-bottom: 20px;
+}
+
+.design {
+    margin-top: 20px;
+    background: #EAEDEF;
+    height: 329px;
+    width: 1280px;
+    border-radius: 4px;
+}
+
+
+.design-kitchen  {
+    float: right;
+    margin-left: 20px;
+    padding-top: 50px;
+    padding-right: 93px;
+    padding-bottom: 35px;
+    
+}
+
+.design-project {
+    font-size: 26px;
+    font-weight: 700;
+    padding-bottom: 30px;
+}
+
+.project-text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    padding-bottom: 40px;
+}
+
+.button-application {
+    color: #BA257D;
+    border-radius: 4px;
+    border: 2px solid #BA257D; 
+    height: 48px;
+    width: 263px;
+    cursor: pointer;
+
+}
+
+.new-collection {
+    margin-left: -11px;
+    margin-right: -10px;
+    
+}
+
+.collection {
+    float: left;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.new-collection img {
+    margin-bottom: 7px;
+}
+
+.collection-spring {
+    font-size: 16px;
+    font-weight: 700;
+    
+}
+
+.collection-text {
+    padding-top: 3px;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.wrap {
+    margin-left: -15px;
+    margin-left: -15px;
+}
+
+.wrap img {
+    float: left;
+    margin-left: 15px;
+    margin-left: 15px;
+}
