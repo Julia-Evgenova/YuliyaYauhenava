@@ -1,18 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
+<!-- saved from url=(0055)http://127.0.0.1:5501/homes/HTML_CSS_6/add/picture.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/normolize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https: //fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    
+    
+    
+    
+    
 
     <title>Document</title>
-</head>
+<link rel="stylesheet" href="./Document_files/reset.css"><link rel="stylesheet" href="./Document_files/normolize.css"><link rel="stylesheet" href="./Document_files/style.css"><link rel="preconnect" href="https://fonts.googleapis.com/"><link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin=""><link href="https://%20//fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&amp;display=swap&amp;_cacheOverride=1709816702194" rel="stylesheet"></head>
 
 <body>
     <div class="container">
@@ -20,13 +19,13 @@
         <br>
         <div class="text">
             <p>HTML-элемент &lt;picture&gt; служит контейнером для одного или более элементов
-                &lt;source> и одного элемента &lt;img&gt; для обеспечения оптимальной версии изображения для различных размеров
+                &lt;source&gt; и одного элемента &lt;img&gt; для обеспечения оптимальной версии изображения для различных размеров
                 экрана. Браузер рассмотрит каждый из дочерних элементов
                 &lt;source&gt; и выберет один, соответствующий лучшему совпадению; если совпадений среди элементов
-                &lt;source&gt; найдено не будет, то будет выбран файл, указанный атрибутом src элемента &lt;img> . Затем
+                &lt;source&gt; найдено не будет, то будет выбран файл, указанный атрибутом src элемента &lt;img&gt; . Затем
                 выбранное изображение отображается в пространстве, занятом элементом &lt;img&gt;.
 
-             <p>Чтобы выбрать оптимальное изображение, user agent анализирует атрибуты srcset, media, и type элемента
+             </p><p>Чтобы выбрать оптимальное изображение, user agent анализирует атрибуты srcset, media, и type элемента
                 &lt;source&gt; и выбирает совместимое изображение, которое наилучшим образом соответствует текущему макету
                 страницы, характеристикам устройства отображения и т. д.</p>
 
@@ -60,7 +59,7 @@
                     размеров экрана или разрешений. Это позволяет создавать более адаптивные и
                     эффективные веб-страницы.</li>
                 <li>Поддержка медиа-запросов: Вы можете использовать медиа-запросы внутри
-                    элементов &lt;source> для определения, какие изображения следует использовать в
+                    элементов &lt;source&gt; для определения, какие изображения следует использовать в
                     зависимости от характеристик устройства, таких как ширина экрана, разрешение,
                     ориентация и т. д.</li>
                 <li>Функциональность альтернативных изображений: Даже если браузер не поддерживает тег
@@ -99,8 +98,7 @@
             <h3>Примеры использования:</h3>
             <br>
             <h4>Отображение разных изображений в зависимости от ширины экрана:</h4>
-            <pre>
-            <code class="html-code">
+            <pre>            <code class="html-code">
             <span class="html-tag">&lt;picture&gt;</span>
 
             <span class="html-tag">&lt;source</span> srcset<span class="html-tag">=</span><span class="html-name">"image-medium.jpg"</span> media<span class="html-tag">=</span><span class="html-name">"(max-width: 1024px)"</span><span class="html-tag">&gt;</span>
@@ -120,15 +118,14 @@
 
         <source srcset="image/white-flower.jpg">
 
-        <img src="image/white-flower-small.jpg" alt="flower">
+        <img src="./Document_files/white-flower-small.jpg" alt="flower">
 
     <picture>
 
 
 
-        <div class="code clearfix">
-            <pre>
-        <code class="html-code">
+        <div class="code">
+            <pre>        <code class="html-code">
             <span class="html-tag">&lt;picture&gt;</span>
             <!-- Источник изображения для больших экранов -->
             <span class="html-tag">&lt;source</span> media<span class="html-tag">=</span><span class="html-name">"(min-width: 1200px)"</span> srcset<span class="html-tag">=</span><span class="html-name">"large-image.jpg"</span><span class="html-tag">&gt;</span>
@@ -147,7 +144,7 @@
                         
                         <source media="(min-width: 800px)" srcset="image/cat-medium.jpg">
                         
-                        <img src="image/cat-small.jpg" alt="manul">
+                        <img src="./Document_files/cat-small.jpg" alt="manul">
                 
                         
                 </picture>
@@ -175,8 +172,7 @@
 
             <h4>Отображение разных форматов изображений в зависимости от браузера:</h4>
 
-            <pre>
-            <code class="html-code">
+            <pre>            <code class="html-code">
             <span class="html-tag">&lt;picture&gt;</span>
 
             <span class="html-tag">&lt;source</span> srcset <span class="html-tag">=</span><span class="html-name">"image.webp"</span> type<span class="html-tag">=</span><span class="html-name">"image/webp"</span><span class="html-tag">&gt;</span>
@@ -195,7 +191,7 @@
 
                 <source srcset="image/webp-jasmine.webp" type="image/webp">
                 <source src="image/jpg-jasmine.jpg" type="image/jpg">
-                <img src="image/png-jasmine.png" alt="jasmine">
+                <img src="./Document_files/png-jasmine.png" alt="jasmine">
 
             </picture>
        
@@ -204,21 +200,20 @@
 
             <h4 class="head4">Отображение фонового изображения с альтернативным источником:</h4>
 
-            <pre class="html">
-    <code class="html-code">
-        <span class="html-tag">&lt;div</span> style<span class="html-tag">=</span><span class="html-name">"background-image: url('image-default.jpg');"</span><span class="html-tag" >&gt;</span>
+            <pre class="html">    <code class="html-code">
+        <span class="html-tag">&lt;div</span> style<span class="html-tag">=</span><span class="html-name">"background-image: url('image-default.jpg');"</span><span class="html-tag">&gt;</span>
 
             <span class="html-tag">&lt;picture&gt;</span>
 
             <span class="html-tag">&lt;source</span> srcset<span class="html-tag">=</span><span class="html-name">"image-large.jpg"</span><span>&gt;</span>
 
-            <span class="html-tag" >&lt;img </span>src<span class="html-tag"><span class="html-tag">=</span><span class="html-name">"image-default.jpg"</span> alt<span>=</span><span class="html-name">"Image description"</span><span>&gt;</span>
+            <span class="html-tag">&lt;img </span>src<span class="html-tag"><span class="html-tag">=</span><span class="html-name">"image-default.jpg"</span> alt<span>=</span><span class="html-name">"Image description"</span><span>&gt;</span>
 
             <span class="html-tag">&lt;picture&gt;</span>
 
         <span class="html-tag">&lt;/div&gt;</span>
        
-    </code>
+    </span></code>
         </pre>
         </div>
 
@@ -228,12 +223,50 @@
 
             <source srcset="image/cat-large.jpg"> 
 
-            <img src ="image/cat.jpg" alt="manul"> 
+            <img src="./Document_files/cat.jpg" alt="manul"> 
 
             <picture>
 
-        </div>
-    </div>
+        </picture></picture></div>
+    </picture></picture></div>
 
-    </body>
-    </html>
+    <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+    </div></body></html>

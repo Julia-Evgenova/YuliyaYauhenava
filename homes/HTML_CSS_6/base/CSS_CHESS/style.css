@@ -619,9 +619,9 @@ background: url(../img/office.png) no-repeat 175px bottom;
 }
 
 .new-collection {
-    margin-left: -11px;
-    margin-right: -10px;
-    margin-bottom: 29px;
+    margin-left: -12px;
+    margin-right: -12px;
+
 }
 
 .collection {
@@ -650,7 +650,7 @@ background: url(../img/office.png) no-repeat 175px bottom;
 .popular_brends {
     font-size: 31px;
     font-weight: 700;
-    margin-top: 29px;
+    margin-top: 55px;
 }
 
 .popular_brends-img {
@@ -664,96 +664,6 @@ background: url(../img/office.png) no-repeat 175px bottom;
     float: left;
     padding-right: 15px;
     padding-left: 15px;
-    margin-bottom: 22px;
 
-}
 
-.ideas {
-    font-size: 31px;
-    font-weight: 700;
-    margin-top: 23px;
-    padding-bottom: 20px;
-}
-
-.ideas-img {
-    margin-right: -9px;
-    margin-left: -9px;
-}
-
-.ideas-img li {
-    text-decoration: none;
-    float: left;
-    margin-right: 9px;
-    margin-left: 9px;
-}
-
-.fgh {
-    float: right;
-}
-
-.ghj {
-    float: left;
-    margin-top: -198px;
-    margin-left: 647px;
-}
-
-.special {
-    font-size: 31px;
-    font-weight: 700;
-    margin-top: 25px;
-    margin-bottom: 10px;
-}
-
-.banner-new {
-    float: right;
-    background: url(../img/bgbanner.png) no-repeat;
-    width: 413px;
-    height: 537px;
-    border-radius: 4px;
-    padding-top: 44px;
-    
-}
-
-.lg {
-    margin-left: 107px;
-    margin-bottom: 30px;
-}
-.rub {
-    font-size: 63px;
-    font-weight: 700;
-    margin-left: 92px;
-    margin-bottom: 15px;
-}
-
-.promotional-code {
-    font-size: 11px;
-    font-weight: 400;
-    color: #888888;
-    margin-left: 105px;
-    margin-bottom: 20px;
-
-}
-
-.new2022 {
-    background: #BA257D;
-    border-radius: 4px;
-    height: 51px;
-    width: 233px;
-    margin-left: 90px;
-    text-align: center;
-    padding-top: 7px;
-}
-
-.new2022 a {
-    
-    text-decoration: none;
-    color: #fff;
-    font-size: 39px;
-    font-weight: 700;
-
-}
-
-.woman-banner {
-    margin-left: 94px;
-    margin-top: 5px;
 }

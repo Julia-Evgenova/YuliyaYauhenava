@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.header {
+    background: #ADD8E6; 
+    height: 50px; 
+    color: blue;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.bg-content {
+    background: url(../image/ye.png) left top repeat-y; 
+}
+
+.content {
+    background:#FCFD95;
+    float: left;
+    width: 200px;
+}
+
+.content-title {
+    padding: 30px 0px 10px 20px;
+}
+
+.list {
+    list-style-type: disc; 
+    padding: 10px 30px 50px 40px;
+}
+
+.content-text {
+    background: url(../image/ball.png) repeat-y top right;
+    overflow: hidden;
+    min-height: 345px;
+    text-align: justify;
+}
+
+.content-text-title {
+    text-align: center; 
+    padding: 20px 0px;
+    font-weight: bold;
+}
+
+.content-text img {
+    float: left; 
+    margin: 0 10px;
+}
+
+.text {
+    line-height: 30px;
+    padding: 0 15px;
+}
+
+.footer {
+    background: #ADD8E6;
+    height: 50px; 
+    color: blue; 
+    text-align: center;
+    padding-top: 15px;
+}
+
+
+@media all and (max-width: 800px) {
+    
+    .content-text {
+        overflow: auto;
+    }
+    .content-text img {
+        float: none;
+    }
+    .content-text-title {
+        text-align: left;
+    }
+    .header, .footer {
+        text-align: left;
+    }
+    
+}
+

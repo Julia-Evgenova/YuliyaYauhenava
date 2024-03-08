@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
