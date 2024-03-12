@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+a {
+   
+    text-decoration: none;
+    color: black;
+}
+
+.info {
+    position: relative;
+}
+
+
+p {
+    line-height: 30px;
+}
+
+@media print {
+    
+    .info a {
+        position: relative;
+        color: transparent;
+    }
+
+    .info::before {
+        content: "(ссылка Информация на https://chesspro.ru/statistic/botvinnik.shtml)";
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    /*.info {
+        visibility: hidden;
+        margin-left: -405px;
+    }
+    .info::after {
+        content: "(ссылка Информация на https://chesspro.ru/statistic/botvinnik.shtml)";
+        visibility: visible;
+    }*/
+}
+
+    
+
+

@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="normolize.css">
     <title>Document</title>
     <style>
         * {
@@ -12,11 +14,28 @@
             margin: 0;
             box-sizing: border-box;
         }
+
+        
+        .block {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: lightgreen;
+            width: 100px;
+            height: 50px;
+            border: solid 1px green;
+            text-align: center;
+            font-size: 13px;
+            padding: 10px;
+    }
+    
     </style>
 </head>
 
 <body>
-
+<div class="wrap">
+    <div class="block"><a href="#">ВСТУПИТЬ В КЛУБ</a>
+        </div>
     <!-- header -->
     <div style="background: #ADD8E6; height: 50px; color: blue; text-align: center; padding-top: 15px;">
         ПРИВЕТ УЧАСТНИКАМ СОРЕВНОВАНИЙ!
@@ -58,7 +77,6 @@
                         target="_blank">
                         шашки</a></li>
 
-
             </ul>
         </div>
 
@@ -96,6 +114,7 @@
         ПРИВЕТ УЧАСТНИКАМ СОРЕВНОВАНИЙ!
     </div>
 
+</div>
 </body>
 
 </html>
