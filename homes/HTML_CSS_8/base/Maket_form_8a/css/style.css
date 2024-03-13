@@ -4,9 +4,11 @@
     box-sizing: border-box;
 }
 
-.container {
-    width: 1280px;
-    margin: 0 auto;
+.container1 {
+    width: 320px;
+    margin: 10px;
+    line-height: 30px;
+    padding: 10px;
 }
 
 .clearfix::after {
@@ -15,3 +17,58 @@
     clear: both;
 }
 
+.title1 {
+width: 290px;
+}
+
+.rubric1 {
+    width: 290px;
+}
+
+.text1 {
+    width: 270px;
+   
+}
+
+.container2 {
+    margin: 10px;
+    
+    padding: 10px;
+}
+
+.text2 {
+    width: 100%;
+   
+   
+}
+.fff {
+    float: left;
+    
+}
+.title2 {
+    float: right;
+    width: 78%;
+    
+}
+
+.title3 {
+    float: right;
+    width: 20%;
+    margin-right: 58%;
+   
+}
+
+@media all and (max-width: 624px) {
+    .container2 p {
+        max-width: 600px;
+    }
+    .title2 { 
+       width: 67%; 
+    }
+    .title3 {
+        width: 29%;
+    width: 38%;
+    }
+    
+
+}
