@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https: //fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2/family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
 
     <title>Document</title>
 </head>
@@ -20,27 +20,29 @@
         <br>
         <div class="text">
             <p>HTML-элемент &lt;picture&gt; служит контейнером для одного или более элементов
-                &lt;source> и одного элемента &lt;img&gt; для обеспечения оптимальной версии изображения для различных размеров
+                &lt;source> и одного элемента &lt;img&gt; для обеспечения оптимальной версии изображения для различных
+                размеров
                 экрана. Браузер рассмотрит каждый из дочерних элементов
                 &lt;source&gt; и выберет один, соответствующий лучшему совпадению; если совпадений среди элементов
                 &lt;source&gt; найдено не будет, то будет выбран файл, указанный атрибутом src элемента &lt;img> . Затем
                 выбранное изображение отображается в пространстве, занятом элементом &lt;img&gt;.
 
-             <p>Чтобы выбрать оптимальное изображение, user agent анализирует атрибуты srcset, media, и type элемента
-                &lt;source&gt; и выбирает совместимое изображение, которое наилучшим образом соответствует текущему макету
+            <p>Чтобы выбрать оптимальное изображение, user agent анализирует атрибуты srcset, media, и type элемента
+                &lt;source&gt; и выбирает совместимое изображение, которое наилучшим образом соответствует текущему
+                макету
                 страницы, характеристикам устройства отображения и т. д.</p>
 
             <p>Элемент &lt;picture&gt; часто используют для того, чтобы обеспечить HiDPI (Retina)-версию изображений для
-                    дисплеев с высоким разрешением, а также для добавления других форматов изображений, не
-                    поддерживаемых всеми браузерами.</p>
+                дисплеев с высоким разрешением, а также для добавления других форматов изображений, не
+                поддерживаемых всеми браузерами.</p>
 
             <p>
-            Тег &lt;picture&gt; используется для отображения изображений с альтернативными источниками в
-            зависимости от разрешения экрана. Это позволяет браузеру выбирать наиболее подходящее изображение
-            для текущего экрана и загружать только его, что уменьшает время загрузки страницы и улучшает
-            производительность.
-        </p>
-    </div>
+                Тег &lt;picture&gt; используется для отображения изображений с альтернативными источниками в
+                зависимости от разрешения экрана. Это позволяет браузеру выбирать наиболее подходящее изображение
+                для текущего экрана и загружать только его, что уменьшает время загрузки страницы и улучшает
+                производительность.
+            </p>
+        </div>
         <br>
 
 
@@ -86,13 +88,13 @@
                     не будет индексироваться поисковыми системами, если он не содержит альтернативный текст в теге
                     &lt;img&gt;. Убедитесь, что ваши изображения имеют адекватные и описательные атрибуты alt.</li>
                 <li>Прогрессивное улучшение (Progressive Enhancement): Важно использовать тег
-                    &lt;picture&gt;с учётом принципа прогрессивного улучшения, чтобы основное содержимое
+                    &lt;picture&gt; с учётом принципа прогрессивного улучшения, чтобы основное содержимое
                     (обычно &lt;img&gt;) всегда было доступно для всех пользователей, в том числе для тех,
                     у кого отключены JavaScript или не поддерживается функциональность тега &lt;picture&gt;.</li>
-                Учитывая эти нюансы, использование тега &lt;picture&gt; может значительно улучшить адаптивность и
-                производительность вашего
-                веб-сайта, обеспечивая лучший пользовательский опыт на различных устройствах и разрешениях экранов.
             </ul>
+            <p>Учитывая эти нюансы, использование тега &lt;picture&gt; может значительно улучшить адаптивность и
+                производительность вашего
+                веб-сайта, обеспечивая лучший пользовательский опыт на различных устройствах и разрешениях экранов.</p>
         </div>
         <div>
             <br>
@@ -109,25 +111,23 @@
 
             <span class="html-tag">&lt;img</span> src<span class="html-tag">=</span><span class="html-name">"image-default.jpg"</span> alt<span class="html-tag">=</span><span class="html-name">"Image description"</span><span class="html-tag">&gt;</span>
 
-            <span class="html-tag">&lt;picture&gt;</span>
+            <span class="html-tag">&lt;/picture&gt;</span>
         </code>
     </pre>
 
 
-    <picture class="example2">
+            <picture class="example2">
 
-        <source srcset="image/white-flower-media.jpg" media="(max-width: 1024px)">
+                <source srcset="image/white-flower-media.jpg" media="(max-width: 1024px)">
 
-        <source srcset="image/white-flower.jpg">
+                <source srcset="image/white-flower.jpg">
 
-        <img src="image/white-flower-small.jpg" alt="flower">
+                <img src="image/white-flower-small.jpg" alt="flower">
 
-    <picture>
+            </picture>
 
-
-
-        <div class="code clearfix">
-            <pre>
+            <div class="code clearfix">
+                <pre>
         <code class="html-code">
             <span class="html-tag">&lt;picture&gt;</span>
             <!-- Источник изображения для больших экранов -->
@@ -137,45 +137,46 @@
             <!-- Источник изображения для маленьких экранов или если браузер не поддерживает тег picture -->
             <span class="html-tag">&lt;img</span> src<span class="html-tag">=</span><span class="html-name">"small-image.jpg"</span> alt<span class="html-tag">=</span><span class="html-name">"Описание изображения"</span><span class="html-tag">&gt;</span>
     
-            <span class="html-tag">&lt;picture&gt;</span>
+            <span class="html-tag">&lt;/picture&gt;</span>
         </code>
                 </pre>
 
                 <picture class="example1">
-            
-                        <source media="(min-width: 1200px)" srcset="image/cat-large.jpg">
-                        
-                        <source media="(min-width: 800px)" srcset="image/cat-medium.jpg">
-                        
-                        <img src="image/cat-small.jpg" alt="manul">
-                
-                        
+
+                    <source media="(min-width: 1200px)" srcset="image/cat-large.jpg">
+
+                    <source media="(min-width: 800px)" srcset="image/cat-medium.jpg">
+
+                    <img src="image/cat-small.jpg" alt="manul">
+
+
                 </picture>
-                
+
+
+                <div>
+
+                    <ul class="if">
+                        <li>Если ширина экрана больше 1200рх, будет загружено изображение "large-image. jpg".</li>
+                        <li>Если ширина экрана между 800рх и 1200рх, будет загружено изображение "medium-image.jpg".
+                        </li>
+                        <li>Если ни одно из условий не выполняется или браузер не поддерживает тег &lt;picture&gt; будет
+                            загружено изображение 'small-image.jpg.</li>
+                        <li>&lt;source&gt; определяет различные варианты источников изображений в зависимости от
+                            медиа-запросов, указанных в атрибуте media.</li>
+                        <li>srcset указывает пути к изображениям для каждого источника.</li>
+                        <li>&lt;img&gt; является резервным вариантом и будет использован, если ни один из элементов</li>
+                        <li>&lt;source&gt; не соответствует текущему устройству или если браузер не поддерживает тег
+                            &lt;picture&gt;.</li>
+                    </ul>
+                </div>
+            </div>
+
 
             <div>
 
-                <ul class="if">
-                    <li>Если ширина экрана больше 1200рх, будет загружено изображение "large-image. jpg".</li>
-                    <li>Если ширина экрана между 800рх и 1200рх, будет загружено изображение "medium-image.jpg".</li>
-                    <li>Если ни одно из условий не выполняется или браузер не поддерживает тег &lt;picture&gt; будет
-                        загружено изображение 'small-image.jpg.</li>
-                    <li>&lt;source&gt; определяет различные варианты источников изображений в зависимости от
-                        медиа-запросов, указанных в атрибуте media.</li>
-                    <li>srcset указывает пути к изображениям для каждого источника.</li>
-                    <li>&lt;img&gt; является резервным вариантом и будет использован, если ни один из элементов</li>
-                    <li>&lt;source&gt; не соответствует текущему устройству или если браузер не поддерживает тег
-                        &lt;picture&gt;.</li>
-                </ul>
-            </div>
-        </div>
+                <h4>Отображение разных форматов изображений в зависимости от браузера:</h4>
 
-
-        <div>
-
-            <h4>Отображение разных форматов изображений в зависимости от браузера:</h4>
-
-            <pre>
+                <pre>
             <code class="html-code">
             <span class="html-tag">&lt;picture&gt;</span>
 
@@ -185,55 +186,56 @@
 
             <span class="html-tag">&lt;img</span> src<span class="html-tag">=</span><span class="html-name">"image.png"</span> alt<span class="html-tag">=</span><span class="html-name">"Image description"</span><span class="html-tag">&gt;</span>
 
-            <span class="html-tag">&lt;picture&gt;</span>
-        </code>
-        </pre>
-        </div>
+            <span class="html-tag">&lt;/picture&gt;</span>
+            </code>
+            </pre>
+            </div>
 
-      
+
             <picture class="example">
 
                 <source srcset="image/webp-jasmine.webp" type="image/webp">
-                <source src="image/jpg-jasmine.jpg" type="image/jpg">
+                <source srcset="image/jpg-jasmine.jpg" type="image/jpeg">
                 <img src="image/png-jasmine.png" alt="jasmine">
 
             </picture>
-       
 
-        <div>
 
-            <h4 class="head4">Отображение фонового изображения с альтернативным источником:</h4>
+            <div>
+
+                <h4 class="head4">Отображение фонового изображения с альтернативным источником:</h4>
 
             <pre class="html">
-    <code class="html-code">
-        <span class="html-tag">&lt;div</span> style<span class="html-tag">=</span><span class="html-name">"background-image: url('image-default.jpg');"</span><span class="html-tag" >&gt;</span>
+            <code class="html-code">
+            <span class="html-tag">&lt;div&gt;</span> style<span class="html-tag">=</span><span class="html-name">"background-image: url('image-default.jpg');"</span><span class="html-tag">&gt;</span>
 
             <span class="html-tag">&lt;picture&gt;</span>
 
             <span class="html-tag">&lt;source</span> srcset<span class="html-tag">=</span><span class="html-name">"image-large.jpg"</span><span>&gt;</span>
 
-            <span class="html-tag" >&lt;img </span>src<span class="html-tag"><span class="html-tag">=</span><span class="html-name">"image-default.jpg"</span> alt<span>=</span><span class="html-name">"Image description"</span><span>&gt;</span>
+            <span class="html-tag">&lt;img</span> src<span class="html-tag">=</span><span class="html-name">"image-default.jpg"</span> alt<span>=</span><span class="html-name">"Image description"</span><span>&gt;</span>
 
-            <span class="html-tag">&lt;picture&gt;</span>
+            <span class="html-tag">&lt;/picture&gt;</span>
 
-        <span class="html-tag">&lt;/div&gt;</span>
-       
-    </code>
-        </pre>
-        </div>
+            <span class="html-tag">&lt;/div&gt;</span>
+        
+            </code>
+            </pre>
+            </div>
 
-        <div class="example3">
+            
 
-            <picture>
+                <picture class="example3">
 
-            <source srcset="image/cat-large.jpg"> 
+                    <source srcset="image/cat-large.jpg">
 
-            <img src ="image/cat.jpg" alt="manul"> 
+                    <img src="image/cat.jpg" alt="manul">
 
-            <picture>
+                </picture>
 
+        
         </div>
     </div>
+</body>
 
-    </body>
-    </html>
+</html>

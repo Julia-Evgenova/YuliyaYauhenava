@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,89 +10,73 @@
 
     <title>Document</title>
 </head>
+
 <body>
-    
-<div class="container1 clearfix">
-    <div>Для публикации вашей статьи заполните, пожалуйста, следующую форму:</div> 
-    <form method="post" action="TestForm.php.php">
-        
-        Название статьи: <br>
-        <input class="title1" type="text" name="article_title"><br>
 
-        Рубрика:<br>
-        <select class="rubric1" name="rubrika">
-            <option value="1">компьютерная техника</option>
-            <option value="2">графика и дизайн</option>
-            <option value="3" selected>программирование</option>
-            
-        </select>
-        Публикация:<br>
-        <input type="radio" name="answer" value="1">на сайте<br>
-        <input type="radio" name="answer" value="1" checked>в журнале<br>
-        <input type="radio" name="answer" value="1">на сайте и в журнале<br>
-        <input type="hidden" name="votenum" value="111">
-        Разрешить комментарии:
-        <input type="checkbox" name="onlynew" checked><br>
+    <div class="container1 clearfix">
+        <div>Для публикации вашей статьи заполните, пожалуйста, следующую форму:</div>
+        <form method="post" action="TestForm.php.php">
 
-        Текст статьи:<br>
-        <textarea class="text1" name="mytext"></textarea><br>
-        <br>
-        <input type="submit" value="Опубликовать">
-    </form>
-</div>
-<br>
+            Название статьи: <br>
+            <input class="title1" type="text" name="article_title"><br>
 
+            Рубрика:<br>
+            <select class="rubric1" name="rubrika">
+                <option value="1">компьютерная техника</option>
+                <option value="2">графика и дизайн</option>
+                <option value="3" selected>программирование</option>
 
-<div class="container2 clearfix">
-    <div>Для публикации вашей статьи заполните, пожалуйста, следующую форму:</div> 
-<br>
-    <form method="post" action="TestForm.php.php">
-        <div class="clearfix">
-        <div class="aaa">
-        <span class="fff">Название статьи:</span> 
-        <input class="title2" type="text" name="article_title">
-        <br>
-       <br>
-        </div>
+            </select>
+            Публикация:<br>
+            <input type="radio" name="answer" value="1">на сайте<br>
+            <input type="radio" name="answer" value="1" checked>в журнале<br>
+            <input type="radio" name="answer" value="1">на сайте и в журнале<br>
+            <input type="hidden" name="votenum" value="111">
+            Разрешить комментарии:
+            <input type="checkbox" name="onlynew" checked><br>
 
-       <div class="bbb">
-        <span class="fff">Рубрика:</span>
-        <select class="title3" name="rubrika">
-            <option value="1">компьютерная техника</option>
-            <option value="2">графика и дизайн</option>
-            <option value="3" selected>программирование</option>  
-        </select>
-        </div>
-       <br>
-       <br>
-       <div class="ccc">
-        <span class="fff">Публикация:</span>
-        <div class="title2">
-        <input type="radio" name="answer" value="1">на сайте
-        <input type="radio" name="answer" value="1" checked>в журнале
-        <input type="radio" name="answer" value="1">на сайте и в журнале<br>
-        <input type="hidden" name="votenum" value="111">
-        </div>
+            Текст статьи:<br>
+            <textarea class="text1" name="mytext"></textarea><br>
+            <br>
+            <input type="submit" value="Опубликовать">
+        </form>
     </div>
-       <br>
-        <br>
-        <div class="ddd">
-        <span class="fff">Разрешить комментарии:</span>
-        <div class="title4">
-        <input type="checkbox" name="onlynew" checked></div><br>
-        </div>
-    </div>
+    <br>
 
-        <br>
-        <div class="eee">
-        Текст статьи:<br>
-        <textarea class="text2" name="mytext"></textarea>
-    </div><br>
-        <br>
-        <input type="submit" value="Опубликовать">
-    </form>
-</div>
-</div>
-    
+
+    <div class="container2 clearfix">
+        <div>Для публикации вашей статьи заполните, пожалуйста, следующую форму:</div>
+        <form method="post" action="TestForm.php.php">
+            <label for="">
+            <span>Название статьи:</span>
+            <input class="title2" type="text" name="article_title"><br>
+</label>
+            Рубрика:
+            <select class="rubric1" name="rubrika">
+                <option value="1">компьютерная техника</option>
+                <option value="2">графика и дизайн</option>
+                <option value="3" selected>программирование</option>
+
+            </select>
+            <br>
+            Публикация:
+            <input type="radio" name="answer" value="1">на сайте
+            <input type="radio" name="answer" value="1" checked>в журнале
+            <input type="radio" name="answer" value="1">на сайте и в журнале
+            <input type="hidden" name="votenum" value="111">
+            <br>
+            Разрешить комментарии:
+            <input type="checkbox" name="onlynew" checked><br>
+
+            Текст статьи: <br>
+            <textarea class="text2" name="mytext"></textarea><br>
+            <br>
+            <input type="submit" value="Опубликовать">
+        </form>
+    </div>
+    <br>
+
+
 </body>
+
 </html>

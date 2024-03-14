@@ -1,7 +1,6 @@
 * {
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
-    box-sizing: border-box;
 }
 
 .container1 {
@@ -31,34 +30,27 @@ width: 290px;
 }
 
 .container2 {
+    width: 1280x;
     margin: 10px;
-    
+    line-height: 30px;
     padding: 10px;
 }
 
 .text2 {
     width: 100%;
    
-   
 }
-.fff {
+
+span {
     float: left;
-    
+    width: 200px;
 }
+
 .title2 {
-    float: right;
-    width: 78%;
-    
+    width: 100%;
+    margin-left: 205px;
 }
-
-.title3 {
-    float: right;
-    width: 20%;
-    margin-right: 58%;
-   
-}
-
-@media all and (max-width: 624px) {
+/*@media all and (max-width: 624px) {
     .container2 p {
         max-width: 600px;
     }

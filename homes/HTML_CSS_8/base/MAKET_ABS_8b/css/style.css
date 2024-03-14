@@ -5,8 +5,9 @@
 }
 
 .container {
-    width: 1280px;
-    margin: 0 auto;
+
+    margin: 30px;
+    
 }
 
 .clearfix::after {
@@ -15,3 +16,96 @@
     clear: both;
 }
 
+.header_text {
+    
+    text-align: justify;
+}
+
+.images {
+    position: relative;
+    width: 500px;
+    height: 400px;
+    margin: 0 auto;
+} 
+.biohazard {
+    position: absolute; 
+    left: 35px;
+    top: 40px;
+}
+
+.biohazard:hover {
+    z-index: 1;
+}
+
+.man-and-woman {
+    position: absolute; 
+    left: 257px;
+    top: 15px;
+}
+
+.man-and-woman:hover { 
+    z-index: 1;
+}
+
+.yin_and_yang {
+    position: absolute;
+    top: 210px;
+    left: 140px;
+}
+
+.yin_and_yang:hover {
+    z-index: 1;
+}
+
+
+.no_smoking {
+    position: absolute; 
+    top: 70px;
+    left: 115px;    
+}
+
+
+.footer_text {
+    position: relative; 
+    
+    margin-top: 30px;
+    text-align: justify;
+    margin-right: 30px;
+}
+
+@media all and (max-width: 624px) {
+    .container {
+
+        margin: 5px;
+        
+    }
+    .images {
+        width: 300px;
+        height: 400px;
+    }
+    .biohazard {
+        position: absolute; 
+        left: 0;
+        top: 10px;
+    }
+    
+    .man-and-woman {
+        position: absolute; 
+        left: 107px;
+        top: 5px;
+    }
+    
+    .no_smoking {
+        position: absolute; 
+        top: 80px;
+        left: 25px;    
+    }
+    
+    .yin_and_yang {
+        position: absolute;
+        top: 220px;
+        left: 50px;
+    }
+    
+    
+}
