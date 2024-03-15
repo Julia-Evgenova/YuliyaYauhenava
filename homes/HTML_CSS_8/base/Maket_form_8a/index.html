@@ -13,19 +13,18 @@
 
 <body>
 
-    <div class="container1 clearfix">
+    <!--<div class="container-first clearfix">
         <div>Для публикации вашей статьи заполните, пожалуйста, следующую форму:</div>
-        <form method="post" action="TestForm.php.php">
+        <form method="post" action="http://fe.it-academy.by/TestForm.php">
 
             Название статьи: <br>
-            <input class="title1" type="text" name="article_title"><br>
+            <input class="title-first" type="text" name="article_title"><br>
 
             Рубрика:<br>
-            <select class="rubric1" name="rubrika">
+            <select class="rubric-first" name="rubrika">
                 <option value="1">компьютерная техника</option>
                 <option value="2">графика и дизайн</option>
                 <option value="3" selected>программирование</option>
-
             </select>
             Публикация:<br>
             <input type="radio" name="answer" value="1">на сайте<br>
@@ -36,40 +35,56 @@
             <input type="checkbox" name="onlynew" checked><br>
 
             Текст статьи:<br>
-            <textarea class="text1" name="mytext"></textarea><br>
+            <textarea class="text-first" name="mytext"></textarea><br>
             <br>
             <input type="submit" value="Опубликовать">
         </form>
     </div>
-    <br>
+    <br>-->
 
 
-    <div class="container2 clearfix">
-        <div>Для публикации вашей статьи заполните, пожалуйста, следующую форму:</div>
-        <form method="post" action="TestForm.php.php">
-            <label for="">
-            <span>Название статьи:</span>
-            <input class="title2" type="text" name="article_title"><br>
-</label>
-            Рубрика:
-            <select class="rubric1" name="rubrika">
-                <option value="1">компьютерная техника</option>
-                <option value="2">графика и дизайн</option>
-                <option value="3" selected>программирование</option>
+    <div class="container-second clearfix">
+        <div class="form">Для публикации вашей статьи заполните, пожалуйста, следующую форму:</div>
+        <form method="post" action="http://fe.it-academy.by/TestForm.php">
+            <div class="post-name">
+                <span class="post-name__name">Название статьи:</span>
+                <input class="post-name__input" type="text" name="article_title">
+            </div>
 
-            </select>
+            <div class="rubric-second">
+                <span class="rubrica">Рубрика:</span>
+                <select name="rubrika">
+                    <option value="1">компьютерная техника</option>
+                    <option value="2">графика и дизайн</option>
+                    <option value="3" selected>программирование</option>
+                </select>
+            </div>
             <br>
-            Публикация:
-            <input type="radio" name="answer" value="1">на сайте
-            <input type="radio" name="answer" value="1" checked>в журнале
-            <input type="radio" name="answer" value="1">на сайте и в журнале
-            <input type="hidden" name="votenum" value="111">
+            <div class="public">
+                <span class="public-text">Публикация:</span>
+                <div class="radio">
+                    <input type="radio" name="answer" value="1">на сайте
+                </div>
+                <div class="radio">
+                    <input type="radio" name="answer" value="1" checked>в журнале
+                </div>
+                <div class="radio">
+                    <input type="radio" name="answer" value="1">на сайте и в журнале
+                </div>
+                <div>
+                    <input type="hidden" name="votenum" value="111">
+                </div>
+            </div>
             <br>
-            Разрешить комментарии:
-            <input type="checkbox" name="onlynew" checked><br>
-
-            Текст статьи: <br>
-            <textarea class="text2" name="mytext"></textarea><br>
+            <div class="comment">
+                <span class="allow-comments">Разрешить комментарии:</span>
+                <input type="checkbox" name="onlynew" checked><br>
+            </div>
+            <div class="text-article">
+                <span class="text-article__article">Текст статьи:</span>
+                <textarea class="text-second" name="mytext"></textarea>
+            </div>
+            <br>
             <br>
             <input type="submit" value="Опубликовать">
         </form>

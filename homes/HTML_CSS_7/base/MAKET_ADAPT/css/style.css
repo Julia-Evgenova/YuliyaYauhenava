@@ -5,7 +5,8 @@
 }
 
 .container {
-    width: 1280px;
+    max-width: 1280px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -75,7 +76,7 @@
 }
 
 
-@media all and (max-width: 1200px) {
+/*@media all and (max-width: 1200px) {
     .content-text {
         overflow: auto;
         background: url(../image/ball.png) repeat-y top right;
@@ -136,47 +137,50 @@
 
     .content-text {
         overflow: auto;
-        background: url(../image/ball.png) repeat-y top right;
+        background: url("../image/ball.png") repeat-y top right;
         background-position: 515px top;
     }
 
-}
+}*/
 
-@media all and (max-width: 320px) {
+@media all and (max-width: 480px) {
     .content-text {
         overflow: auto;
-        background: url(../image/ball.png) repeat-y top right;
-        background-position: 270px top;
+        background: url("../image/ball.png") repeat-y top right/270px top;
     }
 
     .bg-content {
-        background: url(../image/ye.png) no-repeat; 
-       
+        background: url("../image/ye.png") no-repeat;   
     }
+
     .content {
        float: none;
-       width: 320px;
+       width: 480px;
     }
+
     .content-text img {
         float: none;
         display: block;
     }
+
     .text {
-        max-width: 320px;
+        max-width: 480px;
         margin-top: 20px;
-       
     }
+
     .content-text-title {
         text-align: left;
         margin-left: 30px;
     }
-    .header, .footer {
+
+    .header, 
+    .footer {
         text-align: left;
         font-size: 15px;
         padding-left: 10px;
-        max-width: 320px;
+        max-width: 480px;
     }
-    
+
 }
 
 

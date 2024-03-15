@@ -3,7 +3,7 @@
     font-family: "Roboto", sans-serif;
 }
 
-.container1 {
+.container-first {
     width: 320px;
     margin: 10px;
     line-height: 30px;
@@ -16,51 +16,91 @@
     clear: both;
 }
 
-.title1 {
-width: 290px;
-}
-
-.rubric1 {
+.title-first {
     width: 290px;
 }
 
-.text1 {
+.rubric-first {
+    width: 290px;
+}
+
+.text-first {
     width: 270px;
-   
 }
 
-.container2 {
-    width: 1280x;
-    margin: 10px;
-    line-height: 30px;
-    padding: 10px;
+.container-second {
+    margin: 0 30px;
 }
 
-.text2 {
+.form {
+    margin: 10px 0;
+}
+
+.post-name {
+    white-space: nowrap;
     width: 100%;
-   
 }
 
-span {
+.post-name__name {
     float: left;
-    width: 200px;
 }
 
-.title2 {
+.post-name__input {
     width: 100%;
-    margin-left: 205px;
+    margin-left: 75px;
 }
-/*@media all and (max-width: 624px) {
-    .container2 p {
+
+.rubric-second {
+    margin-top: 5px;
+}
+
+.rubrica {
+    margin-right: 135px;
+}
+
+.public-text {
+    margin-right: 100px;
+}
+
+.radio {
+    display: inline-block;
+}
+
+.comment {
+    margin-bottom: 10px;
+}
+
+.text-second {
+    width: 100%;
+}
+
+@media all and (max-width: 320px) {
+    .container-second {
         max-width: 600px;
     }
-    .title2 { 
-       width: 67%; 
-    }
-    .title3 {
-        width: 29%;
-    width: 38%;
-    }
-    
 
+    .post-name {
+        white-space: wrap;
+    }
+
+    .post-name__name {
+        float: none;
+    }
+
+    .post-name__input {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .rubrica {
+        margin-bottom: 5px;
+    }
+
+    .public-text {
+        margin-right: 100px;
+    }
+
+    .radio {
+        display: block;
+    }
 }
