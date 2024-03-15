@@ -3,7 +3,7 @@
     font-family: "Roboto", sans-serif;
 }
 
-.container-first {
+/*.container-first {
     width: 320px;
     margin: 10px;
     line-height: 30px;
@@ -26,10 +26,12 @@
 
 .text-first {
     width: 270px;
-}
+}*/
 
 .container-second {
-    margin: 0 30px;
+    margin: 0 auto;
+    padding: 20px;
+    width: 1800px;
 }
 
 .form {
@@ -46,8 +48,9 @@
 }
 
 .post-name__input {
-    width: 100%;
+    width: 88%;
     margin-left: 75px;
+    margin-right: 25px;
 }
 
 .rubric-second {
@@ -58,12 +61,17 @@
     margin-right: 135px;
 }
 
+.options {
+    display: inline-block;
+}
+
 .public-text {
     margin-right: 100px;
 }
 
 .radio {
     display: inline-block;
+    white-space: nowrap;
 }
 
 .comment {
@@ -74,9 +82,14 @@
     width: 100%;
 }
 
-@media all and (max-width: 320px) {
+@media all and (max-width: 576px) {
+    .form {
+        text-align: left;
+        max-width: 500px;
+        line-height: 20px;
+    }
     .container-second {
-        max-width: 600px;
+        max-width: 500px;
     }
 
     .post-name {
@@ -85,22 +98,93 @@
 
     .post-name__name {
         float: none;
+        display: block;
     }
 
     .post-name__input {
-        width: 100%;
+        width: 430px;
         margin-left: 0;
+        display: block;
     }
 
     .rubrica {
         margin-bottom: 5px;
+        display: block; 
     }
 
-    .public-text {
-        margin-right: 100px;
+    .options {
+        display: block;
+        width: 430px;
     }
 
     .radio {
         display: block;
+        margin-top: 5px;
+    }
+
+    .text-article__article {
+        display: block;
+    }
+
+    .text-second {
+        margin-top: 5px;
+        width: 430px;
+        display: block;
+       line-height: 15px;
+        
+    }
+}
+
+@media all and (max-width: 480px) {
+    .form {
+        text-align: left;
+        max-width: 320px;
+        line-height: 20px;
+    }
+    .container-second {
+        max-width: 320px;
+    }
+
+    .post-name {
+        white-space: wrap;
+    }
+
+    .post-name__name {
+        float: none;
+        display: block;
+    }
+
+    .post-name__input {
+        width: 320px;
+        margin-left: 0;
+        display: block;
+    }
+
+    .rubrica {
+        margin-bottom: 5px;
+        display: block; 
+    }
+
+    .options {
+        margin: 0 auto;
+        display: block;
+        width: 320px;
+    }
+
+    .radio {
+        display: block;
+        margin-top: 5px;
+    }
+
+    .text-article__article {
+        display: block;
+    }
+
+    .text-second {
+        margin-top: 5px;
+        width: 320px;
+        display: block;
+       line-height: 15px;
+        
     }
 }
