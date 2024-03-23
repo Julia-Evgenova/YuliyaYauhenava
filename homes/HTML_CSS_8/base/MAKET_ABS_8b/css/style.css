@@ -5,9 +5,7 @@
 }
 
 .container {
-
     margin: 30px;
-    
 }
 
 .clearfix::after {
@@ -17,7 +15,6 @@
 }
 
 .header_text {
-    
     text-align: justify;
 }
 
@@ -26,9 +23,10 @@
     width: 500px;
     height: 400px;
     margin: 0 auto;
-} 
+}
+
 .biohazard {
-    position: absolute; 
+    position: absolute;
     left: 35px;
     top: 40px;
 }
@@ -38,12 +36,12 @@
 }
 
 .man-and-woman {
-    position: absolute; 
+    position: absolute;
     left: 257px;
     top: 15px;
 }
 
-.man-and-woman:hover { 
+.man-and-woman:hover {
     z-index: 1;
 }
 
@@ -57,17 +55,14 @@
     z-index: 1;
 }
 
-
 .no_smoking {
-    position: absolute; 
+    position: absolute;
     top: 70px;
-    left: 115px;    
+    left: 115px;
 }
 
-
 .footer_text {
-    position: relative; 
-    
+    position: relative;
     margin-top: 30px;
     text-align: justify;
     margin-right: 30px;
@@ -75,37 +70,35 @@
 
 @media all and (max-width: 624px) {
     .container {
-
         margin: 5px;
-        
     }
+
     .images {
         width: 300px;
         height: 400px;
     }
+
     .biohazard {
-        position: absolute; 
+        position: absolute;
         left: 0;
         top: 10px;
     }
-    
+
     .man-and-woman {
-        position: absolute; 
+        position: absolute;
         left: 107px;
         top: 5px;
     }
-    
+
     .no_smoking {
-        position: absolute; 
+        position: absolute;
         top: 80px;
-        left: 25px;    
+        left: 25px;
     }
-    
+
     .yin_and_yang {
         position: absolute;
         top: 220px;
         left: 50px;
     }
-    
-    
 }

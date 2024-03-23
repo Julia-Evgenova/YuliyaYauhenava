@@ -80,6 +80,7 @@
 
 .text-second {
     width: 100%;
+    resize: none;
 }
 
 @media all and (max-width: 576px) {

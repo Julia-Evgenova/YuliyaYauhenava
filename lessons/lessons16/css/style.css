@@ -115,6 +115,10 @@
         flex-direction: column;
     }
 
+    .ddd {
+        margin: 5px auto;
+    }
+
     .qqq {
         height: auto;
         padding-top: 0;
@@ -144,6 +148,12 @@
         order: 5;
     }
 
+}
+
+@media all and (max-width: 800px) {
+    .ddd:last-child {
+        display: none;
+    }
 }
 
 @media all and (max-width: 480px) {
@@ -178,6 +188,7 @@
     .wrap {
         flex-direction: column;
         height: auto;
+        flex-flow: wrap;
     }
 
     .menu {
@@ -199,6 +210,7 @@
     .content {
         align-items: center;
         flex-direction: column;
+        flex-flow: wrap;
     }
 
     .qqq {
