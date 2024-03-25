@@ -1,0 +1,83 @@
+.container {
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+.bg-content {
+    display: flex;
+}
+
+.header,
+.footer {
+    background: #ADD8E6;
+    height: 50px;
+    color: blue;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.content {
+    display: flex;
+}
+
+.content-title {
+    font-weight: 700;
+    padding: 10px;
+}
+
+.list {
+    background: rgb(251, 251, 138);
+    width: 300px;
+    padding: 30px;
+    list-style-type: disc;
+}
+
+.content-text {
+    background: url("../image/ball.png") repeat-y right top;
+    display: flex;
+    margin-left: 20px;
+}
+
+.text h3 {
+    font-weight: 700; 
+    text-align: center;
+    padding: 20px;
+}
+
+.text img {
+    float: left;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+@media all and (max-width: 320px) {
+    .header, 
+    .footer {
+        display: none;
+    }
+
+    .content {
+        flex-direction: column-reverse;
+    }
+
+    .list {
+        background: none;
+        list-style-type: none;
+        padding-right: 10px;
+    }
+
+    .text {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text img {
+        width: 100%
+    }
+
+    .content-text {
+        background: none;
+    }
+
+}

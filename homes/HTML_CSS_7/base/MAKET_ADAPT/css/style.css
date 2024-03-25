@@ -146,16 +146,21 @@
 @media all and (max-width: 480px) {
     .content-text {
         overflow: auto;
-        background: url("../image/ball.png") repeat-y top right/270px top;
+        background: none;
     }
 
     .bg-content {
-        background: url("../image/ye.png") no-repeat;   
+        background: none;   
     }
 
     .content {
        float: none;
        width: 480px;
+       background: none;
+    }
+
+    .list li {
+        display: inline;
     }
 
     .content-text img {
@@ -164,12 +169,12 @@
     }
 
     .text {
-        max-width: 480px;
+        max-width: 400px;
         margin-top: 20px;
     }
 
     .content-text-title {
-        text-align: left;
+        text-align: center;
         margin-left: 30px;
     }
 

@@ -358,6 +358,32 @@
     text-align: left;
 }
 
+.slider_arrow {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+.slider_arrow img:first-child {
+    position: absolute;
+    top: -450px;
+    left: -6px;
+    z-index: 3;
+    text-align: center;
+    padding-top: 13px;
+}
+
+.slider_arrow img:last-child {
+    position: absolute;
+    top: -450px;
+    left: 1100px;
+    z-index: 3;
+    text-align: center;
+    padding-top: 13px;
+}
+
 .number {
     position: absolute;
     font-family: var(--font-family);
@@ -449,7 +475,7 @@
     left: 35px;
 }
 
-.btn_from {
+.order_btn_from {
     display: flex;
     align-items: center;
     border-radius: 10px;
@@ -470,17 +496,28 @@
     cursor: pointer;
 }
 
-.btn_from:hover {
+.order_btn_from:hover {
     background: #b0cc0d;
 }
 
+.order_total {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+    color: #000;
+    text-transform: none;
+    margin-left: 17px;
+    margin-right: 8px;
+    width: 320px;
+}
 
 .carbohydrates {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 189px;
     margin-right: 43px;
+    margin-left: 8px;
 }
 
 .carb {
@@ -539,7 +576,7 @@
 
 .slider_basiliks img:last-child {
     position: absolute;
-    top: -163px;
+    top: -175px;
     left: 626px;
 }
 
@@ -572,4 +609,12 @@ form {
     border-radius: 22px;
     height: 468px;
     margin-bottom: 100px;
+}
+
+.our_advantages {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 120%;
+    text-transform: uppercase;
 }
