@@ -23,7 +23,7 @@
 
 .content-title {
     font-weight: 700;
-    padding: 10px;
+    padding-bottom: 10px;
 }
 
 .list {
@@ -51,7 +51,7 @@
     margin-right: 20px;
 }
 
-@media all and (max-width: 320px) {
+@media all and (max-width: 375px) {
     .header, 
     .footer {
         display: none;
@@ -61,9 +61,22 @@
         flex-direction: column-reverse;
     }
 
+    .content-title {
+        margin-right: 30px;
+        padding-left: 0;
+    }
+
     .list {
         background: none;
         list-style-type: none;
+        width: 100%;
+        text-align: justify;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .list li {
         padding-right: 10px;
     }
 

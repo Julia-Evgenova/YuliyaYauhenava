@@ -359,6 +359,8 @@
 }
 
 .slider_arrow {
+    border: none;
+    color: #B0CC0D;
     display: flex;
     position: relative;
     justify-content: space-between;
@@ -366,22 +368,26 @@
     cursor: pointer;
 }
 
-.slider_arrow img:first-child {
+.slider_arrow i:first-child {
+    top: 150px;
+    left: 0px;
     position: absolute;
-    top: -450px;
-    left: -6px;
     z-index: 3;
     text-align: center;
     padding-top: 13px;
 }
 
-.slider_arrow img:last-child {
+.slider_arrow i:last-child {
     position: absolute;
-    top: -450px;
-    left: 1100px;
+    top: 150px;
+    left: 1138px;
     z-index: 3;
     text-align: center;
     padding-top: 13px;
+}
+
+.slider_arrow:hover {
+    color: #FFA800;
 }
 
 .number {
@@ -576,7 +582,7 @@
 
 .slider_basiliks img:last-child {
     position: absolute;
-    top: -175px;
+    top: -170px;
     left: 626px;
 }
 
@@ -596,6 +602,10 @@ form {
     color: #000;
     border: none;
     padding-left: 22px;
+}
+
+.areas button {
+    border: none;
 }
 
 .areas button>img {
