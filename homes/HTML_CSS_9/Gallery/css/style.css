@@ -1,0 +1,39 @@
+a {
+    cursor: pointer;
+}
+
+.container {
+    overflow-y: scroll;
+    width: 580px;
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+    background-color: rgb(155, 199, 238);
+}
+
+/* фон полосы прокрутки;*/
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+/* цвет полосы прокрутки;*/
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* стрелки на полосе прокрутки:*/
+::-webkit-scrollbar-button:start {
+    display: block;
+    height: 12px;
+    width: 12px;
+    background-color: #ccc;
+    position: relative;
+}
+
+::-webkit-scrollbar-button:end {
+    display: block;
+    height: 12px;
+    width: 12px;
+    background-color: #ccc;
+}

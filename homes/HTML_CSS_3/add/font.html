@@ -1,13 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            margin: 30px;
+        }
+    </style>
 </head>
+
 <body>
-    <font color="#BruceWillis">Hello</font>
-    <br>
-    <font color="#Candy">Hello</font>
+    <div class="container">
+        <h2>Почему HTML считает, что «BruceWillis» — это цвет?</h2>
+        <br>
+        <p>Пропускаемые цифры распознаются как 0[...]. Некорректные символы распознаются как 0. Так что, например,
+            значения #F0F0F0, F0F0F0, F0F0F, #FxFxFx и FxFxFx – одно и то же.</p>
+        <br>
+        <p>Цвет #BruceWillis:
+            <font color="#BruceWillis">Hello</font>
+        </p>
+
+        <p>Цвет #Candy:
+            <font color="#Candy">Hello</font>
+        </p>
+    </div>
 </body>
+
 </html>

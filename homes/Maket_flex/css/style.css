@@ -359,35 +359,43 @@
 }
 
 .slider_arrow {
-    border: none;
-    color: #B0CC0D;
+    /*border: none;
+    color: #B0CC0D;*/
     display: flex;
     position: relative;
     justify-content: space-between;
     margin: 0 15px;
     cursor: pointer;
-}
-
-.slider_arrow i:first-child {
-    top: 150px;
-    left: 0px;
-    position: absolute;
     z-index: 3;
-    text-align: center;
-    padding-top: 13px;
+    
+    border: none;
 }
 
-.slider_arrow i:last-child {
+.slider_arrow svg:first-child {
+    border-radius: 100%;
+    fill: rgba(255, 255, 255, 0.8);
+    /*top: 150px;
+    left: 0px;*/
+    top: 160px;
+    left: -5px;
     position: absolute;
-    top: 150px;
-    left: 1138px;
-    z-index: 3;
-    text-align: center;
-    padding-top: 13px;
 }
 
-.slider_arrow:hover {
-    color: #FFA800;
+.slider_arrow svg:last-child {
+    position: absolute;
+    top: 160px;
+    left: 1105px;
+    z-index: 3;
+    border-radius: 100%;
+    fill: rgba(255, 255, 255, 0.8);
+}
+
+.slider_arrow svg path:hover {
+    fill: #ffa800;
+}
+
+.slider_arrow svg path:active {
+    fill: #ffa800;
 }
 
 .number {
