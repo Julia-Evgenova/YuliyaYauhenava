@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        @keyframes MyAnimation {
+            from {
+                background: url("images/Sprite-example.png") 0 0;
+            }
+
+            to {
+                background: url("images/Sprite-example.png") -500px 0;
+            }
+        }
+
+        .ex {
+            width: 83.33px;
+            height: 83px;
+            animation: MyAnimation 1s steps(6) infinite;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class='ex'></div>
+
+</body>
+
+</html>

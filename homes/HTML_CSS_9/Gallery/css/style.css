@@ -2,6 +2,20 @@ a {
     cursor: pointer;
 }
 
+h2 {
+    margin: 20px 0 20px 20px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.container {
+    margin-left: 20px;
+}
+
+iframe {
+    border: none;
+}
+
 .container {
     overflow-y: scroll;
     width: 580px;
