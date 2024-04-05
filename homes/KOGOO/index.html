@@ -15,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/media.js">
+    <script src="css/media.js"></script>
     <title>Document</title>
 
 </head>
@@ -113,7 +113,6 @@
                     <span>Каталог</span>
                 </button>
 
-
                 <div class="header_searc">
                     <div class="header_dropdown">
                         <button onclick="myFunction()" class="dropbtn">Везде
@@ -139,7 +138,6 @@
                     </button>
                 </div>
 
-
                 <div class="header_icons">
                     <i class="fa-solid fa-scale-balanced"></i>
                     <i class="fa-regular fa-heart"></i>
@@ -147,7 +145,7 @@
                         <i class="fa-solid fa-basket-shopping"></i>
                     </button>
                     <a class="header_icons_basket_link" href="#" title="basket" target="_blank">Корзина</a>
-                    <div class="header_basket_list">
+                    <!--<div class="header_basket_list">
                         <span>В вашей корзине</span>
                         <span>2 товара</span>
                         <ul>
@@ -157,7 +155,7 @@
                             <li></li>
                             <li></li>
                         </ul>
-                    </div>
+                    </div>-->
                 </div>
 
             </div>
@@ -206,10 +204,27 @@
                                 с бесплатной доставкой по РФ от 1 дня
                             </p>
                         </div>
-                        <button class="incatalog">
-                            Перейти в католог
-                        </button>
-
+                        <div class="header_board_btns">
+                        <div class="incatalog">
+                            <a href=# title="incatalog">Перейти в католог</a>
+                            </div>
+                            <div class="testdrive_wrap">
+                                <div class="testdrive">
+                                    <img src="images/lightning.svg" alt="lightning">
+                                    Тест-драйв и обучение
+                                    <div class="free_btn">
+                                        <a href="#" title="free" target="_blank">Бесплатно</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="line_wrap">
+                                <div class="line">
+                                    <img src="images/ellipse-left.svg" alt="ellipse">
+                                    <img src="images/line.svg" alt="line">
+                                    <img src="images/ellipse-right.svg" alt="ellipse">
+                                </div>
+                            </div>
+                        </div>
 
                         <div class="about_store_slider">
                             <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
@@ -220,7 +235,6 @@
                                 <circle cx="13" cy="13" r="12.5" transform="matrix(-1 0 0 1 26 0)" stroke="white"
                                     stroke-opacity="0.2" />
                             </svg>
-
                             <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -230,19 +244,7 @@
                             </svg>
                         </div>
 
-
-                        <div class="testdrive">
-                            <img src="images/lightning.svg" alt="lightning">
-                            Тест-драйв и обучение
-                            <div class="free_btn">
-                                <a href="#" title="free" target="_blank">Бесплатно</a>
-                            </div>
-                        </div>
-                        <div class="line">
-                            <img src="images/ellipse-left.svg" alt="ellipse">
-                            <img src="images/line.svg" alt="line">
-                            <img src="images/ellipse-right.svg" alt="ellipse">
-                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -276,13 +278,38 @@
                                 <span>4,9</span>
                             </div>
                         </div>
-
                     </div>
                 </div>
 
             </div>
         </div>
     </div>
+
+    <div class="electricscooters">
+        <div class="container">
+            <div class="electricscooters_hits">
+                <div class="electricscooters_title">
+                    <h2>Электросамокаты</h2>
+                </div>
+                <ul class="electricscooters_hits_purpose">
+                    <li>Хиты продаж</li>
+                    <li>Для города</li>
+                    <li>Для взрослых</li>
+                    <li>Для детей</li>
+                </ul>
+            </div>
+
+            <div class="electricscooters_choice">
+                <div>
+                </div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+
+    </div>
+
 </body>
 
 </html>

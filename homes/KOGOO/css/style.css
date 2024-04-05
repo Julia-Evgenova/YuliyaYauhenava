@@ -12,16 +12,16 @@
   --gray-200: #eaebed;
   --white: #fff;
   --bachground: #f4f7fb;
-  --orange: #ee685f;
+  --oranges: #ee685f;
   --orange: #f3a712;
   --green: #75d14a;
 }
 
 @font-face {
   font-family: "SF Pro Text";
-  src: url("../fonts/SFProText-Medium.ttf");
-  src: url("../fonts/SFProText-Medium.eot");
-  src: url("../fonts/SFProText-Medium.eot?#iefix") format("embedded-opentype"),
+  src: url("../fonts/SFProText-Medium.ttf"),
+    url("../fonts/SFProText-Medium.eot"),
+    url("../fonts/SFProText-Medium.eot?#iefix") format("embedded-opentype"),
     url("../fonts/SFProText-Medium.woff2") format("woff2"),
     url("../fonts/SFProText-Medium.woff") format("woff");
   font-weight: 500;
@@ -31,9 +31,9 @@
 
 @font-face {
   font-family: "SF Pro Text";
-  src: url("../fonts/SFProText-Heavy.ttf");
-  src: url("../fonts/SFProText-Heavy.eot");
-  src: url("../fonts/SFProText-Heavy.eot?#iefix") format("embedded-opentype"),
+  src: url("../fonts/SFProText-Heavy.ttf"),
+    url("../fonts/SFProText-Heavy.eot"),
+    url("../fonts/SFProText-Heavy.eot?#iefix") format("embedded-opentype"),
     url("../fonts/SFProText-Heavy.woff2") format("woff2"),
     url("../fonts/SFProText-Heavy.woff") format("woff");
   font-weight: 900;
@@ -43,9 +43,9 @@
 
 @font-face {
   font-family: "SF Pro Text";
-  src: url("../fonts/SFProText-Semibold.ttf");
-  src: url("../fonts/SFProText-Semibold.eot");
-  src: url("../fonts/SFProText-Semibold.eot?#iefix") format("embedded-opentype"),
+  src: url("../fonts/SFProText-Semibold.ttf"),
+    url("../fonts/SFProText-Semibold.eot"),
+    url("../fonts/SFProText-Semibold.eot?#iefix") format("embedded-opentype"),
     url("../fonts/SFProText-Semibold.woff2") format("woff2"),
     url("../fonts/SFProText-Semibold.woff") format("woff");
   font-weight: 600;
@@ -55,9 +55,9 @@
 
 @font-face {
   font-family: "SF Pro Display";
-  src: url("../fonts/SF-Pro-Display-Regular.otf");
-  src: url("../fonts/SFProDisplay-Regular.eot");
-  src: url("../fonts/SFProDisplay-Regular.eot?#iefix") format("embedded-opentype"),
+  src: url("../fonts/SF-Pro-Display-Regular.otf"),
+    url("../fonts/SFProDisplay-Regular.eot"),
+    url("../fonts/SFProDisplay-Regular.eot?#iefix") format("embedded-opentype"),
     url("../fonts/SFProDisplay-Regular.woff2") format("woff2"),
     url("../fonts/SFProDisplay-Regular.woff") format("woff"),
     url("../fonts/SFProDisplay-Regular.ttf") format("truetype");
@@ -80,7 +80,7 @@
   align-items: center;
   margin-bottom: 13px;
   margin-top: 11px;
-  position: relative;
+
 }
 
 .cooperation::after {
@@ -88,9 +88,7 @@
   padding-bottom: 29px;
   width: 1440px;
   border-bottom: 1px solid #ecf3ff;
-  position: absolute;
-  left: 120px;
-  top: 10px;
+
 }
 
 .cooperation .service {
@@ -121,7 +119,7 @@
 
 .messengers {
   min-width: 53px;
-  margin-right: 620px;
+  margin-right: 615px;
 }
 
 .messengers a {
@@ -129,10 +127,6 @@
 }
 
 .viber path:hover {
-  fill: #8e24aa;
-}
-
-.viber path:focus-visible {
   fill: #8e24aa;
 }
 
@@ -243,7 +237,7 @@
 
 .header_dropdown {
   display: inline-block;
-  position: relative;
+
 }
 
 .dropbtn {
@@ -253,12 +247,12 @@
   background: var(--bachground);
   border: none;
   cursor: pointer;
+  margin-top: 65px;
+  margin-left: 5px;
 }
 
 .dropdown-content {
-  position: absolute;
-  top: calc(100% + 10px);
-  left: 0;
+
   min-width: 117px;
   background: var(--bachground);
   border-radius: 5px;
@@ -301,7 +295,7 @@
   font-weight: 400;
   font-size: 14px;
   color: var(--gray-600);
-  width: 483px;
+  width: 430px;
   border: none;
   padding-left: 20px;
 }
@@ -364,7 +358,6 @@
   margin-top: 35px;
   width: 1440px;
   background: var(--bachground);
-  height: 40px;
   margin: 0 auto;
 }
 
@@ -433,10 +426,10 @@
   width: 20px;
   height: 20px;
   background: var(--purple);
-  position: relative;
+
   margin-left: 8px;
   border: none;
-  left: -20px;
+
 }
 
 .header_board {
@@ -445,15 +438,15 @@
   height: 421px;
   background: radial-gradient(544.32% 83.35% at 75.14% 62.23%, rgb(166, 169, 255) 0%, rgb(111, 115, 238) 100%);
   margin-top: 31px;
-  position: relative;
+
   margin-left: 30px;
 }
 
 .header_board_container {
   height: 421px;
   padding-top: 39px;
-  position: relative;
-  background: url("../images/velo-back.png") no-repeat 800px bottom,
+
+  background: url("../images/velo-back.png") no-repeat 810px bottom,
     url("../images/shadov.svg") no-repeat 800px bottom,
     url("../images/kirin.png") no-repeat 560px 233px;
 
@@ -493,24 +486,36 @@
 }
 
 .incatalog {
+
+  border-radius: 5px;
+  padding: 15px 25px;
+  max-width: 177px;
+  background: var(--white);
+  margin-bottom: 46px;
+}
+
+.incatalog a {
+  text-decoration: none;
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 16px;
   text-align: center;
   color: var(--purple);
-  border-radius: 5px;
-  padding: 15px 25px;
-  min-width: 177px;
-  height: 53px;
-  border: 1.30px solid var(--white);
-  background: var(--white);
-  margin-bottom: 46px;
 }
 
 .incatalog:hover {
   color: var(--white);
-  border: 1.30px solid var(--white);
   background: var(--purple);
+}
+
+.incatalog a:hover {
+  color: var(--white);
+  background: var(--purple);
+}
+
+.testdrive_wrap {
+  margin-top: -105px;
+  margin-left: 490px;
 }
 
 .testdrive {
@@ -526,19 +531,9 @@
   font-size: 14px;
   color: var(--white);
   text-align: center;
-  margin-left: 639px;
-  position: absolute;
-  top: 270px;
-  left: -10px;
-  padding-top: 15px;
+
+  padding-top: 5px;
   padding-left: 10px;
-}
-
-.testdrive img {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-
 }
 
 .free_btn {
@@ -563,26 +558,16 @@
   color: var(--purple);
 }
 
-.line {
-  display: flex;
+
+.line_wrap {
   position: relative;
 }
 
-.line img {
+.line {
+  display: flex;
   position: absolute;
-  top: -120px;
+  top: -45px;
   left: 685px;
-}
-
-.line img:nth-child(2) {
-  top: -113px;
-  left: 695px;
-  z-index: 1;
-}
-
-.line img:nth-child(3) {
-  top: -116px;
-  left: 790px;
 }
 
 .garant {
@@ -592,7 +577,7 @@
 
 .garant_wrap {
   display: flex;
-  
+
 }
 
 .garant_wrap ul {
@@ -620,7 +605,7 @@
   font-size: 25px;
   text-transform: uppercase;
   color: var(--black);
-  
+
 }
 
 .garant li a span {
@@ -650,28 +635,75 @@
   height: 56px;
   background: #fc3f1d;
   fill: var(--white);
-  position: relative;
   right: 10px;
 }
 
 .yandex_text {
   line-height: 25px;
-  position: relative;
-  right: 10px;
+
 }
 
 .yandex_text p {
   font-family: var(--font-family);
-font-weight: 400;
-font-size: 12px;
-color: var(--gray-600);
+  font-weight: 400;
+  font-size: 12px;
+  color: var(--gray-600);
 
 }
 
 .yandex_text span {
   font-family: var(--font-family);
-font-weight: 600;
-font-size: 25px;
-text-transform: uppercase;
-color: var(--black);
+  font-weight: 600;
+  font-size: 25px;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.electricscooters_hits {
+  display: flex;
+
+}
+
+.electricscooters_hits_purpose {
+  display: flex;
+
+}
+
+.electricscooters_title {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 35px;
+  text-transform: uppercase;
+  color: var(--black);
+  margin-right: 292px;
+}
+
+.electricscooters_hits_purpose {}
+
+.electricscooters_hits_purpose li {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 12px;
+  text-align: center;
+  color: var(--gray-600);
+  border-radius: 5px;
+  padding: 10px 20px;
+  width: 103px;
+  height: 37px;
+  background: var(--bachground);
+  margin-right: 10px;
+ 
+}
+
+.electricscooters_hits_purpose li:hover {
+color: var(--purple);
+border: 1.30px solid var(--purple);
+border-radius: 5px;
+padding: 10px 20px;
+width: 109px;
+height: 37px;
+background: var(--white);
+
+  
+  
 }

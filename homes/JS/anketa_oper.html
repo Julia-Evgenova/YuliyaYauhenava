@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Анкета с использованием условной операции</title>
+</head>
+<body>
+<script>
+    var lastName = prompt("Введите вашу фамилию:");
+    var firstName = prompt("Введите ваше имя:");
+    var patronymic = prompt("Введите ваше отчество:");
+    var age = parseInt(prompt("Введите ваш возраст в годах:"), 10);
+    var genderCode = prompt("Введите ваш пол (м для мужского, ж для женского):");
+    var isMale = genderCode.toLowerCase() === "м";
+    var pension = (age > 63 && isMale) || (age > 58 && !isMale) ? "да" : "нет";
+
+    var message = "ваше ФИО: " + lastName + " " + firstName + " " + patronymic + "\n" +
+                  "ваш возраст в годах: " + age + "\n" +
+                  "ваш возраст в днях: " + (age * 365) + "\n" +
+                  "через 5 лет вам будет: " + (age + 5) + "\n" +
+                  "ваш пол: " + (isMale ? "мужской" : "женский") + "\n" +
+                  "вы на пенсии: " + pension;
+
+    alert(message);
+</script>
+</body>
+</html>

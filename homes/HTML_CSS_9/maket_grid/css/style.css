@@ -1,0 +1,165 @@
+.container {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 50px 245px 50px;
+    grid-gap: 0px;
+    grid-template-areas:
+        "h h"
+        "m c"
+        "f f";
+}
+
+.header {
+    background: #ADD8E6;
+    color: blue;
+    text-align: center;
+    grid-area: h;
+    padding-top: 20px;
+}
+
+.content-menu {
+    height: 100%;
+    grid-area: m;
+}
+
+.list {
+    background-color: #F0E68C;
+    padding: 20px 10px 20px 30px;
+    min-height: 250px;
+}
+
+.content-title {
+    font-weight: 700;
+    margin-bottom: 15px;
+    list-style-type: none;
+}
+
+.list li {
+    list-style-type: disc;
+}
+
+.list li:first-child {
+    list-style-type: none;
+
+}
+
+.content-title li {
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.text {
+    background: url("../image/ball.png") repeat-y right top;
+
+}
+
+.content-text {
+    grid-area: c;
+}
+
+.content-text p {
+    min-height: 240px;
+
+}
+
+.text h3 {
+    text-align: center;
+    font-weight: 700;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+.text img {
+    float: left;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.footer {
+    color: blue;
+    background: #ADD8E6;
+    text-align: center;
+    grid-area: f;
+    padding-top: 20px;
+}
+
+@media screen and (max-width: 640px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+            "c"
+            "c"
+            "m";
+    }
+    
+    .list li:first-child {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .text {
+        background: none;
+    }
+
+    .list {
+        background: none;
+        display: inline-block;
+
+    }
+
+    .content-text p {
+        margin: 20px;
+    }
+
+    .list li {
+        list-style-type: none;
+        margin-right: 20px;
+        display: inline-block;
+        line-height: 20px;
+    }
+
+    .header,
+    .footer {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+    .container {
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+            "c"
+            "c"
+            "m";
+    }
+
+    .text img {
+        float: none;
+    }
+
+    .text {
+        background: none;
+    }
+
+    .list {
+        background: none;
+    }
+
+    .content-text p {
+        margin: 20px;
+    }
+
+    .list li {
+        list-style-type: none;
+        margin-right: 20px;
+        display: inline-block;
+    }
+
+    .header,
+    .footer {
+        display: none;
+    }
+    
+}
