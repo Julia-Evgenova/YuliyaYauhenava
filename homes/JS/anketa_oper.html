@@ -2,26 +2,27 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Анкета с использованием условной операции</title>
+    <title>Анкетасусловнойоперацией</title>
 </head>
 <body>
-<script>
-    var lastName = prompt("Введите вашу фамилию:");
-    var firstName = prompt("Введите ваше имя:");
-    var patronymic = prompt("Введите ваше отчество:");
-    var age = parseInt(prompt("Введите ваш возраст в годах:"), 10);
-    var genderCode = prompt("Введите ваш пол (м для мужского, ж для женского):");
-    var isMale = genderCode.toLowerCase() === "м";
-    var pension = (age > 63 && isMale) || (age > 58 && !isMale) ? "да" : "нет";
+    <script>
+        var lastName = prompt("Введите вашу фамилию:");
+        var firstName = prompt("Введите ваше имя:");
+        var middleName = prompt("Введите ваше отчество:");
+        var age = parseInt(prompt("Введите ваш возраст в годах:"), 10);
 
-    var message = "ваше ФИО: " + lastName + " " + firstName + " " + patronymic + "\n" +
-                  "ваш возраст в годах: " + age + "\n" +
-                  "ваш возраст в днях: " + (age * 365) + "\n" +
-                  "через 5 лет вам будет: " + (age + 5) + "\n" +
-                  "ваш пол: " + (isMale ? "мужской" : "женский") + "\n" +
-                  "вы на пенсии: " + pension;
+        var isMale = confirm("Ваш пол - мужской?");
 
-    alert(message);
-</script>
+        var gender = isMale ? "мужской" : "женский";
+
+        var pension = (isMale && age >= 60) || (!isMale && age >= 55) ? "да" : "нет";
+
+        alert("Ваше ФИО: " + lastName + " " + firstName + " " + middleName + "\n" +
+            "Ваш возраст в годах: " + age + "\n" +
+            "Ваш возраст в днях: " + (age * 365) + "\n" +
+            "Через 5 лет вам будет: " + (age + 5) + "\n" +
+            "Ваш пол: " + gender + "\n" +
+            "Вы на пенсии: " + pension);
+    </script>
 </body>
 </html>
