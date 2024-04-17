@@ -1,6 +1,8 @@
 * {
   box-sizing: border-box;
+  font-size: 100%;
 }
+
 :root {
   --font-family: "Jost", sans-serif;
   --second-family: "Roboto", sans-serif;
@@ -99,7 +101,9 @@
   min-width: 300px;
 }
 
-.service li {
+
+.service li a {
+  text-decoration: none;
   margin-right: 30px;
   font-family: var(--font-family);
   font-weight: 400;
@@ -107,7 +111,7 @@
   color: var(--gray-600);
 }
 
-.service li:hover {
+.service li a:hover {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 12px;
@@ -230,7 +234,7 @@
 
 .header_searc {
   border: 1.50px solid var(--purple);
-  width: 603px;
+
   height: 40px;
   border-radius: 5px;
   display: flex;
@@ -238,9 +242,15 @@
   align-items: center;
 }
 
-.header_dropdown {
-  display: inline-block;
+/*.header_dropdown {
+  cursor: pointer;
+  margin-top: 65px;
+  margin-left: 5px;
+}*/
 
+.dropdown {
+  position: relative;
+  display: inline-block;
 }
 
 .dropbtn {
@@ -248,14 +258,31 @@
   width: 76px;
   height: 32px;
   background: var(--bachground);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -o-appearance: none;
   border: none;
-  cursor: pointer;
-  margin-top: 65px;
   margin-left: 5px;
+  padding-left: 10px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--black);
 }
 
-.dropdown-content {
+.fa-caret-down {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: var(--black);
+  font-size: 12px;
+}
 
+/*
+.dropdown-content {
   min-width: 117px;
   background: var(--bachground);
   border-radius: 5px;
@@ -275,7 +302,6 @@
   transition-delay: 0.1s;
 }
 
-
 .dropdown-content:hover {
   display: block;
 }
@@ -291,7 +317,7 @@
 
 .dropdown-content a:hover {
   color: var(--purple);
-}
+}*/
 
 .header_searc_scooter {
   font-family: var(--font-family);
@@ -326,8 +352,14 @@
   margin-right: 25px;
 }
 
-.header_icons i:last-child {
-  margin-right: 0;
+.header_icons_btn i {
+  margin-right: 10px;
+}
+
+.header_icons .fa-scale-balanced:hover {
+  border-radius: 100px;
+  background: red;
+  padding: 10px;
 }
 
 .header_icons_btn {
@@ -335,6 +367,7 @@
   background: none;
   border: none;
   display: flex;
+  align-items: center;
 }
 
 .fa-basket-shopping {
@@ -354,7 +387,6 @@
 .header_basket_list {
   margin-top: 30px;
   width: 304px;
-
 }
 
 .about_store {
@@ -371,12 +403,11 @@
   justify-content: space-between;
   align-items: center;
   height: 40px;
-
+  margin-bottom: 31px;
 }
 
 .about_store_link {
   display: flex;
-
 }
 
 .about_store_link li a {
@@ -389,6 +420,10 @@
 
 .about_store_link li:first-child {
   margin-right: 49px;
+}
+
+.about_store_link_first:hover {
+  color: var(--purple);
 }
 
 .about_store_link_info {
@@ -435,14 +470,16 @@
 
 }
 
+.about_store_slider {
+  margin-top: 46px;
+}
+
 .header_board {
   border-radius: 10px;
   width: 1380px;
   height: 421px;
   background: radial-gradient(544.32% 83.35% at 75.14% 62.23%, rgb(166, 169, 255) 0%, rgb(111, 115, 238) 100%);
-  margin-top: 31px;
-
-  margin-left: 30px;
+  margin: 0 auto;
 }
 
 .header_board_container {
@@ -629,6 +666,7 @@
   align-items: center;
   justify-content: space-evenly;
   margin-left: 196px;
+
 }
 
 .yandex_btn {
@@ -638,7 +676,9 @@
   height: 56px;
   background: #fc3f1d;
   fill: var(--white);
-  right: 10px;
+  text-align: center;
+  padding-top: 12px;
+  box-shadow: 3px 5px 7px rgba(252, 63, 29, 0.5);
 }
 
 .yandex_text {
@@ -678,35 +718,785 @@
   font-size: 35px;
   text-transform: uppercase;
   color: var(--black);
-  margin-right: 292px;
+  margin-right: 280px;
 }
 
-.electricscooters_hits_purpose {}
+.electricscooters_hits {
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
 
 .electricscooters_hits_purpose li {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 12px;
-  text-align: center;
-  color: var(--gray-600);
   border-radius: 5px;
-  padding: 10px 20px;
-  width: 103px;
+  padding: 12px 20px;
+  width: 109px;
   height: 37px;
   background: var(--bachground);
   margin-right: 10px;
- 
+
+}
+
+.electricscooters_hits_purpose li:nth-child(2) {
+  width: 103px;
+}
+
+.electricscooters_hits_purpose li:nth-child(3) {
+  width: 116px;
+}
+
+.electricscooters_hits_purpose li:last-child {
+  width: 96px;
+}
+
+.electricscooters_hits_purpose li a {
+  text-decoration: none;
+  text-align: center;
+  color: var(--gray-600);
+}
+
+.electricscooters_hits_purpose li a:hover {
+  color: var(--purple);
+  transform: scale(1.2);
+  text-decoration: none;
+  background: var(--white);
 }
 
 .electricscooters_hits_purpose li:hover {
-color: var(--purple);
-border: 1.30px solid var(--purple);
-border-radius: 5px;
-padding: 10px 20px;
-width: 109px;
-height: 37px;
-background: var(--white);
+  background: var(--white);
+  border: 1.30px solid var(--purple);
+  padding: 12px;
+}
 
-  
-  
+.electricscooters_choice-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.electricscooters_choice_slider {
+  width: 255px;
+  height: 492px;
+  background: url("../images/scooter.jpg") no-repeat;
+  position: relative;
+  border: 1.50px solid var(--gray-200);
+  border-radius: 10px;
+}
+
+.electricscooters_choice_hits {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  margin: 0 10px;
+}
+
+.electricscooters_choice_hit {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 12px;
+  color: var(--white);
+  border-radius: 5px;
+  width: 41px;
+  height: 25px;
+  background: var(--oranges);
+  text-align: center;
+  padding-top: 7px;
+}
+
+.electricscooters_choice_new {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 12px;
+  text-align: center;
+  color: var(--white);
+  text-transform: none;
+  border-radius: 5px;
+  width: 63px;
+  height: 25px;
+  background: var(--green);
+  padding-top: 6px;
+}
+
+.electricscooters_choice_balanced {
+  border-radius: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+  width: 35px;
+  height: 35px;
+}
+
+.electricscooters_choice .fa-scale-balanced {
+  color: var(--gray-600);
+  border-radius: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.2);
+  width: 30px;
+  height: 30px;
+  padding-top: 6px;
+  text-align: center;
+}
+
+.electricscooters_choice_arrows {
+  margin: 55px 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.electricscooters_choice_arrows button {
+  border-radius: 100%;
+  background-color: var(--white);
+  width: 40px;
+  height: 40px;
+  border: none;
+  color: var(--purple);
+}
+
+.electricscooters_choice_arrows button:hover {
+  background: var(--purple);
+  color: var(--white);
+}
+
+
+.electricscooter_kirin_kogoo {
+  margin: 120px 0 30px 24px;
+}
+
+.electricscooter_kirin {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--black);
+
+}
+
+.electricscooter_kirin_characteristics {
+  margin: 20px 0 25px 0;
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--gray-600);
+
+}
+
+.accumulator {
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.accum {
+  display: flex;
+  align-items: center;
+  margin-right: 24px;
+}
+
+.accum img {
+  margin-right: 10px;
+}
+
+.fa-bolt-lightning {
+  margin-right: 10px;
+}
+
+.speed {
+  margin-right: 38px;
+}
+
+.speed img {
+  margin-right: 10px;
+}
+
+.speed-time {
+  display: flex;
+}
+
+.timer {
+  display: flex;
+  align-items: center;
+}
+
+.timer img {
+  margin-right: 10px;
+}
+
+.electricscooter_kirin_kogoo_price {
+  line-height: 120%;
+  margin-right: 26px;
+}
+
+.electricscooter_kirin_kogoo_price p:first-child {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 12px;
+  text-decoration: line-through;
+  color: var(--gray-600);
+}
+
+.electricscooter_kirin_kogoo_price p:last-child {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--black);
+}
+
+.electricscooter_kirin_kogoo_price-icons {
+  display: flex;
+  align-items: center;
+}
+
+.electricscooter_kirin_kogoo_icons {
+  display: flex;
+  align-items: center;
+}
+
+.electricscooter_kirin_kogoo_icon-basket {
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--gray-200);
+  padding: 9px;
+  margin-right: 10px;
+
+}
+
+.electricscooter_kirin_kogoo_icon-heart {
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--gray-200);
+  padding: 11px;
+  color: var(--purple);
+}
+
+.electricscooters_choice_btn {
+  border: none;
+  background: var(--purple);
+  border-radius: 5px;
+  padding: 10px 20px;
+  width: 206px;
+  height: 37px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 12px;
+  text-align: center;
+  color: var(--white);
+  margin-top: 16px;
+}
+
+.see_everything {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  border: 1.30px solid var(--purple);
+  border-radius: 5px;
+  padding: 18px 0;
+  width: 142px;
+  height: 53px;
+  margin-top: 50px;
+  margin-bottom: 110px;
+}
+
+.see_everything a {
+  text-decoration: none;
+  color: var(--purple);
+}
+
+.selection {
+  margin-bottom: 110px;
+}
+
+.selection_wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.selection_model {
+  background: url("../images/backmodelscooter.png") no-repeat;
+  width: 540px;
+  height: 235px;
+  padding: 32px 0 33px 40px;
+}
+
+.model_service {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 25px;
+  text-transform: uppercase;
+  color: var(--black);
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+
+.selection_model p:nth-child(2) {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--black);
+  line-height: 25px;
+  margin-bottom: 22px;
+}
+
+.selection_model_choose {
+  color: var(--purple);
+}
+
+.selection_model_choose a {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--purple);
+  text-decoration: none;
+}
+
+.selection_model_choose i {
+  font-size: 12px;
+}
+
+.service_maintenance {
+  width: 540px;
+  height: 235px;
+  background: url("../images/servicemaintenance.jpg") no-repeat;
+  padding: 32px 0 33px 40px;
+}
+
+.service_maintenance p:nth-child(2) {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--black);
+  line-height: 25px;
+  margin-bottom: 22px;
+}
+
+.freeShipping_electricscooters {
+  border-radius: 10px;
+  width: 1380px;
+  height: 421px;
+  background: radial-gradient(708.28% 82.86% at 23.3% 72.57%, rgb(89, 89, 89) 0%, rgb(59, 62, 70) 100%);
+  margin: 0 auto;
+}
+
+.freeShipping_electricscooters_back {
+  background: url("../images/drone.png") no-repeat left top;
+  height: 654px;
+}
+
+.freeShipping_electricscooters_text {
+  padding: 67px 0;
+  margin-left: 760px;
+
+}
+
+.freeShipping_electricscooters_text p:first-child {
+  border: 1px solid var(--oranges);
+  border-radius: 5px;
+  width: 62px;
+  height: 27px;
+  background: var(--oranges);
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  color: var(--white);
+  padding-top: 5px;
+}
+
+.freeShipping_electricscooters_text p:nth-child(2) {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 35px;
+  text-transform: uppercase;
+  color: var(--white);
+  margin: 27px 0;
+  line-height: 50px;
+}
+
+.freeShipping_electricscooters_text button {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  color: var(--black);
+  background: var(--white);
+  border-radius: 5px;
+  padding: 15px 25px;
+  width: 132px;
+  height: 53px;
+  border: none;
+}
+
+.manager {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 87px;
+  margin-bottom: 68px;
+}
+
+
+.popularCategories h3 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 35px;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.askQuestion {
+  background: var(--bachground);
+  border-radius: 5px;
+  width: 279px;
+  height: 91px;
+}
+
+.askQuestion {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.askQuestion_img {
+  margin: 10px;
+}
+
+.askQuestion_text p {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 12px;
+  color: var(--black);
+  line-height: 18px;
+  margin-bottom: 5px;
+}
+
+.askQuestion_text a {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 12px;
+  color: var(--purple);
+  text-decoration: none;
+}
+
+.popularCategories_cards {
+  display: flex;
+  margin-bottom: 30px;
+  justify-content: space-between;
+}
+
+.popularCategories_cards_techniques {
+  position: relative;
+}
+
+.popularCategories_cards-technique-item img {
+  border-radius: 10px;
+  width: 255px;
+  height: 255px;
+}
+
+.popularCategories_cards-technique-text {
+  border-radius: 10px;
+  width: 233px;
+  height: 68px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  background: rgba(0, 0, 0, 0.2);
+  padding: 10px 0 33px 16px;
+  line-height: 150%;
+  position: absolute;
+  top: 175px;
+  left: 10px;
+}
+
+.types_equipment {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--white);
+}
+
+.types_equipment-rub {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--white);
+}
+
+.kogoo_russia {
+  border-radius: 10px;
+  width: 1380px;
+  height: 623px;
+  background: var(--bachground);
+  margin: 0 auto;
+  display: flex;
+  margin-bottom: 100px;
+}
+
+.kogoo_russia_img img {
+  border-radius: 10px;
+  width: 606px;
+  height: 565px;
+  margin: 29px;
+}
+
+.kogoo_russia_testdrive_moskva {
+  margin: 58px 135px 58px 42px;
+}
+
+.kogoo_russia_testdrive_moskva-official {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 35px;
+  text-transform: uppercase;
+  color: var(--black);
+  margin-bottom: 18px;
+  line-height: 50px;
+}
+
+.kogoo_russia_testdrive_moskva-our_goal {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--black);
+  margin-bottom: 40px;
+  line-height: 25px;
+}
+
+.kogoo_russia_testdrive_moskva_brend {
+  border-radius: 10px;
+  width: 540px;
+  height: 204px;
+  background: var(--white);
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--black);
+  padding: 20px 0 21px 23px;
+}
+
+.kogoo_russia_testdrive_moskva_brend-list {
+  font-weight: 400;
+  margin: 13px 0;
+  line-height: 20px;
+}
+
+.kogoo_russia_testdrive_moskva_brend a {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 12px;
+  color: var(--purple);
+  text-decoration: none;
+}
+
+.kogoo_russia_testdrive_moskva_brend-list img {
+  margin-right: 10px;
+}
+
+.favorable_prices {
+  text-align: center;
+  line-height: 50px;
+  margin-bottom: 55px;
+}
+
+.favorable_prices h3 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 35px;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--black);
+}
+
+
+.favorable_prices p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  color: var(--black);
+}
+
+.online_store_links {
+  text-align: center;
+  margin-bottom: 51px;
+}
+
+.online_store_links a {
+  text-decoration: none;
+  border: 1.30px solid var(--purple);
+  border-radius: 5px;
+  padding: 15px 25px;
+  width: 175px;
+  height: 53px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  color: var(--purple);
+}
+
+.online_store_links a:last-child {
+  color: var(--gray-600);
+  border-radius: 5px;
+  background: var(--bachground);
+  border: none;
+  margin-left: 20px;
+}
+
+.online_store {
+  margin-bottom: 30px;
+}
+
+.order_options_cards {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.order_options_cards-item {
+  border: 1px solid var(--gray-200);
+  border-radius: 10px;
+  width: 350px;
+  height: 225px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 26px 35px 66px 20px;
+  margin-bottom: 30px;
+}
+
+
+.order_options_cards-item i {
+  color: var(--purple);
+  font-size: 25px;
+}
+
+.order_options_cards-item img {
+  width: 25px;
+  height: 25px;
+  margin-bottom: 15px;
+}
+
+.order_options_cards-item p {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--black);
+}
+
+.order_options_cards-item p:last-child {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 129%;
+  color: var(--black);
+  margin-top: 10px;
+}
+
+.order_options_cards-item_card {
+  border: 1px solid var(--gray-200);
+  border-radius: 10px;
+  width: 350px;
+  height: 225px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 26px 25px 66px 20px;
+}
+
+.order_options_cards-item_card img {
+  width: 25px;
+  height: 25px;
+  margin-bottom: 15px;
+}
+
+.order_options_cards-item_card p {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--black);
+}
+
+.order_options_cards-item_card p:nth-child(3) {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 129%;
+  color: var(--black);
+  margin-top: 10px;
+}
+
+
+.order_options_cards-item_card a {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 129%;
+  color: var(--black);
+  text-decoration: none;
+  color: var(--purple);
+}
+
+.order_options_cards-item_card:last-child {
+  background: url("../images/velo.jpg") no-repeat bottom;
+  background-size: 100% 100%;
+  display: block;
+  padding: 68px 0 95px 33px;
+}
+
+.order_options_cards-item_card:last-child p {
+  margin-bottom: 6px;
+}
+
+.order_options_cards-item_card_transition i {
+  color: var(--purple);
+  font-size: 12px;
+
+}
+
+.video_card {
+  position: relative;
+  margin: 100px 0;
+}
+
+.video_card img {
+  border-radius: 10px;
+  width: 1380px;
+  height: 630px;
+
+}
+
+.video_card button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 100%;
+  color: var(--purple);
+  font-size: 30px;
+  backdrop-filter: blur(15px);
+  width: 136px;
+  height: 136px;
+  border: none;
+  background-color: var(--white);
+}
+
+.favorable_prices h4 {
+  font-family: var(--font-family);
+font-weight: 600;
+font-size: 35px;
+text-transform: uppercase;
+text-align: center;
+color: var(--black);
+}
+
+.favorable_prices-reviews a {
+  text-decoration: none;
+  font-family: var(--font-family);
+font-weight: 500;
+font-size: 14px;
+color: var(--purple);
+}
+
+.favorable_prices-reviews i {
+  color: var(--purple);
+  font-size: 12px;
+  stroke-width: 1.30px;
+  margin-left: 5px;
 }

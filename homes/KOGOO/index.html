@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -25,9 +25,9 @@
         <div class="cooperation">
             <div class="container">
                 <ul class="service">
-                    <li>Сервис</li>
-                    <li>Сотрудничество</li>
-                    <li>Заказать звонок</li>
+                    <li> <a href="#">Сервис</a></li>
+                    <li><a href="#">Сотрудничество</a></li>
+                    <li><a href="#">Заказать звонок</a></li>
                 </ul>
                 <div class="contacts">
                     <div class="messengers">
@@ -69,7 +69,7 @@
                                 </defs>
                             </svg>
                         </a>
-                        <a href="https://web.telegram.org/k/" title="telegram" target="_blank">
+                        <a href="https://t.me/kugoo_by_bot" title="telegram" target="_blank">
                             <svg class="telegram" width="12" height="13" viewBox="0 0 12 13" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_16905_2365)">
@@ -114,37 +114,47 @@
                 </button>
 
                 <div class="header_searc">
+                    <!--
                     <div class="header_dropdown">
                         <button onclick="myFunction()" class="dropbtn">Везде
-                            <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M3.83467 4.73501C3.43943 5.33402 2.56057 5.33402 2.16532 4.73501L0.559123 2.30074C0.120431 1.63589 0.597252 0.75 1.3938 0.75L4.6062 0.75C5.40275 0.75 5.87957 1.63589 5.44088 2.30074L3.83467 4.73501Z"
-                                    fill="#282739" />
-                            </svg>
+                            <i class="fa-solid fa-caret-down"></i>
                         </button>
                         <div id="dropdown" class="dropdown-content">
                             <a href="#" title="scooters">Cамокаты</a>
                             <br>
                             <a href="#" title="accessories">Аксессуары</a>
                         </div>
-                    </div>
-                    <form method="post" action="http://fe.it-academy.by/TestForm.php"></form>
-                    <label for="scooter">
-                        <input class="header_searc_scooter" type="text" name="header_searc_scooter" id="scooter"
-                            placeholder="Искать самокат KUGO">
-                    </label>
+                    </div> -->
+                    <form method="post" action="http://fe.it-academy.by/TestForm.php">
+                        <div class="dropdown">
+                            <select class="dropbtn">
+                                <option value="1" selected>Везде</option>
+                                <option value="2">Cамокаты</option>
+                                <option value="3">Аксессуары</option>
+                            </select>
+                            <i class="fa-solid fa-caret-down"></i>
+                        </div>
+
+
+                        <label for="scooter">
+                            <input class="header_searc_scooter" type="text" name="header_searc_scooter" id="scooter"
+                                placeholder="Искать самокат KUGO">
+                        </label>
+                    </form>
                     <button class="header_icon_searc">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </button>
+
                 </div>
 
                 <div class="header_icons">
                     <i class="fa-solid fa-scale-balanced"></i>
                     <i class="fa-regular fa-heart"></i>
-                    <button class="header_icons_btn">
+                    <div class="header_icons_btn">
                         <i class="fa-solid fa-basket-shopping"></i>
-                    </button>
-                    <a class="header_icons_basket_link" href="#" title="basket" target="_blank">Корзина</a>
+                        <a class="header_icons_basket_link" href="#" title="basket" target="_blank">Корзина</a>
+                    </div>
+
                     <!--<div class="header_basket_list">
                         <span>В вашей корзине</span>
                         <span>2 товара</span>
@@ -162,128 +172,125 @@
         </header>
 
         <div class="about_store">
-            <div>
-                <div class="about_store_back container">
-                    <ul class="about_store_link">
-                        <li><a href="" title="about-store">О магазине</a></li>
-                        <li><a href="" title="delivery-payment">Доставка и оплата</a></li>
-                        <li><a href="#" class="about_store_link_installment" title="installment"
-                                target="_blank">Доступна
-                                рассрочка</a></li>
-                    </ul>
-                    <ul class="about_store_link_info">
-                        <li><a href="" title="test-drive">Тест-драйв</a></li>
-                        <li><a href="" title="blog">Блог</a></li>
-                        <li><a href="" title="contacts">Контакты</a></li>
-                        <li><a href="" title="stock">Акции</a></li>
-                    </ul>
-                    <button class="about_store_percent">
-                        <svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M0.0265625 2.56C0.0265625 2.24667 0.0965625 1.96333 0.236563 1.71C0.383229 1.45 0.586563 1.24333 0.846563 1.09C1.10656 0.936666 1.3999 0.86 1.72656 0.86C2.06656 0.86 2.36323 0.936666 2.61656 1.09C2.87656 1.24333 3.07656 1.45 3.21656 1.71C3.36323 1.96333 3.43656 2.24667 3.43656 2.56C3.43656 2.87333 3.36323 3.16 3.21656 3.42C3.07656 3.67333 2.87656 3.87667 2.61656 4.03C2.36323 4.18333 2.06656 4.26 1.72656 4.26C1.3999 4.26 1.10656 4.18333 0.846563 4.03C0.586563 3.87667 0.383229 3.67333 0.236563 3.42C0.0965625 3.16 0.0265625 2.87333 0.0265625 2.56ZM0.946563 2.56C0.946563 2.70667 0.979896 2.84667 1.04656 2.98C1.11323 3.10667 1.20323 3.21 1.31656 3.29C1.43656 3.36333 1.57323 3.4 1.72656 3.4C1.89323 3.4 2.03323 3.36333 2.14656 3.29C2.2599 3.21 2.3499 3.10667 2.41656 2.98C2.48323 2.84667 2.51656 2.70667 2.51656 2.56C2.51656 2.40667 2.48323 2.26667 2.41656 2.14C2.3499 2.01333 2.2599 1.91333 2.14656 1.84C2.03323 1.76667 1.89323 1.73 1.72656 1.73C1.57323 1.73 1.43656 1.76667 1.31656 1.84C1.20323 1.91333 1.11323 2.01333 1.04656 2.14C0.979896 2.26667 0.946563 2.40667 0.946563 2.56ZM4.19656 6.44C4.19656 6.12 4.2699 5.83333 4.41656 5.58C4.56323 5.32 4.76323 5.11667 5.01656 4.97C5.27656 4.81667 5.57323 4.74 5.90656 4.74C6.2399 4.74 6.53323 4.81667 6.78656 4.97C7.04656 5.11667 7.24656 5.32 7.38656 5.58C7.53323 5.83333 7.60656 6.12 7.60656 6.44C7.60656 6.74667 7.53323 7.03 7.38656 7.29C7.24656 7.55 7.04656 7.75667 6.78656 7.91C6.53323 8.05667 6.2399 8.13 5.90656 8.13C5.57323 8.13 5.27656 8.05667 5.01656 7.91C4.76323 7.75667 4.56323 7.55 4.41656 7.29C4.2699 7.03 4.19656 6.74667 4.19656 6.44ZM5.12656 6.43C5.12656 6.57667 5.15656 6.71667 5.21656 6.85C5.28323 6.97667 5.37323 7.08 5.48656 7.16C5.60656 7.23333 5.74656 7.27 5.90656 7.27C6.06656 7.27 6.20323 7.23333 6.31656 7.16C6.43656 7.08 6.52656 6.97667 6.58656 6.85C6.65323 6.72333 6.68656 6.58333 6.68656 6.43C6.68656 6.28333 6.65323 6.14667 6.58656 6.02C6.52656 5.89333 6.43656 5.79333 6.31656 5.72C6.20323 5.64 6.06656 5.6 5.90656 5.6C5.74656 5.6 5.60656 5.64 5.48656 5.72C5.37323 5.79333 5.28323 5.89333 5.21656 6.02C5.15656 6.14667 5.12656 6.28333 5.12656 6.43ZM5.70656 1H6.77656L1.92656 8H0.856563L5.70656 1Z"
-                                fill="white" />
-                        </svg>
-                    </button>
-                </div>
 
+            <div class="about_store_back container">
+                <ul class="about_store_link">
+                    <li><a class="about_store_link_first" href="#" title="about-store" target="_blank">О магазине</a>
+                    </li>
+                    <li><a href="#" title="delivery-payment" target="_blank">Доставка и оплата</a></li>
+                    <li><a href="#" class="about_store_link_installment" title="installment" target="_blank">Доступна
+                            рассрочка</a></li>
+                </ul>
+                <ul class="about_store_link_info">
+                    <li><a href="#" title="test-drive">Тест-драйв</a></li>
+                    <li><a href="#" title="blog" target="_blank">Блог</a></li>
+                    <li><a href="#" title="contacts" target="_blank">Контакты</a></li>
+                    <li><a href="#" title="stock" target="_blank">Акции</a></li>
+                </ul>
+                <button class="about_store_percent">
+                    <svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M0.0265625 2.56C0.0265625 2.24667 0.0965625 1.96333 0.236563 1.71C0.383229 1.45 0.586563 1.24333 0.846563 1.09C1.10656 0.936666 1.3999 0.86 1.72656 0.86C2.06656 0.86 2.36323 0.936666 2.61656 1.09C2.87656 1.24333 3.07656 1.45 3.21656 1.71C3.36323 1.96333 3.43656 2.24667 3.43656 2.56C3.43656 2.87333 3.36323 3.16 3.21656 3.42C3.07656 3.67333 2.87656 3.87667 2.61656 4.03C2.36323 4.18333 2.06656 4.26 1.72656 4.26C1.3999 4.26 1.10656 4.18333 0.846563 4.03C0.586563 3.87667 0.383229 3.67333 0.236563 3.42C0.0965625 3.16 0.0265625 2.87333 0.0265625 2.56ZM0.946563 2.56C0.946563 2.70667 0.979896 2.84667 1.04656 2.98C1.11323 3.10667 1.20323 3.21 1.31656 3.29C1.43656 3.36333 1.57323 3.4 1.72656 3.4C1.89323 3.4 2.03323 3.36333 2.14656 3.29C2.2599 3.21 2.3499 3.10667 2.41656 2.98C2.48323 2.84667 2.51656 2.70667 2.51656 2.56C2.51656 2.40667 2.48323 2.26667 2.41656 2.14C2.3499 2.01333 2.2599 1.91333 2.14656 1.84C2.03323 1.76667 1.89323 1.73 1.72656 1.73C1.57323 1.73 1.43656 1.76667 1.31656 1.84C1.20323 1.91333 1.11323 2.01333 1.04656 2.14C0.979896 2.26667 0.946563 2.40667 0.946563 2.56ZM4.19656 6.44C4.19656 6.12 4.2699 5.83333 4.41656 5.58C4.56323 5.32 4.76323 5.11667 5.01656 4.97C5.27656 4.81667 5.57323 4.74 5.90656 4.74C6.2399 4.74 6.53323 4.81667 6.78656 4.97C7.04656 5.11667 7.24656 5.32 7.38656 5.58C7.53323 5.83333 7.60656 6.12 7.60656 6.44C7.60656 6.74667 7.53323 7.03 7.38656 7.29C7.24656 7.55 7.04656 7.75667 6.78656 7.91C6.53323 8.05667 6.2399 8.13 5.90656 8.13C5.57323 8.13 5.27656 8.05667 5.01656 7.91C4.76323 7.75667 4.56323 7.55 4.41656 7.29C4.2699 7.03 4.19656 6.74667 4.19656 6.44ZM5.12656 6.43C5.12656 6.57667 5.15656 6.71667 5.21656 6.85C5.28323 6.97667 5.37323 7.08 5.48656 7.16C5.60656 7.23333 5.74656 7.27 5.90656 7.27C6.06656 7.27 6.20323 7.23333 6.31656 7.16C6.43656 7.08 6.52656 6.97667 6.58656 6.85C6.65323 6.72333 6.68656 6.58333 6.68656 6.43C6.68656 6.28333 6.65323 6.14667 6.58656 6.02C6.52656 5.89333 6.43656 5.79333 6.31656 5.72C6.20323 5.64 6.06656 5.6 5.90656 5.6C5.74656 5.6 5.60656 5.64 5.48656 5.72C5.37323 5.79333 5.28323 5.89333 5.21656 6.02C5.15656 6.14667 5.12656 6.28333 5.12656 6.43ZM5.70656 1H6.77656L1.92656 8H0.856563L5.70656 1Z"
+                            fill="white" />
+                    </svg>
+                </button>
             </div>
 
-            <div class="header_board">
-                <div class="header_board_container">
-                    <div class="container">
-                        <div class="header_board_new">
-                            Новинка
-                        </div>
-                        <div class="header_board-text">
-                            <p>
-                                Электросамокаты Kugoo Kirin
-                                <br>
-                                от официального дилера
-                            </p>
-                            <p class="freeshipping">
-                                с бесплатной доставкой по РФ от 1 дня
-                            </p>
-                        </div>
-                        <div class="header_board_btns">
+
+        </div>
+        <div class="header_board">
+            <div class="header_board_container">
+                <div class="container">
+                    <div class="header_board_new">
+                        Новинка
+                    </div>
+                    <div class="header_board-text">
+                        <p>
+                            Электросамокаты Kugoo Kirin
+                            <br>
+                            от официального дилера
+                        </p>
+                        <p class="freeshipping">
+                            с бесплатной доставкой по РФ от 1 дня
+                        </p>
+                    </div>
+                    <div class="header_board_btns">
                         <div class="incatalog">
                             <a href=# title="incatalog">Перейти в католог</a>
-                            </div>
-                            <div class="testdrive_wrap">
-                                <div class="testdrive">
-                                    <img src="images/lightning.svg" alt="lightning">
-                                    Тест-драйв и обучение
-                                    <div class="free_btn">
-                                        <a href="#" title="free" target="_blank">Бесплатно</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="line_wrap">
-                                <div class="line">
-                                    <img src="images/ellipse-left.svg" alt="ellipse">
-                                    <img src="images/line.svg" alt="line">
-                                    <img src="images/ellipse-right.svg" alt="ellipse">
+                        </div>
+                        <div class="testdrive_wrap">
+                            <div class="testdrive">
+                                <img src="images/lightning.svg" alt="lightning">
+                                Тест-драйв и обучение
+                                <div class="free_btn">
+                                    <a href="#" title="free" target="_blank">Бесплатно</a>
                                 </div>
                             </div>
                         </div>
-
-                        <div class="about_store_slider">
-                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M9.46967 13.5303C9.17678 13.2374 9.17678 12.7626 9.46967 12.4697L14.2426 7.6967C14.5355 7.40381 15.0104 7.40381 15.3033 7.6967C15.5962 7.98959 15.5962 8.46447 15.3033 8.75736L11.0607 13L15.3033 17.2426C15.5962 17.5355 15.5962 18.0104 15.3033 18.3033C15.0104 18.5962 14.5355 18.5962 14.2426 18.3033L9.46967 13.5303ZM11 13.75H10V12.25H11V13.75Z"
-                                    fill="white" />
-                                <circle cx="13" cy="13" r="12.5" transform="matrix(-1 0 0 1 26 0)" stroke="white"
-                                    stroke-opacity="0.2" />
-                            </svg>
-                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M16.5303 13.5303C16.8232 13.2374 16.8232 12.7626 16.5303 12.4697L11.7574 7.6967C11.4645 7.40381 10.9896 7.40381 10.6967 7.6967C10.4038 7.98959 10.4038 8.46447 10.6967 8.75736L14.9393 13L10.6967 17.2426C10.4038 17.5355 10.4038 18.0104 10.6967 18.3033C10.9896 18.5962 11.4645 18.5962 11.7574 18.3033L16.5303 13.5303ZM15 13.75H16V12.25H15V13.75Z"
-                                    fill="white" />
-                                <circle cx="13" cy="13" r="12.5" stroke="white" stroke-opacity="0.2" />
-                            </svg>
-                        </div>
-
-                        
-                    </div>
-                </div>
-            </div>
-
-            <div class="garant">
-                <div class="container">
-                    <div class="garant_wrap">
-                        <ul class="garant_list">
-                            <li><a href="#" target="_blank" title="garant">Гарантия 1 год <br>
-                                    <span>на весь ассортимент</span></a>
-                            </li>
-                            <li><a href="#" target="_blank" title="installment">РАССРОЧКА<br>
-                                    <span>от 6 месяцев</span></a>
-                            </li>
-                            <li><a href="#" target="_blank" title="gifts">Подарки<br>
-                                    <span>и бонусам к покупкам </span></a></li>
-                        </ul>
-                        <div class="yandex_revies">
-                            <button class="yandex_btn">
-                                <svg width="19" height="29" viewBox="0 0 19 29" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M19 29H14.0066V3.91978H11.7769C7.69422 3.91978 5.55868 5.99121 5.55868 9.08242C5.55868 12.5879 7.03471 14.2132 10.081 16.2846L12.5934 18.0055L5.37025 29H0L6.50083 19.1846C2.76364 16.4758 0.659504 13.8308 0.659504 9.36923C0.659504 3.79231 4.49091 0 11.7455 0H18.9686V29H19Z"
-                                        fill="white" />
-                                </svg>
-                            </button>
-
-                            <div class="yandex_text">
-                                <p>Яндекс отзывы</p>
-                                <img src="images/star.svg" alt="star">
-                                <span>4,9</span>
+                        <div class="line_wrap">
+                            <div class="line">
+                                <img src="images/ellipse-left.svg" alt="ellipse">
+                                <img src="images/line.svg" alt="line">
+                                <img src="images/ellipse-right.svg" alt="ellipse">
                             </div>
                         </div>
                     </div>
-                </div>
 
+                    <div class="about_store_slider">
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M9.46967 13.5303C9.17678 13.2374 9.17678 12.7626 9.46967 12.4697L14.2426 7.6967C14.5355 7.40381 15.0104 7.40381 15.3033 7.6967C15.5962 7.98959 15.5962 8.46447 15.3033 8.75736L11.0607 13L15.3033 17.2426C15.5962 17.5355 15.5962 18.0104 15.3033 18.3033C15.0104 18.5962 14.5355 18.5962 14.2426 18.3033L9.46967 13.5303ZM11 13.75H10V12.25H11V13.75Z"
+                                fill="white" />
+                            <circle cx="13" cy="13" r="12.5" transform="matrix(-1 0 0 1 26 0)" stroke="white"
+                                stroke-opacity="0.2" />
+                        </svg>
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M16.5303 13.5303C16.8232 13.2374 16.8232 12.7626 16.5303 12.4697L11.7574 7.6967C11.4645 7.40381 10.9896 7.40381 10.6967 7.6967C10.4038 7.98959 10.4038 8.46447 10.6967 8.75736L14.9393 13L10.6967 17.2426C10.4038 17.5355 10.4038 18.0104 10.6967 18.3033C10.9896 18.5962 11.4645 18.5962 11.7574 18.3033L16.5303 13.5303ZM15 13.75H16V12.25H15V13.75Z"
+                                fill="white" />
+                            <circle cx="13" cy="13" r="12.5" stroke="white" stroke-opacity="0.2" />
+                        </svg>
+                    </div>
+                </div>
             </div>
         </div>
+
+        <div class="garant">
+            <div class="container">
+                <div class="garant_wrap">
+                    <ul class="garant_list">
+                        <li><a href="#" target="_blank" title="garant">Гарантия 1 год <br>
+                                <span>на весь ассортимент</span></a>
+                        </li>
+                        <li><a href="#" target="_blank" title="installment">РАССРОЧКА<br>
+                                <span>от 6 месяцев</span></a>
+                        </li>
+                        <li><a href="#" target="_blank" title="gifts">Подарки<br>
+                                <span>и бонусам к покупкам </span></a></li>
+                    </ul>
+                    <div class="yandex_revies">
+                        <a class="yandex_btn"
+                            href="https://yandex.by/maps/org/kugoo_by/141020274258/reviews/?ll=27.601023%2C53.933571&utm_campaign=v1&utm_medium=rating&utm_source=badge&z=14"
+                            target="_blank" title="yandex"><svg width="19" height="29" viewBox="0 0 19 29" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M19 29H14.0066V3.91978H11.7769C7.69422 3.91978 5.55868 5.99121 5.55868 9.08242C5.55868 12.5879 7.03471 14.2132 10.081 16.2846L12.5934 18.0055L5.37025 29H0L6.50083 19.1846C2.76364 16.4758 0.659504 13.8308 0.659504 9.36923C0.659504 3.79231 4.49091 0 11.7455 0H18.9686V29H19Z"
+                                    fill="white" />
+                            </svg>
+                        </a>
+
+                        <div class="yandex_text">
+                            <p>Яндекс отзывы</p>
+                            <img src="images/star.svg" alt="star">
+                            <span>4,9</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </div>
+
 
     <div class="electricscooters">
         <div class="container">
@@ -292,22 +299,812 @@
                     <h2>Электросамокаты</h2>
                 </div>
                 <ul class="electricscooters_hits_purpose">
-                    <li>Хиты продаж</li>
-                    <li>Для города</li>
-                    <li>Для взрослых</li>
-                    <li>Для детей</li>
+                    <li><a href="#">Хиты продаж</a></li>
+                    <li><a href="#">Для города</a></li>
+                    <li><a href="#">Для взрослых</a></li>
+                    <li><a href="#">Для детей</a></li>
                 </ul>
             </div>
+        </div>
+    </div>
 
-            <div class="electricscooters_choice">
-                <div>
+    <div class="electricscooters_choice container">
+        <div class="electricscooters_choice-wrap">
+
+            <div class="electricscooters_choice_slider">
+                <div class="electricscooters_choice_hits">
+                    <p class="electricscooters_choice_hit">ХИТ</p>
+                    <div class="electricscooters_choice_balanced">
+                        <i class="fa-solid fa-scale-balanced"></i>
+                    </div>
                 </div>
-                <div></div>
-                <div></div>
-                <div></div>
+                <div class="electricscooters_choice_arrows">
+                    <button>
+                        <i class="fa-solid fa-angle-left"></i>
+                    </button>
+                    <button>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </button>
+                </div>
+                <div class="electricscooter_kirin_kogoo">
+                    <p class="electricscooter_kirin">Kugoo Kirin M4</p>
+                    <div class="electricscooter_kirin_characteristics">
+                        <div class="electricscooter_kirin_characteristics_accum">
+                            <div class="accumulator">
+                                <div class="accum">
+                                    <img src="images/accumulator.svg" alt="accumulator">
+                                    <span> 2000 mAh</span>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-bolt-lightning"></i>
+                                    <span>
+                                        1,2 л.с.
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="speed-time">
+                            <div class="speed">
+                                <img src="images/speed.svg" alt="speed">
+                                <span>
+                                    60 км/ч
+                                </span>
+                            </div>
+                            <div class="timer">
+                                <img src="images/timer.png" alt="timer">
+                                <span>5 часов</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="electricscooter_kirin_kogoo_price-icons">
+                            <div class="electricscooter_kirin_kogoo_price">
+                                <p>39 900 &#8381;</p>
+                                <p>29 900 &#8381;</p>
+                            </div>
+                            <div class="electricscooter_kirin_kogoo_icons">
+                                <div class="electricscooter_kirin_kogoo_icon-basket">
+                                    <img src="images/basket.svg" alt="basket">
+                                </div>
+                                <div class="electricscooter_kirin_kogoo_icon-heart">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="electricscooters_choice_btn">
+                            Купить в 1 клик
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="electricscooters_choice_slider">
+                <div class="electricscooters_choice_hits">
+                    <p class="electricscooters_choice_new">Новинка</p>
+                    <div class="electricscooters_choice_balanced">
+                        <i class="fa-solid fa-scale-balanced"></i>
+                    </div>
+                </div>
+                <div class="electricscooters_choice_arrows">
+                    <button>
+                        <i class="fa-solid fa-angle-left"></i>
+                    </button>
+                    <button>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </button>
+                </div>
+                <div class="electricscooter_kirin_kogoo">
+                    <p class="electricscooter_kirin">Kugoo Kirin M4</p>
+                    <div class="electricscooter_kirin_characteristics">
+                        <div class="electricscooter_kirin_characteristics_accum">
+                            <div class="accumulator">
+                                <div class="accum">
+                                    <img src="images/accumulator.svg" alt="accumulator">
+                                    <span> 2000 mAh</span>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-bolt-lightning"></i>
+                                    <span>
+                                        1,2 л.с.
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="speed-time">
+                            <div class="speed">
+                                <img src="images/speed.svg" alt="speed">
+                                <span>
+                                    60 км/ч
+                                </span>
+                            </div>
+                            <div class="timer">
+                                <img src="images/timer.png" alt="timer">
+                                <span>5 часов</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="electricscooter_kirin_kogoo_price-icons">
+                            <div class="electricscooter_kirin_kogoo_price">
+                                <p>39 900 &#8381;</p>
+                                <p>29 900 &#8381;</p>
+                            </div>
+                            <div class="electricscooter_kirin_kogoo_icons">
+                                <div class="electricscooter_kirin_kogoo_icon-basket">
+                                    <img src="images/basket.svg" alt="basket">
+                                </div>
+                                <div class="electricscooter_kirin_kogoo_icon-heart">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="electricscooters_choice_btn">
+                            Купить в 1 клик
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="electricscooters_choice_slider">
+                <div class="electricscooters_choice_hits">
+                    <p class="electricscooters_choice_hit">ХИТ</p>
+                    <div class="electricscooters_choice_balanced">
+                        <i class="fa-solid fa-scale-balanced"></i>
+                    </div>
+                </div>
+                <div class="electricscooters_choice_arrows">
+                    <button>
+                        <i class="fa-solid fa-angle-left"></i>
+                    </button>
+                    <button>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </button>
+                </div>
+                <div class="electricscooter_kirin_kogoo">
+                    <p class="electricscooter_kirin">Kugoo Kirin M4</p>
+                    <div class="electricscooter_kirin_characteristics">
+                        <div class="electricscooter_kirin_characteristics_accum">
+                            <div class="accumulator">
+                                <div class="accum">
+                                    <img src="images/accumulator.svg" alt="accumulator">
+                                    <span> 2000 mAh</span>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-bolt-lightning"></i>
+                                    <span>
+                                        1,2 л.с.
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="speed-time">
+                            <div class="speed">
+                                <img src="images/speed.svg" alt="speed">
+                                <span>
+                                    60 км/ч
+                                </span>
+                            </div>
+                            <div class="timer">
+                                <img src="images/timer.png" alt="timer">
+                                <span>5 часов</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="electricscooter_kirin_kogoo_price-icons">
+                            <div class="electricscooter_kirin_kogoo_price">
+                                <p>39 900 &#8381;</p>
+                                <p>29 900 &#8381;</p>
+                            </div>
+                            <div class="electricscooter_kirin_kogoo_icons">
+                                <div class="electricscooter_kirin_kogoo_icon-basket">
+                                    <img src="images/basket.svg" alt="basket">
+                                </div>
+                                <div class="electricscooter_kirin_kogoo_icon-heart">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="electricscooters_choice_btn">
+                            Купить в 1 клик
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="electricscooters_choice_slider">
+                <div class="electricscooters_choice_hits">
+                    <p class="electricscooters_choice_new">Новинка</p>
+                    <div class="electricscooters_choice_balanced">
+                        <i class="fa-solid fa-scale-balanced"></i>
+                    </div>
+                </div>
+                <div class="electricscooters_choice_arrows">
+                    <button>
+                        <i class="fa-solid fa-angle-left"></i>
+                    </button>
+                    <button>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </button>
+                </div>
+                <div class="electricscooter_kirin_kogoo">
+                    <p class="electricscooter_kirin">Kugoo Kirin M4</p>
+                    <div class="electricscooter_kirin_characteristics">
+                        <div class="electricscooter_kirin_characteristics_accum">
+                            <div class="accumulator">
+                                <div class="accum">
+                                    <img src="images/accumulator.svg" alt="accumulator">
+                                    <span> 2000 mAh</span>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-bolt-lightning"></i>
+                                    <span>
+                                        1,2 л.с.
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="speed-time">
+                            <div class="speed">
+                                <img src="images/speed.svg" alt="speed">
+                                <span>
+                                    60 км/ч
+                                </span>
+                            </div>
+                            <div class="timer">
+                                <img src="images/timer.png" alt="timer">
+                                <span>5 часов</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="electricscooter_kirin_kogoo_price-icons">
+                            <div class="electricscooter_kirin_kogoo_price">
+                                <p>39 900 &#8381;</p>
+                                <p>29 900 &#8381;</p>
+                            </div>
+                            <div class="electricscooter_kirin_kogoo_icons">
+                                <div class="electricscooter_kirin_kogoo_icon-basket">
+                                    <img src="images/basket.svg" alt="basket">
+                                </div>
+                                <div class="electricscooter_kirin_kogoo_icon-heart">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="electricscooters_choice_btn">
+                            Купить в 1 клик
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="electricscooters_choice container">
+        <div class="electricscooters_choice-wrap">
+
+            <div class="electricscooters_choice_slider">
+                <div class="electricscooters_choice_hits">
+                    <p class="electricscooters_choice_hit">ХИТ</p>
+                    <div class="electricscooters_choice_balanced">
+                        <i class="fa-solid fa-scale-balanced"></i>
+                    </div>
+                </div>
+                <div class="electricscooters_choice_arrows">
+                    <button>
+                        <i class="fa-solid fa-angle-left"></i>
+                    </button>
+                    <button>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </button>
+                </div>
+                <div class="electricscooter_kirin_kogoo">
+                    <p class="electricscooter_kirin">Kugoo Kirin M4</p>
+                    <div class="electricscooter_kirin_characteristics">
+                        <div class="electricscooter_kirin_characteristics_accum">
+                            <div class="accumulator">
+                                <div class="accum">
+                                    <img src="images/accumulator.svg" alt="accumulator">
+                                    <span> 2000 mAh</span>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-bolt-lightning"></i>
+                                    <span>
+                                        1,2 л.с.
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="speed-time">
+                            <div class="speed">
+                                <img src="images/speed.svg" alt="speed">
+                                <span>
+                                    60 км/ч
+                                </span>
+                            </div>
+                            <div class="timer">
+                                <img src="images/timer.png" alt="timer">
+                                <span>5 часов</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="electricscooter_kirin_kogoo_price-icons">
+                            <div class="electricscooter_kirin_kogoo_price">
+                                <p>39 900 &#8381;</p>
+                                <p>29 900 &#8381;</p>
+                            </div>
+                            <div class="electricscooter_kirin_kogoo_icons">
+                                <div class="electricscooter_kirin_kogoo_icon-basket">
+                                    <img src="images/basket.svg" alt="basket">
+                                </div>
+                                <div class="electricscooter_kirin_kogoo_icon-heart">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="electricscooters_choice_btn">
+                            Купить в 1 клик
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="electricscooters_choice_slider">
+                <div class="electricscooters_choice_hits">
+                    <p class="electricscooters_choice_new">Новинка</p>
+                    <div class="electricscooters_choice_balanced">
+                        <i class="fa-solid fa-scale-balanced"></i>
+                    </div>
+                </div>
+                <div class="electricscooters_choice_arrows">
+                    <button>
+                        <i class="fa-solid fa-angle-left"></i>
+                    </button>
+                    <button>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </button>
+                </div>
+                <div class="electricscooter_kirin_kogoo">
+                    <p class="electricscooter_kirin">Kugoo Kirin M4</p>
+                    <div class="electricscooter_kirin_characteristics">
+                        <div class="electricscooter_kirin_characteristics_accum">
+                            <div class="accumulator">
+                                <div class="accum">
+                                    <img src="images/accumulator.svg" alt="accumulator">
+                                    <span> 2000 mAh</span>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-bolt-lightning"></i>
+                                    <span>
+                                        1,2 л.с.
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="speed-time">
+                            <div class="speed">
+                                <img src="images/speed.svg" alt="speed">
+                                <span>
+                                    60 км/ч
+                                </span>
+                            </div>
+                            <div class="timer">
+                                <img src="images/timer.png" alt="timer">
+                                <span>5 часов</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="electricscooter_kirin_kogoo_price-icons">
+                            <div class="electricscooter_kirin_kogoo_price">
+                                <p>39 900 &#8381;</p>
+                                <p>29 900 &#8381;</p>
+                            </div>
+                            <div class="electricscooter_kirin_kogoo_icons">
+                                <div class="electricscooter_kirin_kogoo_icon-basket">
+                                    <img src="images/basket.svg" alt="basket">
+                                </div>
+                                <div class="electricscooter_kirin_kogoo_icon-heart">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="electricscooters_choice_btn">
+                            Купить в 1 клик
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="electricscooters_choice_slider">
+                <div class="electricscooters_choice_hits">
+                    <p class="electricscooters_choice_hit">ХИТ</p>
+                    <div class="electricscooters_choice_balanced">
+                        <i class="fa-solid fa-scale-balanced"></i>
+                    </div>
+                </div>
+                <div class="electricscooters_choice_arrows">
+                    <button>
+                        <i class="fa-solid fa-angle-left"></i>
+                    </button>
+                    <button>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </button>
+                </div>
+                <div class="electricscooter_kirin_kogoo">
+                    <p class="electricscooter_kirin">Kugoo Kirin M4</p>
+                    <div class="electricscooter_kirin_characteristics">
+                        <div class="electricscooter_kirin_characteristics_accum">
+                            <div class="accumulator">
+                                <div class="accum">
+                                    <img src="images/accumulator.svg" alt="accumulator">
+                                    <span> 2000 mAh</span>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-bolt-lightning"></i>
+                                    <span>
+                                        1,2 л.с.
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="speed-time">
+                            <div class="speed">
+                                <img src="images/speed.svg" alt="speed">
+                                <span>
+                                    60 км/ч
+                                </span>
+                            </div>
+                            <div class="timer">
+                                <img src="images/timer.png" alt="timer">
+                                <span>5 часов</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="electricscooter_kirin_kogoo_price-icons">
+                            <div class="electricscooter_kirin_kogoo_price">
+                                <p>39 900 &#8381;</p>
+                                <p>29 900 &#8381;</p>
+                            </div>
+                            <div class="electricscooter_kirin_kogoo_icons">
+                                <div class="electricscooter_kirin_kogoo_icon-basket">
+                                    <img src="images/basket.svg" alt="basket">
+                                </div>
+                                <div class="electricscooter_kirin_kogoo_icon-heart">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="electricscooters_choice_btn">
+                            Купить в 1 клик
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="electricscooters_choice_slider">
+                <div class="electricscooters_choice_hits">
+                    <p class="electricscooters_choice_new">Новинка</p>
+                    <div class="electricscooters_choice_balanced">
+                        <i class="fa-solid fa-scale-balanced"></i>
+                    </div>
+                </div>
+                <div class="electricscooters_choice_arrows">
+                    <button>
+                        <i class="fa-solid fa-angle-left"></i>
+                    </button>
+                    <button>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </button>
+                </div>
+                <div class="electricscooter_kirin_kogoo">
+                    <p class="electricscooter_kirin">Kugoo Kirin M4</p>
+                    <div class="electricscooter_kirin_characteristics">
+                        <div class="electricscooter_kirin_characteristics_accum">
+                            <div class="accumulator">
+                                <div class="accum">
+                                    <img src="images/accumulator.svg" alt="accumulator">
+                                    <span> 2000 mAh</span>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-bolt-lightning"></i>
+                                    <span>
+                                        1,2 л.с.
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="speed-time">
+                            <div class="speed">
+                                <img src="images/speed.svg" alt="speed">
+                                <span>
+                                    60 км/ч
+                                </span>
+                            </div>
+                            <div class="timer">
+                                <img src="images/timer.png" alt="timer">
+                                <span>5 часов</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="electricscooter_kirin_kogoo_price-icons">
+                            <div class="electricscooter_kirin_kogoo_price">
+                                <p>39 900 &#8381;</p>
+                                <p>29 900 &#8381;</p>
+                            </div>
+                            <div class="electricscooter_kirin_kogoo_icons">
+                                <div class="electricscooter_kirin_kogoo_icon-basket">
+                                    <img src="images/basket.svg" alt="basket">
+                                </div>
+                                <div class="electricscooter_kirin_kogoo_icon-heart">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="electricscooters_choice_btn">
+                            Купить в 1 клик
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="see_everything container">
+        <a href="#">Смотреть все</a>
+    </div>
+
+    <div class="selection container">
+        <div class="selection_wrap">
+            <div class="selection_model">
+                <p class="model_service">Подбор модели <br> электросамоката</p>
+                <p>Пройдите тест и выберите <br> электросамокат по своим критериям</p>
+                <div class="selection_model_choose">
+                    <a href="#">Подобрать модель</a>
+                    <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+
+                </div>
+            </div>
+
+            <div class="service_maintenance">
+                <p class="model_service">Сервисное <br> обслуживание</p>
+                <p>Крупнейший сервисный центр <br> в России для продуктов Kugoo</p>
+                <div class="selection_model_choose">
+                    <a href="#">Подобрать модель</a>
+                    <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="freeShipping_electricscooters">
+        <div class="freeShipping_electricscooters_back">
+            <div class="freeShipping_electricscooters_text">
+                <p>Акция</p>
+                <p>
+                    Бесплатная доставка <br>
+                    электросамокатов <br>
+                    по России до 01.09
+                </p>
+                <button>Подробнее</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="popularCategories container">
+        <div class="manager">
+            <h3>Популярные категории</h3>
+            <div class="askQuestion">
+                <div class="askQuestion_img">
+                    <img src="images/imgmanager.png" alt="manager">
+                </div>
+                <div class="askQuestion_text">
+                    <p>Менеджер ответит на любой <br> ваш вопрос о продуктах Kugoo</p>
+                    <a href="#" target="_blank" title="question">Задать вопрос</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="popularCategories_cards container">
+        <div class="popularCategories_cards_techniques">
+            <div class="popularCategories_cards-technique-item">
+                <img src="images/robotvacuumcleaner.jpg" alt="robotvacuumcl">
+                <div class="popularCategories_cards-technique-text">
+                    <p class="types_equipment">Робот-пылесоссы</p>
+                    <p class="types_equipment-rub">от 29 900 &#8381;</p>
+                </div>
+            </div>
+        </div>
+        <div class="popularCategories_cards_techniques">
+            <div class="popularCategories_cards-technique-item">
+                <img src="images/Electricbicycles.jpg" alt="electricbicycles">
+                <div class="popularCategories_cards-technique-text">
+                    <p class="types_equipment">Робот-пылесоссы</p>
+                    <p class="types_equipment-rub">от 29 900 &#8381;</p>
+                </div>
+            </div>
+        </div>
+        <div class="popularCategories_cards_techniques">
+            <div class="popularCategories_cards-technique-item">
+                <img src="images/Scales.jpg" alt="scales">
+                <div class="popularCategories_cards-technique-text">
+                    <p class="types_equipment">Робот-пылесоссы</p>
+                    <p class="types_equipment-rub">от 29 900 &#8381;</p>
+                </div>
+            </div>
+        </div>
+        <div class="popularCategories_cards_techniques">
+            <div class="popularCategories_cards-technique-item">
+                <img src="images/robotvacuumcleaner.jpg" alt="robotvacuumcl">
+                <div class="popularCategories_cards-technique-text">
+                    <p class="types_equipment">Робот-пылесоссы</p>
+                    <p class="types_equipment-rub">от 29 900 &#8381;</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="popularCategories_cards container">
+        <div class="popularCategories_cards_techniques">
+            <div class="popularCategories_cards-technique-item">
+                <img src="images/robotvacuumcleaner.jpg" alt="robotvacuumcl">
+                <div class="popularCategories_cards-technique-text">
+                    <p class="types_equipment">Робот-пылесоссы</p>
+                    <p class="types_equipment-rub">от 29 900 &#8381;</p>
+                </div>
+            </div>
+        </div>
+        <div class="popularCategories_cards_techniques">
+            <div class="popularCategories_cards-technique-item">
+                <img src="images/Electricbicycles.jpg" alt="electricbicycles">
+                <div class="popularCategories_cards-technique-text">
+                    <p class="types_equipment">Робот-пылесоссы</p>
+                    <p class="types_equipment-rub">от 29 900 &#8381;</p>
+                </div>
+            </div>
+        </div>
+        <div class="popularCategories_cards_techniques">
+            <div class="popularCategories_cards-technique-item">
+                <img src="images/Scales.jpg" alt="scales">
+                <div class="popularCategories_cards-technique-text">
+                    <p class="types_equipment">Робот-пылесоссы</p>
+                    <p class="types_equipment-rub">от 29 900 &#8381;</p>
+                </div>
+            </div>
+        </div>
+        <div class="popularCategories_cards_techniques">
+            <div class="popularCategories_cards-technique-item">
+                <img src="images/robotvacuumcleaner.jpg" alt="robotvacuumcl">
+                <div class="popularCategories_cards-technique-text">
+                    <p class="types_equipment">Робот-пылесоссы</p>
+                    <p class="types_equipment-rub">от 29 900 &#8381;</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="see_everything container">
+        <a href="#">Смотреть все</a>
+    </div>
+
+    <div class="kogoo_russia">
+        <div class="kogoo_russia_img">
+            <img src="images/happy-young-company-smiling-friends-walking-street-with-electric-kick-scooter-man-women-having-fun-together.jpg"
+                alt="">
+        </div>
+        <div class="kogoo_russia_testdrive_moskva">
+            <p class="kogoo_russia_testdrive_moskva-official">Kugoo-Russia — первый официальный дилер Kugoo Kirin в
+                России</p>
+            <p class="kogoo_russia_testdrive_moskva-our_goal">
+                Наша цель предоставить полный ассортимент современной продукции Kugoo Kirin, которая улучшает и упрощает
+                жизнь. Стремимся подарить комфорт и эмоции, поэтому помогаем с выбором и внимательно относимся к
+                сервисному обслуживанию.
+            </p>
+
+            <div class="kogoo_russia_testdrive_moskva_brend">
+                <p>Специализируемся исключительно на бренде Kugoo, поэтому вы получите:</p>
+                <ul class="kogoo_russia_testdrive_moskva_brend-list">
+                    <li><img src="images/polygon-arrow.png" alt="arrow"> цены от завода-изготовителя Jilong;</li>
+                    <li><img src="images/polygon-arrow.png" alt="arrow"> бесплатный тест-драйв самокатов;</li>
+                    <li><img src="images/polygon-arrow.png" alt="arrow"> фирменную гарантию 1 год;</li>
+                    <li><img src="images/polygon-arrow.png" alt="arrow"> ремонт и обслуживание от 1 дня в собственном
+                        сервисном центре;
+                    </li>
+                    <li><img src="images/polygon-arrow.png" alt="arrow"> более 1 000 запчастей и аксессуаров в наличии;
+                    </li>
+                </ul>
+                <a href="#" target="_blank" title="certificate">Смотреть сертификат</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="favorable_prices container">
+        <h3>Предлагаем самые выгодные цены <br>
+            на продукты Kugoo за счет прямых поставок</h3>
+        <p>
+            и заботимся об удобстве покупателей
+        </p>
+    </div>
+
+    <div class="online_store container">
+        <div class="online_store_links">
+            <a href="#" target="_blank" title="online-store">Интернет-магазин</a>
+            <a href="#" target="_blank" title="service-center">Сервисный центр</a>
+        </div>
+    </div>
+
+    <div class="order_options container">
+        <div class="order_options_cards">
+            <div class="order_options_cards-item">
+                <i class="fa-solid fa-basket-shopping"></i>
+                <p>Х товаров в каталоге</p>
+                <p>Выбирайте товар, который подходит по цене и характеристикам. Если товара нет в наличии — мы сообщим
+                    вам о его поступлении. </p>
+            </div>
+
+            <div class="order_options_cards-item">
+                <i class="fa-solid fa-wallet"></i>
+                <p>5 способов оплаты</p>
+                <p>Вы можете оплатить покупку наличными, картой, онлайн на сайте, через интернет-банкинг или в кредит от
+                    «Сбербанка». </p>
+            </div>
+
+            <div class="order_options_cards-item">
+                <img src="images/guarantee.png" alt="guarantee">
+                <p>Полная документация <br> и гарантия 1 год</p>
+                <p>При покупке вам выдается кассовый чек, товарный чек и гарантийный талон – эти документы дают право на
+                    гарантийное обслуживание.</p>
             </div>
         </div>
 
+
+        <div class="order_options_cards">
+            <div class="order_options_cards-item_card">
+                <img src="images/sending.png" alt="sending">
+                <p>Отправка заказа день в день</p>
+                <p>Отправляем заказы по всей России день в день или забирайте товар самостоятельно в магазинах в Москве,
+                    Санкт-Петербурге и Краснодаре</p>
+            </div>
+
+            <div class="order_options_cards-item_card">
+                <img src="images/percent.png" alt="percent">
+                <p>Рассрочка без переплат</p>
+                <p>В нашем магазине можно приобрести любой товар в рассрочку.</p>
+                <a href="#" target="_blank" title="installment-plan">Подробнее про условия рассрочки</a>
+            </div>
+
+            <div class="order_options_cards-item_card">
+                <p>Больше в каталоге</p>
+                <div class="order_options_cards-item_card_transition">
+                    <a href="#" target="_blank" title="transition">Перейти</a>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="video_card">
+        <img src="images/young-beautiful-woman-sitting-car-with-scotter.jpg" alt="young-beautiful-woman">
+        <button><i class="fa-solid fa-play"></i></button>
+    </div>
+
+    <div class="favorable_prices container">
+        <h4>Отзывы и фото реальных покупателей</h4>
+        <div class="favorable_prices-reviews">
+        <a href="https://yandex.by/maps/org/kugoo_by/141020274258/reviews/?ll=27.601023%2C53.933571&utm_campaign=v1&utm_medium=rating&utm_source=badge&z=14"
+            target="_blank" title="reviews">Читать отзывы на Яндекс</a>
+        <i class="fa-solid fa-arrow-right"></i>
+    </div>
     </div>
 
 </body>
