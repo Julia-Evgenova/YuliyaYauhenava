@@ -1,0 +1,947 @@
+@media (max-width: 1290px) {
+    /* Стили для экранов с максимальной шириной 1440px */
+}
+
+@media (max-width: 1024px) {
+    /* Стили для планшетов */
+}
+
+@media (max-width: 768px) {
+    /* Стили для мобильных устройств в портретной ориентации */
+
+   
+.garant {
+    display: none;
+}
+.header {
+    width: 100%;
+}
+
+.header_searc_scooter {
+    width: auto;
+}
+
+.header_searc form {
+    width: auto;
+}
+
+
+.about_store {
+    width: 100%;
+}
+
+.header_board {
+    width: 100%;
+}
+.header_board_container {
+    background: url(../images/velo-back.png) no-repeat 350px 65px;
+    background-size: contain;
+    padding-top: 15px;
+    height: 420px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.header_board_container_content {
+    height: 100%;
+    padding: 25px 40px;
+}
+
+.free_btn {
+    margin-left: 0;
+}
+
+.testdrive_wrap {
+    margin-top: -26px;
+    margin-left: 0px;
+}
+
+.line_wrap {
+    display: none;
+}
+
+.electricscooters_hits {
+    display: block;
+    text-align: center;
+}
+
+.electricscooters_hits_purpose {
+    margin-top: 20px;
+    margin-left: 60px;
+}
+
+.electricscooters_choice_slider:nth-last-child(4) {
+    display: none;
+}
+
+.electricscooters_choice_slider:nth-last-child(3) {
+    display: none;
+}
+
+.electricscooters_choice-wrap {
+    justify-content: space-evenly;
+}
+
+.electricscooters_choice:nth-child(3) {
+display: none;
+}
+
+.freeShipping_electricscooters {
+    display: none;
+}
+
+.selection {
+    display: none;
+}
+
+.kogoo_russia {
+    display: none;
+}
+
+.popularCategories_cards {
+    display: none;
+}
+
+.see_everything {
+display: none;
+}
+
+.manager {
+    display: inline-block;
+    margin-top: 0;
+    margin-left: 250px;
+    margin-bottom: 45px;
+}
+
+.order_options {
+    display: none;
+}
+
+.manager h3 {
+    display: none;
+}
+
+.video_card {
+    width: 700px;
+    height: 350px;
+}
+
+#playButton {
+    top: 35%;
+    left: 40%
+}
+
+ .favorable_prices {
+    display: none;
+}
+
+.no-js .owl-carousel .my-unique-carousel .owl-loaded .owl-drag .no-js .owl-carousel, .owl-carousel.owl-loaded {
+    display: none;
+}
+
+.video_reviews {
+    display: none;
+}
+
+.new_articles {
+    display: none;
+}
+.answer_questions {
+    display: none;
+}
+.email {
+    width: 100%;
+    padding-left: 30px;
+}
+
+.footer {
+    width: 100%;
+}
+
+.footer_info_buyers {
+    display: none;
+}
+
+.footer_logo {
+    display: none;
+}
+
+.footer_payment {
+    display: none;
+}
+
+.social_network {
+    padding-top: 25px;
+    text-align: center;
+}
+
+.footer {
+    width: 100%;
+}
+
+.footer_info_buyers {
+    display: none;
+}
+
+.footer_logo {
+    display: none;
+}
+
+.footer_payment {
+    display: none;
+}
+
+.social_network {
+    padding-top: 25px;
+    text-align: center;
+}
+
+.email_form_content-btn {
+    margin-top: 10px;
+}
+
+}
+
+@media (max-width: 480px) {
+    /* Стили для мобильных устройств в альбомной ориентации */
+    .container {
+        max-width: 1100px;
+        width: calc(100% - 30px);
+    }
+
+    .section {
+        border: none;
+    }
+
+    .cooperation {
+        display: none;
+    }
+
+    .header {
+        margin-left: 0;
+    }
+
+    .header .container {
+        display: flex;
+        margin-bottom: 0;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header_icons {
+        display: none;
+    }
+
+    .header_icon_searc {
+        border: none;
+        padding-right: 10px;
+        border: 1.50px solid var(--purple);
+        border-radius: 0 5px 5px 0;
+        width: auto;
+        height: auto;
+        background: none;
+        border: none;
+    }
+
+    .header_icon_searc i {
+        color: #5D6C7B;
+        font-size: 12px;
+    }
+
+    .header_logo {
+        width: 70px;
+        margin-bottom: 17px;
+    }
+
+    .about_store {
+        display: none;
+    }
+
+    .about_store_back {
+        display: block;
+    }
+
+    .about_store_link {
+        display: block;
+    }
+
+    .about_store_link_info {
+        display: block;
+    }
+
+    .btn_catalog {
+        display: none;
+    }
+
+    .header_board .owl-nav {
+        display: none;
+    }
+
+    .header_board-text {
+        font-size: 12px;
+        line-height: 130%;
+        text-transform: uppercase;
+    }
+
+    .header_board-text p:nth-child(1) {
+        width: 162px;
+    }
+
+    .header_searc {
+        border: 0;
+        background: var(--bachground);
+        border-radius: 10px;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .header_searc form {
+        width: 100%;
+    }
+
+    .dropbtn {
+        display: none;
+    }
+
+    .dropdown {
+        display: none;
+    }
+
+    .header_searc_scooter {
+        background: var(--bachground);
+        width: 100%;
+    }
+
+    .incatalog {
+        display: none;
+    }
+
+    .header_board_new {
+        font-size: 8px;
+        border: 0.50px solid var(--white);
+        border-radius: 3px;
+        width: 44px;
+        height: 17px;
+        margin-bottom: 10px;
+        padding-top: 4px;
+    }
+
+    .uniqueCarousel .owl-dots .owl-dot {
+        top: 120px;
+    }
+
+    #uniqueCarousel .owl-theme .owl-dots .owl-dot:hover span {
+        background: var(--purple);
+    }
+
+    .testdrive_wrap {
+        display: none;
+    }
+
+    .line_wrap {
+        display: none;
+    }
+
+    .owl-nav .owl-prev,
+    .owl-nav .owl-next {
+        display: none;
+    }
+
+    .owl-theme .owl-dots .owl-dot span {
+        width: 20px;
+        height: 2px;
+    }
+
+    #uniqueCarousel .owl-carousel {
+        margin-bottom: 30px;
+        /* Добавляет отступ снизу для карусели */
+    }
+
+    #uniqueCarousel .owl-dots {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        /* Центрирование dots */
+        transform: translateX(-50%);
+        /* Точное центрирование */
+        width: 100%;
+        display: flex;
+        justify-content: center;  
+    }
+
+    #uniqueCarousel .owl-dot {
+        background: transparent;
+        width: 10px;
+        height: 10px;
+        border-radius: 0%;
+        margin: 0 10px;
+        /* Расстояние между точками */
+    }
+
+    #uniqueCarousel .item {
+        height: auto;
+    }
+
+    .freeshipping {
+        font-size: 10px;
+    }
+
+    .garant {
+        display: none;
+    }
+
+    .electricscooters {
+        display: none;
+    }
+
+    .electricscooters_choice {
+        display: none;
+    }
+
+    .see_everything {
+        display: none;
+    }
+
+    .selection {
+        display: none;
+    }
+
+    .my-unique-carousel .owl-stage-outer {
+        display: none;
+    }
+
+    .freeShipping_electricscooters {
+        display: none;
+    }
+
+    .popularCategories {
+        display: none;
+    }
+
+    .popularCategories_cards {
+        display: none;
+    }
+
+    .kogoo_russia {
+        display: none;
+    }
+
+    .favorable_prices {
+        display: none;
+    }
+
+    .online_store {
+        display: none;
+    }
+
+    .order_options {
+        display: none;
+    }
+
+    .video_card {
+        display: none;
+    }
+
+    .favorable_prices {
+        display: none;
+    }
+
+    .my-unique-carousel {
+        display: none;
+    }
+
+    .video_reviews {
+        display: none;
+    }
+
+    .new_articles {
+        display: none;
+    }
+
+    .answer_questions {
+        display: none;
+    }
+
+    .often_buy {
+        display: none;
+    }
+
+    .email {
+        width: 480px;
+        width: 100%;
+    }
+
+    .email_form {
+        height: auto;
+        display: block;
+    }
+
+    .email_form_content {
+        display: block;
+    }
+
+    .email_form_content button {
+        display: block;
+    }
+
+    .email_form p {
+        text-align: center;
+        font-size: 14px;
+        width: 100%;
+        height: auto;
+        padding: 0 18px 18px;
+    }
+
+    .email_form_content input {
+        width: 100%;
+    }
+
+    .email_form_content-btn {
+        margin-top: 16.5px;
+        width: 100%;
+    }
+
+    .footer {
+        width: 100%;
+    }
+
+    .footer_info_buyers {
+        display: none;
+    }
+
+    .footer_logo {
+        display: none;
+    }
+
+    .footer_payment {
+        display: none;
+    }
+
+    .social_network {
+        padding-top: 25px;
+        text-align: center;
+    }
+
+    .social_network a {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .social_network a img:nth-child(1) {
+        margin-bottom: 10px;
+        margin-right: 10px;
+    }
+
+    .social_network a img:nth-child(2) {
+        margin-bottom: 10px;
+        margin-right: 10px;
+    }
+
+    .footer_logotips {
+        padding-bottom: 14px;
+    }
+
+    .footer_requisites_link a {
+        display: block;
+        text-align: center;
+    }
+
+    .footer_requisites_link {
+        display: block;
+        width: 100%;
+    }
+
+    .footer_requisites_link-spec {
+        margin-right: 0;
+    }
+
+    .header_board_container {
+        background: url("../images/velo-back.png") no-repeat 205px bottom;
+        background-size: 160px 120px; /* Четко определите размеры изображения */
+        padding-top: 15px;
+        height: 125px; /* Явно задайте высоту */
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .header_board {
+        max-width: 480px;
+        width: calc(100% - 30px);
+        height: auto;
+        margin: 0 auto;
+        overflow: visible; 
+    }
+
+    .header_board_container_content {
+        padding: 0;
+    }
+}
+
+@media (max-width: 320px) {
+    /* Стили для мобильных устройств в альбомной ориентации */
+    .container {
+        max-width: 1100px;
+        width: calc(100% - 30px);
+    }
+
+    .section {
+        border: none;
+    }
+
+    .cooperation {
+        display: none;
+    }
+
+    .header {
+        margin-left: 0;
+    }
+
+    .header .container {
+        display: flex;
+        margin-bottom: 0;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header_icons {
+        display: none;
+    }
+
+    .header_icon_searc {
+        border: none;
+        padding-right: 10px;
+        border: 1.50px solid var(--purple);
+        border-radius: 0 5px 5px 0;
+        background: none;
+        border: none;
+    }
+
+    .header_icon_searc i {
+        color: #5D6C7B;
+        font-size: 12px;
+    }
+
+    .header_logo {
+        width: 70px;
+        margin-bottom: 17px;
+    }
+
+    .about_store {
+        display: none;
+    }
+
+    .about_store_back {
+        display: block;
+    }
+
+    .about_store_link {
+        display: block;
+    }
+
+    .about_store_link_info {
+        display: block;
+    }
+
+    .btn_catalog {
+        display: none;
+    }
+
+    .header_board .owl-nav {
+        display: none;
+    }
+
+    .header_board-text {
+        font-size: 12px;
+        line-height: 130%;
+        text-transform: uppercase;
+    }
+
+    .header_board-text p:nth-child(1) {
+        width: 162px;
+    }
+
+    .header_searc {
+        border: 0;
+        background: var(--bachground);
+        border-radius: 10px;
+        margin-bottom: 20px;
+       width: 100%;
+    }
+
+    .dropbtn {
+        display: none;
+    }
+
+    .dropdown {
+        display: none;
+    }
+
+    .header_searc_scooter {
+        background: var(--bachground);
+        width: 110%;
+    }
+
+    .incatalog {
+        display: none;
+    }
+
+    .header_board_new {
+        font-size: 8px;
+        border: 0.50px solid var(--white);
+        border-radius: 3px;
+        width: 44px;
+        height: 17px;
+        margin-bottom: 10px;
+        padding-top: 4px;
+    }
+
+    .uniqueCarousel .owl-dots .owl-dot {
+        top: 120px;
+    }
+
+    #uniqueCarousel .owl-theme .owl-dots .owl-dot:hover span {
+        background: var(--purple);
+    }
+
+    .testdrive_wrap {
+        display: none;
+    }
+
+    .line_wrap {
+        display: none;
+    }
+
+    .owl-nav .owl-prev,
+    .owl-nav .owl-next {
+        display: none;
+    }
+
+    .owl-theme .owl-dots .owl-dot span {
+        width: 20px;
+        height: 2px;
+    }
+
+    #uniqueCarousel .owl-carousel {
+        margin-bottom: 30px;
+        /* Добавляет отступ снизу для карусели */
+    }
+
+    #uniqueCarousel .owl-dots {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        /* Центрирование dots */
+        transform: translateX(-50%);
+        /* Точное центрирование */
+        width: 100%;
+        display: flex;
+        justify-content: center;  
+    }
+
+    #uniqueCarousel .owl-dot {
+        background: transparent;
+        width: 10px;
+        height: 10px;
+        border-radius: 0%;
+        margin: 0 10px;
+        /* Расстояние между точками */
+    }
+
+    #uniqueCarousel .item {
+        height: auto;
+    }
+
+    .freeshipping {
+        font-size: 10px;
+    }
+
+    .garant {
+        display: none;
+    }
+
+    .electricscooters {
+        display: none;
+    }
+
+    .electricscooters_choice {
+        display: none;
+    }
+
+    .see_everything {
+        display: none;
+    }
+
+    .selection {
+        display: none;
+    }
+
+    .my-unique-carousel .owl-stage-outer {
+        display: none;
+    }
+
+    .freeShipping_electricscooters {
+        display: none;
+    }
+
+    .popularCategories {
+        display: none;
+    }
+
+    .popularCategories_cards {
+        display: none;
+    }
+
+    .kogoo_russia {
+        display: none;
+    }
+
+    .favorable_prices {
+        display: none;
+    }
+
+    .online_store {
+        display: none;
+    }
+
+    .order_options {
+        display: none;
+    }
+
+    .video_card {
+        display: none;
+    }
+
+    .favorable_prices {
+        display: none;
+    }
+
+    .my-unique-carousel {
+        display: none;
+    }
+
+    .video_reviews {
+        display: none;
+    }
+
+    .new_articles {
+        display: none;
+    }
+
+    .answer_questions {
+        display: none;
+    }
+
+    .often_buy {
+        display: none;
+    }
+
+    .email {
+        width: 320px;
+        width: calc(100%);
+    }
+
+    .email_form {
+        height: auto;
+        display: block;
+    }
+
+    .email_form_content {
+        display: block;
+    }
+
+    .email_form_content button {
+        display: block;
+    }
+
+    .email_form p {
+        text-align: center;
+        font-size: 14px;
+        width: 100%;
+        height: auto;
+        padding: 0 18px 18px;
+    }
+
+    .email_form_content input {
+        width: 100%;
+    }
+
+    .email_form_content-btn {
+        margin-top: 16.5px;
+        width: 100%;
+    }
+
+    .footer {
+        width: 100%;
+    }
+
+    .footer_info_buyers {
+        display: none;
+    }
+
+    .footer_logo {
+        display: none;
+    }
+
+    .footer_payment {
+        display: none;
+    }
+
+    .social_network {
+        padding-top: 25px;
+        text-align: center;
+    }
+
+    .social_network a {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .social_network a img:nth-child(1) {
+        margin-bottom: 10px;
+        margin-right: 10px;
+    }
+
+    .social_network a img:nth-child(2) {
+        margin-bottom: 10px;
+        margin-right: 10px;
+    }
+
+    .footer_logotips {
+        padding-bottom: 14px;
+    }
+
+    .footer_requisites_link a {
+        display: block;
+        text-align: center;
+    }
+
+    .footer_requisites_link {
+        display: block;
+        width: 100%;
+    }
+
+    .footer_requisites_link-spec {
+        margin-right: 0;
+    }
+
+    .header_board_container {
+        background: url("../images/velo-back.png") no-repeat 205px bottom;
+        background-size: 160px 120px; /* Четко определите размеры изображения */
+        padding-top: 15px;
+        height: 125px; /* Явно задайте высоту */
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .header_board {
+        max-width: 320px;
+        width: calc(100% - 30px);
+        height: auto;
+        margin: 0 auto;
+        overflow: visible; 
+    }
+
+    .header_searc form {
+        width: 100%;
+    }
+}

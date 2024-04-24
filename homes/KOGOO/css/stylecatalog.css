@@ -1,0 +1,1584 @@
+* {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+a {
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+}
+
+:root {
+    --font-family: "Jost", sans-serif;
+    --second-family: "Roboto", sans-serif;
+    --third-family: "SF Pro Text", sans-serif;
+    --font3: "SF Pro Display", sans-serif;
+}
+
+:root {
+    --purple: #6f73ee;
+    --black: #282739;
+    --gray-600: #5d6c7b;
+    --gray-200: #eaebed;
+    --white: #fff;
+    --bachground: #f4f7fb;
+    --oranges: #ee685f;
+    --orange: #f3a712;
+    --green: #75d14a;
+}
+
+@font-face {
+    font-family: "SF Pro Text";
+    src: url("../fonts/SFProText-Medium.ttf"),
+        url("../fonts/SFProText-Medium.eot"),
+        url("../fonts/SFProText-Medium.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/SFProText-Medium.woff2") format("woff2"),
+        url("../fonts/SFProText-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "SF Pro Text";
+    src: url("../fonts/SFProText-Heavy.ttf"),
+        url("../fonts/SFProText-Heavy.eot"),
+        url("../fonts/SFProText-Heavy.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/SFProText-Heavy.woff2") format("woff2"),
+        url("../fonts/SFProText-Heavy.woff") format("woff");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "SF Pro Text";
+    src: url("../fonts/SFProText-Semibold.ttf"),
+        url("../fonts/SFProText-Semibold.eot"),
+        url("../fonts/SFProText-Semibold.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/SFProText-Semibold.woff2") format("woff2"),
+        url("../fonts/SFProText-Semibold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "SF Pro Display";
+    src: url("../fonts/SF-Pro-Display-Regular.otf"),
+        url("../fonts/SFProDisplay-Regular.eot"),
+        url("../fonts/SFProDisplay-Regular.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/SFProDisplay-Regular.woff2") format("woff2"),
+        url("../fonts/SFProDisplay-Regular.woff") format("woff"),
+        url("../fonts/SFProDisplay-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.section {
+    border: 1px dashed #E8E8E8;
+}
+
+.container {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.cooperation .container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 13px;
+    margin-top: 11px;
+
+}
+
+.cooperation::after {
+    content: "";
+    padding-bottom: 29px;
+    width: 1440px;
+    border-bottom: 1px solid #ecf3ff;
+
+}
+
+.cooperation .service {
+    display: flex;
+    min-width: 300px;
+}
+
+
+.service li a {
+    text-decoration: none;
+    margin-right: 30px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 12px;
+    color: var(--gray-600);
+}
+
+.service li a:hover {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 12px;
+    color: var(--black);
+}
+
+.contacts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 786px;
+}
+
+.messengers {
+    min-width: 53px;
+}
+
+.messengers a {
+    text-decoration: none;
+}
+
+.viber path:hover {
+    fill: #8e24aa;
+}
+
+.call path:hover {
+    fill: #4caf50;
+}
+
+.messengers_viber path:focus-visible {
+    fill: #8e24aa;
+}
+
+.messengers_telegram path:hover {
+    fill: #039be5;
+}
+
+.messengers_telegram path:focus-visible {
+    fill: #039be5;
+}
+
+.number {
+    display: flex;
+    align-items: center;
+    min-width: 133px;
+}
+
+.number span {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 12px;
+    color: var(--black);
+    margin-right: 9px;
+}
+
+.number button {
+    border: 1px solid var(--gray-600);
+    background: none;
+    border-radius: 100%;
+    height: 18px;
+    width: 18px;
+    color: var(--gray-600);
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.number button:hover {
+    border: 1px solid var(--gray-600);
+    background: #5D6C7B;
+    border-radius: 100%;
+    color: var(--white);
+    font-size: 10px;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.header_logo {
+    margin-right: 35px;
+}
+
+.btn_catalog {
+    border: 1.50px solid var(--purple);
+    border-radius: 5px;
+    min-width: 114px;
+    height: 40px;
+    background: var(--purple);
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-right: 20px;
+}
+
+.btn_catalog:hover {
+    background-color: #8185F9;
+    font-family: var(--font-family);
+}
+
+.btn_catalog i {
+    font-size: 15px;
+    margin-right: 5px;
+}
+
+.btn_catalog span {
+    margin-right: 10px;
+}
+
+.header .container {
+    margin-top: 29px;
+}
+
+.header_searc {
+    border: 1.50px solid var(--purple);
+
+    height: 40px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*.header_dropdown {
+  cursor: pointer;
+  margin-top: 65px;
+  margin-left: 5px;
+}*/
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    border-radius: 5px;
+    width: 76px;
+    height: 32px;
+    background: var(--bachground);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -o-appearance: none;
+    border: none;
+    margin-left: 5px;
+    padding-left: 10px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--black);
+    cursor: pointer;
+}
+
+.fa-caret-down {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: var(--black);
+    font-size: 12px;
+}
+
+/*
+.dropdown-content {
+  min-width: 117px;
+  background: var(--bachground);
+  border-radius: 5px;
+  height: 67px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  padding-top: 1px;
+  z-index: 1;
+  line-height: 30px;
+  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease, transition-delay 0.1s;
+}
+
+.header_dropdown:hover .dropdown-content {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(0);
+  transition-delay: 0.1s;
+}
+
+.dropdown-content:hover {
+  display: block;
+}
+
+.dropdown-content a {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--black);
+  text-decoration: none;
+  padding: 9px 44px 38px 14px;
+}
+
+.dropdown-content a:hover {
+  color: var(--purple);
+}*/
+
+.header_searc_scooter {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--gray-600);
+    width: 430px;
+    border: none;
+    padding-left: 20px;
+}
+
+.header_icon_searc {
+    border: 1.50px solid var(--purple);
+    border-radius: 0 5px 5px 0;
+    width: 40px;
+    height: 40px;
+    background: var(--purple);
+    border: none;
+}
+
+.header_icon_searc i {
+    color: white;
+}
+
+.header_icons {
+    display: flex;
+    margin-left: 47px;
+    align-items: center;
+}
+
+.header_icons i {
+    margin-right: 25px;
+    cursor: pointer;
+}
+
+.header_icons i:hover {
+    color: var(--purple);
+}
+
+.header_icons_btn i {
+    margin-right: 10px;
+}
+
+.header_icons_btn {
+    padding-right: 8px;
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+}
+
+.fa-basket-shopping {
+    display: inline-block;
+    color: var(--purple);
+}
+
+.header_icons_basket_link {
+    text-decoration: none;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--black);
+
+}
+
+.header_basket_list {
+    margin-top: 30px;
+    width: 304px;
+}
+
+.about_store {
+    margin-top: 35px;
+    width: 1440px;
+    background: var(--bachground);
+    margin: 0 auto;
+}
+
+.about_store_back {
+    width: 800px;
+    margin-left: 170px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    margin-bottom: 31px;
+}
+
+.about_store_link {
+    display: flex;
+}
+
+.about_store_link li a {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--black);
+    text-decoration: none;
+}
+
+.about_store_link li:first-child {
+    margin-right: 49px;
+}
+
+.about_store_link_first:hover {
+    color: var(--purple);
+}
+
+.about_store_link_info {
+    display: flex;
+}
+
+.about_store_link li a {
+    text-decoration: none;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--black);
+}
+
+.about_store_link .about_store_link_installment {
+    border-radius: 300px;
+    width: 106px;
+    height: 20px;
+    background: var(--purple);
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 10px;
+    color: var(--white);
+    margin-left: 15.53px;
+}
+
+.about_store_link_info li a {
+    text-decoration: none;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--black);
+    margin-left: 49px;
+}
+
+.about_store_percent {
+    border-radius: 300px;
+    width: 20px;
+    height: 20px;
+    background: var(--purple);
+    margin-left: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 10px;
+  color: var(--white);
+  }
+
+.about_store_slider {
+    margin-top: 46px;
+}
+
+.header_board {
+    border-radius: 10px;
+    width: 1380px;
+    height: 200px;
+    background: radial-gradient(544.32% 83.35% at 75.14% 62.23%, rgb(166, 169, 255) 0%, rgb(111, 115, 238) 100%);
+    margin: 0 auto;
+    background: linear-gradient(34deg, #6f73ee 0%, #6f73ee 100%);
+    margin-bottom: 100px;
+}
+
+.header_board_container {
+    height: 421px;
+    padding-top: 39px;
+    background: url("../images/young-woman-riding-electric.jpg") no-repeat top right;
+    border-radius: 5px;
+}
+
+.header_board-text {
+    line-height: 50px;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 35px;
+    padding-top: 40px;
+    text-transform: uppercase;
+    color: var(--white);
+    margin-bottom: 7px;
+}
+
+.testdrive_wrap {
+    margin-top: -105px;
+    margin-left: 490px;
+}
+
+.electricscooters_title {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 35px;
+    text-transform: uppercase;
+    color: var(--black);
+    margin-right: 280px;
+}
+
+.electricscooters_hits {
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+.electricscooters_hits_purpose li {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 12px;
+    border-radius: 5px;
+    padding: 12px 20px;
+    width: 109px;
+    height: 37px;
+    background: var(--bachground);
+    margin-right: 10px;
+
+}
+
+.electricscooters_hits_purpose li:nth-child(2) {
+    width: 103px;
+}
+
+.electricscooters_hits_purpose li:nth-child(3) {
+    width: 116px;
+}
+
+.electricscooters_hits_purpose li:last-child {
+    width: 96px;
+}
+
+.electricscooters_hits_purpose li a {
+    text-decoration: none;
+    text-align: center;
+    color: var(--gray-600);
+}
+
+.electricscooters_hits_purpose li a:hover {
+    color: var(--purple);
+    transform: scale(1.2);
+    text-decoration: none;
+    background: var(--white);
+}
+
+.electricscooters_hits_purpose li:hover {
+    background: var(--white);
+    border: 1.30px solid var(--purple);
+    padding: 12px;
+}
+
+.electricscooters_choice-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.electricscooters_choice_slider {
+    width: 255px;
+    height: 492px;
+    background: url("../images/scooter.jpg") no-repeat;
+    position: relative;
+    border: 1.50px solid var(--gray-200);
+    border-radius: 10px;
+}
+
+.electricscooters_choice_hits {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    margin: 0 10px;
+}
+
+.electricscooters_choice_hit {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 12px;
+    color: var(--white);
+    border-radius: 5px;
+    width: 41px;
+    height: 25px;
+    background: var(--oranges);
+    text-align: center;
+    padding-top: 7px;
+}
+
+.electricscooters_choice_new {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 12px;
+    text-align: center;
+    color: var(--white);
+    text-transform: none;
+    border-radius: 5px;
+    width: 63px;
+    height: 25px;
+    background: var(--green);
+    padding-top: 6px;
+}
+
+.electricscooters_choice_balanced {
+    border-radius: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    width: 35px;
+    height: 35px;
+}
+
+.electricscooters_choice .fa-scale-balanced {
+    color: var(--gray-600);
+    border-radius: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.2);
+    width: 30px;
+    height: 30px;
+    padding-top: 6px;
+    text-align: center;
+}
+
+.electricscooters_choice_arrows {
+    margin: 55px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.electricscooters_choice_arrows button {
+    border-radius: 100%;
+    background-color: var(--white);
+    width: 40px;
+    height: 40px;
+    border: none;
+    color: var(--purple);
+}
+
+.electricscooters_choice_arrows button:hover {
+    background: var(--purple);
+    color: var(--white);
+}
+
+
+.electricscooter_kirin_kogoo {
+    margin: 120px 0 30px 24px;
+}
+
+.electricscooter_kirin {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--black);
+
+}
+
+.electricscooter_kirin_characteristics {
+    margin: 20px 0 25px 0;
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--gray-600);
+
+}
+
+.accumulator {
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.accum {
+    display: flex;
+    align-items: center;
+    margin-right: 24px;
+}
+
+.accum img {
+    margin-right: 10px;
+}
+
+.fa-bolt-lightning {
+    margin-right: 10px;
+}
+
+.speed {
+    margin-right: 38px;
+}
+
+.speed img {
+    margin-right: 10px;
+}
+
+.speed-time {
+    display: flex;
+}
+
+.timer {
+    display: flex;
+    align-items: center;
+}
+
+.timer img {
+    margin-right: 10px;
+}
+
+.electricscooter_kirin_kogoo_price {
+    line-height: 120%;
+    margin-right: 26px;
+}
+
+.electricscooter_kirin_kogoo_price p:first-child {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 12px;
+    text-decoration: line-through;
+    color: var(--gray-600);
+}
+
+.electricscooter_kirin_kogoo_price p:last-child {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--black);
+}
+
+.electricscooter_kirin_kogoo_price-icons {
+    display: flex;
+    align-items: center;
+}
+
+.electricscooter_kirin_kogoo_icons {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.electricscooter_kirin_kogoo_icon-basket {
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--gray-200);
+    padding: 9px;
+    margin-right: 10px;
+}
+
+.electricscooter_kirin_kogoo_icon-heart {
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--gray-200);
+    padding: 11px;
+    color: var(--purple);
+}
+
+.electricscooters_choice_btn {
+    border: none;
+    background: var(--purple);
+    border-radius: 5px;
+    padding: 10px 20px;
+    width: 206px;
+    height: 37px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+    color: var(--white);
+    margin-top: 16px;
+    cursor: pointer;
+}
+
+.service_maintenance {
+    width: 540px;
+    height: 235px;
+    background: url("../images/servicemaintenance.jpg") no-repeat;
+    padding: 32px 0 33px 40px;
+}
+
+.service_maintenance p:nth-child(2) {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--black);
+    line-height: 25px;
+    margin-bottom: 22px;
+}
+
+.askQuestion {
+    background: var(--bachground);
+    border-radius: 5px;
+    width: 279px;
+    height: 91px;
+}
+
+.askQuestion {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.askQuestion_img {
+    margin: 10px;
+}
+
+.askQuestion_text p {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 12px;
+    color: var(--black);
+    line-height: 18px;
+    margin-bottom: 5px;
+}
+
+.askQuestion_text a {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 12px;
+    color: var(--purple);
+    text-decoration: none;
+}
+
+.popularCategories_cards {
+    display: flex;
+    margin-bottom: 30px;
+    justify-content: space-between;
+}
+
+.popularCategories_cards_techniques {
+    position: relative;
+}
+
+.popularCategories_cards-technique-item img {
+    border-radius: 10px;
+    width: 255px;
+    height: 255px;
+}
+
+.popularCategories_cards-technique-text {
+    border-radius: 10px;
+    width: 233px;
+    height: 68px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 0.2);
+    padding: 10px 0 33px 16px;
+    line-height: 150%;
+    position: absolute;
+    top: 175px;
+    left: 10px;
+}
+
+.types_equipment {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--white);
+}
+
+.types_equipment-rub {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--white);
+}
+
+.kogoo_russia {
+    border-radius: 10px;
+    width: 1380px;
+    height: 623px;
+    background: var(--bachground);
+    margin: 0 auto;
+    display: flex;
+    margin-bottom: 100px;
+}
+
+.kogoo_russia_img {
+    position: relative;
+}
+
+.kogoo_russia_img img {
+    border-radius: 10px;
+    width: 606px;
+    height: 565px;
+    margin: 29px;
+
+}
+
+.test_driveMoskva {
+    border-radius: 10px;
+    width: 233px;
+    height: 139px;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.2);
+    position: absolute;
+    top: 70%;
+    left: 55%;
+}
+
+.test_driveMoskva p {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--white);
+    padding: 17px 30px 0 21px;
+}
+
+.test_driveMoskva p:nth-child(2) {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 122%;
+    margin-bottom: 15px;
+}
+
+.test_driveMoskva_link {
+    border-radius: 10px;
+    width: 233px;
+    height: 42px;
+    backdrop-filter: blur(10px);
+    background: var(--purple);
+    padding: 11px 0 11px 22px;
+}
+
+.test_driveMoskva .test_driveMoskva_link a {
+    text-decoration: none;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--white);
+}
+
+.test_driveMoskva .test_driveMoskva_link i {
+    font-size: 14px;
+    color: var(--white);
+    margin-left: 100px;
+    text-align: center;
+}
+
+.kogoo_russia_testdrive_moskva {
+    margin: 58px 135px 58px 42px;
+}
+
+.kogoo_russia_testdrive_moskva-official {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 35px;
+    text-transform: uppercase;
+    color: var(--black);
+    margin-bottom: 18px;
+    line-height: 50px;
+}
+
+.kogoo_russia_testdrive_moskva-our_goal {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--black);
+    margin-bottom: 40px;
+    line-height: 25px;
+}
+
+.kogoo_russia_testdrive_moskva_brend {
+    border-radius: 10px;
+    width: 540px;
+    height: 204px;
+    background: var(--white);
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--black);
+    padding: 20px 0 21px 23px;
+}
+
+.kogoo_russia_testdrive_moskva_brend-list {
+    font-weight: 400;
+    margin: 13px 0;
+    line-height: 20px;
+}
+
+.kogoo_russia_testdrive_moskva_brend a {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 12px;
+    color: var(--purple);
+    text-decoration: none;
+}
+
+.kogoo_russia_testdrive_moskva_brend-list img {
+    margin-right: 10px;
+}
+
+.favorable_prices {
+    text-align: center;
+    line-height: 50px;
+    margin-bottom: 55px;
+}
+
+.favorable_prices h3 {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 35px;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--black);
+}
+
+
+.favorable_prices p {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--black);
+}
+
+.online_store_links {
+    text-align: center;
+    margin-bottom: 51px;
+}
+
+.online_store_links a {
+    text-decoration: none;
+    border: 1.30px solid var(--purple);
+    border-radius: 5px;
+    padding: 15px 25px;
+    width: 175px;
+    height: 53px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: var(--purple);
+}
+
+.online_store_links a:last-child {
+    color: var(--gray-600);
+    border-radius: 5px;
+    background: var(--bachground);
+    border: none;
+    margin-left: 20px;
+}
+
+.online_store {
+    margin-bottom: 30px;
+}
+
+.video_reviews {
+    position: relative;
+}
+
+.video_reviews_title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 100px;
+    margin-bottom: 17px;
+}
+
+.video_reviews_title h4 {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 35px;
+    text-transform: uppercase;
+    color: var(--black);
+}
+
+.video_reviews_link a {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--purple);
+    text-decoration: none;
+}
+
+.video_reviews_link a {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--purple);
+    text-decoration: none;
+}
+
+.video_reviews_link a .fa-arrow-right {
+    margin-left: 5px;
+}
+
+.video_reviews_text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--gray-600);
+    line-height: 170%;
+    margin-bottom: 49px;
+}
+
+.video_card button i {
+    text-align: center;
+    font-size: 30px;
+}
+
+#playButton:hover {
+    color: var(--white);
+    background-color: var(--purple);
+}
+
+.youtube-carousel {
+    position: relative;
+    height: 350px;
+}
+
+.youtube-carousel iframe {
+    border: none;
+}
+
+
+.youtube-carousel .item {
+    padding: 0 10px;
+    transition: transform 0.3s ease;
+    overflow: hidden;
+    /* Обрезаем содержимое за пределами блока */
+    border-radius: 10px;
+    /* Скругление углов */
+}
+
+.youtube-carousel .item iframe {
+    border-radius: 10px;
+    width: 350px;
+    /* убедитесь, что iframe заполняет всю ширину .item */
+    height: 197px;
+    /* опционально, можно установить фиксированную высоту */
+    border-radius: 10px;
+    transition: width 0.3s ease, height 0.3s ease;
+}
+
+.youtube-carousel .item:hover iframe {
+    border-radius: 10px;
+}
+
+.youtube-carousel .owl-item:hover .item iframe {
+    transform: scale(1.54);
+}
+
+.youtube-carousel .owl-item:hover .item {
+    z-index: 2;
+}
+
+.youtube-carousel_review {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--black);
+}
+
+.youtube-carousel_review-button {
+    color: var(--white);
+    border-radius: 100px;
+    border: none;
+    background-color: var(--purple);
+    width: 98px;
+    height: 98px;
+    position: absolute;
+    top: 40%;
+    left: 65%;
+    z-index: 5;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.new_articles_cards-card {
+    background: var(--bachground);
+    border-radius: 10px;
+    width: 350px;
+    height: 367px;
+    margin-right: 30px;
+}
+
+.new_articles {
+    position: relative;
+}
+
+.new_articles h4 {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 35px;
+    text-transform: uppercase;
+    color: var(--black);
+    margin-bottom: 60px;
+}
+
+.new_articles_cards-card_text {
+    margin: 20px 0 26px 20px;
+}
+
+.new_articles_cards-card_text p {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 119%;
+    color: var(--black);
+    margin-bottom: 11px;
+}
+
+.new_articles_cards-card_text p:nth-child(2) {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--black);
+    margin-bottom: 18px;
+}
+
+.new_articles_cards-card_form {
+    display: flex;
+    align-items: center;
+}
+
+.new_articles_cards-card_form form {
+    margin-right: 25px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 12px;
+    color: var(--gray-600);
+}
+
+.new_articles_cards-card_form input {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 12px;
+    color: var(--gray-600);
+    border: none;
+    background: var(--bachground);
+}
+
+.new_articles_cards-card_form-eye a {
+    text-decoration: none;
+    color: #5D6C7B;
+    font-size: 12px;
+}
+
+.new_articles_cards-card_form-eye span {
+    margin-left: 10px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 12px;
+    color: var(--gray-600);
+}
+
+.new_articles .next-button {
+    color: var(--white);
+    border-radius: 100px;
+    border: none;
+    background-color: var(--purple);
+    width: 98px;
+    height: 98px;
+    position: absolute;
+    top: 50%;
+    left: 63%;
+    z-index: 1;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.often_buy {
+    margin-top: 89px;
+}
+
+.often_buy h4 {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 35px;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--black);
+    margin-bottom: 60px;
+}
+
+.email {
+    width: 1440px;
+    height: 97px;
+    margin: 73px auto 0;
+    background: var(--purple);
+}
+
+.email_form {
+    display: flex;
+    padding: 24px 0 21px;
+    justify-content: space-between;
+}
+
+.email_form p {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: var(--white);
+    line-height: 30px;
+}
+
+.email_form_content {
+    display: flex;
+    align-items: center;
+}
+
+.email_form_content input {
+    border-radius: 5px;
+    padding: 15px 25px;
+    width: 410px;
+    height: 53px;
+    background: rgba(255, 255, 255, 0.2);
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--white);
+    border: none;
+    margin-right: 20px;
+}
+
+.email_form_content-btn {
+    background: var(--white);
+    border-radius: 5px;
+    padding: 15px 25px;
+    width: 140px;
+    height: 53px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: var(--purple);
+    border: none;
+}
+
+.footer {
+    background: var(--bachground);
+    width: 1440px;
+    height: 585px;
+    margin: 0 auto;
+}
+
+.footer_info_buyers {
+    display: flex;
+    margin-bottom: 36px;
+    border-bottom: 1px solid rgba(93, 108, 123, 0.15);
+    padding-top: 46px;
+}
+
+.catalog_buyers {
+    display: flex;
+    margin-right: 110px;
+}
+
+.catalog_item h6 {
+    margin-bottom: 17px;
+}
+
+.catalog_item {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--black);
+}
+
+.catalog_item:nth-child(1) {
+    width: 130px;
+    margin-right: 120px;
+}
+
+.catalog_item li {
+    padding: 5px 0;
+}
+
+.catalog_item_buyers {
+    display: flex;
+    justify-content: space-between;
+    width: 254px;
+}
+
+.catalog_item_list a {
+    text-decoration: none;
+    color: var(--gray-600);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.catalog_item_list-special a {
+    font-weight: 400;
+    font-size: 14px;
+    text-decoration: none;
+    color: var(--gray-600);
+}
+
+.footer_contacts_call_centers {
+    display: flex;
+    margin-bottom: 28px;
+}
+
+.call_center_titles_links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--black);
+    margin-bottom: 17px;
+}
+
+.call_center_titles_links a {
+    text-decoration: none;
+    font-size: 12px;
+    color: var(--purple);
+}
+
+.footer_contacts_call_shops {
+    display: flex;
+    margin-bottom: 49px;
+}
+
+.call_center {
+    margin-right: 40px;
+}
+
+.call_center p {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 12px;
+    color: var(--black);
+    padding: 2.5px 0;
+}
+
+.call_center p:nth-child(2) {
+    font-weight: 500;
+    font-size: 16px;
+    padding: 3.5px 0;
+}
+
+.call_center p:nth-child(3) {
+    color: var(--gray-600);
+}
+
+.shop {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 129%;
+    color: var(--black);
+    margin-right: 50px;
+}
+
+.shop p:nth-child(2) {
+    font-size: 12px;
+    color: var(--gray-600);
+    margin-top: 8px;
+}
+
+.shop:nth-child(3) {
+    margin-right: 0;
+}
+
+.footer_logotips {
+    display: flex;
+    padding-bottom: 34px;
+    border-bottom: 1px solid rgba(93, 108, 123, 0.15);
+    justify-content: space-between;
+}
+
+.footer_logotips a {
+    cursor: pointer;
+}
+
+.footer_logo {
+    display: flex;
+    align-items: center;
+}
+
+.footer_logo_kugoo {
+    margin-right: 59px;
+}
+
+.footer_logo_kugoo a {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: var(--black);
+    text-decoration: none;
+}
+
+.mobile_applications img:nth-child(1) {
+    margin-right: 10px;
+}
+
+.social_network a {
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.social_network_link-special {
+    margin: 0;
+}
+
+.footer_payment {
+    display: flex;
+}
+
+.footer_requisites {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 19px;
+}
+
+.footer_requisites_link {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_requisites_link-spec {
+    margin-right: 44px;
+}
+
+.footer_requisites_link a {
+    text-decoration: none;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 12px;
+    color: var(--gray-600);
+}
+
+.footer_requisites_payment-method {
+    display: flex;
+    width: 268px;
+}
+
+.footer_payment-online_chat {
+    display: flex;
+    align-items: center;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--black);
+}
+
+.chat_online {
+    margin-right: 15px;
+}
+
+.chats a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+.viber {
+    margin-right: 14px;
+}
+
+.skype {
+    margin-right: 14px;
+}
+
+.viber:hover {
+    color: var(--purple);
+}
+
+.skype:hover {
+    color: var(--green);
+}
+
+.telegram:hover {
+    color: rgb(33, 203, 255);
+}
