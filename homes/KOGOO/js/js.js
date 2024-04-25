@@ -226,7 +226,7 @@ $(document).ready(function() {
     $("#uniqueCarousel").owlCarousel({
         items: 1,
         loop: true,
-        autoplay: false,
+        autoplay: true,
         autoplayTimeout: 5000, // Интервал смены слайдов
         autoplayHoverPause: true,
         animateOut: 'fadeOut', // Эффект исчезновения

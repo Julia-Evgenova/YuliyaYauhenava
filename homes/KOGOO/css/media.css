@@ -4,205 +4,620 @@
 
 @media (max-width: 1024px) {
     /* Стили для планшетов */
+    .header_board {
+        width: 100%;
+        width: calc(100% - 30px);
+    }
+
+    .electricscooters_choice_slider:nth-last-child(3) {
+        display: none;
+    }
+
+    .selection {
+        display: none;
+    }
+
+    .freeShipping_electricscooters {
+        width: 100%;
+    }
+
+    .freeShipping_electricscooters_text {
+        margin-left: 570px;
+        padding-top: 20px;
+    }
+
+    .popularCategories_cards_techniques:nth-child(4) {
+display: none;
+    }
+
+    .see_everything {
+        margin-bottom: 50px;
+    }
+
+    .kogoo_russia {
+        display: none;
+    }
+
+    .video_card {
+        width: 100%;
+        height: 470px;
+    }
+
+    .answer_questions {
+        margin-top: 50px;
+    }
+
+    .email_form {
+        flex-direction: column;
+    }
+
+    .footer_info_buyers {
+        flex-direction: column;
+    }
+
+    .call_center_titles_links h6 {
+        margin-top: 15px;
+    }
+
+    .call_center_titles_links {
+        display: block;
+    }
+
+    .footer_contacts_call_shops {
+        flex-direction: column;
+    }
+
+    .footer_logotips {
+        flex-direction: column;
+    }
+
+    .social_network {
+        margin-top: 15px;
+    }
+
+    .footer_requisites {
+        flex-direction: column;
+    }
+
+    .footer_requisites_link {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 10px;
+    }
+
+    .footer_requisites_link-spec {
+        margin-right: 0;
+    }
+
+    .footer_requisites_payment-method {
+        display: none;
+    }
+
+    .testdrive_wrap {
+        display: none;
+    }
+
+    .line_wrap {
+        display: none;
+    }
+
+    .header_searc form {
+        width: auto;
+    }
+
+    .about_store_link_info li a {
+        margin-left: 25px;
+    }
+
+    .header_icons i:nth-child(1) {
+        display: none;
+    }
+
+    .header_icons i:nth-child(2) {
+        margin-right: 5px;
+    }
+
+    .header_icons {
+        margin-left: 10px;
+    }
+
+    .about_store {
+        width: 100%;
+    }
+
 }
+
 
 @media (max-width: 768px) {
+
     /* Стили для мобильных устройств в портретной ориентации */
+    .header_icons {
+        margin-left: 95px;
+    }
 
-   
-.garant {
-    display: none;
-}
-.header {
-    width: 100%;
+    .about_store_link_info li:nth-child(2) {
+        display: none;
+    }
+
+    .contacts {
+        justify-content: space-around;
+    }
+
+    .header_icons i:nth-child(1) {
+        display: none;
+    }
+
+    .dropdown {
+        display: none;
+    }
+    
+    .garant {
+        display: none;
+    }
+
+    .header {
+        width: 100%;
+    }
+
+    .header_searc_scooter {
+        width: auto;
+    }
+
+    .header_searc form {
+        width: auto;
+    }
+
+    .about_store {
+        width: 100%;
+    }
+
+    .header_board {
+        width: 100%;
+    }
+
+    .header_board_container {
+        background: url(../images/velo-back.png) no-repeat 350px 65px;
+        background-size: contain;
+        padding-top: 15px;
+        height: 420px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .header_board_container_content {
+        height: 100%;
+        padding: 25px 40px;
+    }
+
+    .free_btn {
+        margin-left: 0;
+    }
+
+    .testdrive_wrap {
+        margin-top: -26px;
+        margin-left: 0px;
+    }
+
+    .line_wrap {
+        display: none;
+    }
+
+    .electricscooters_hits {
+        display: block;
+        text-align: center;
+    }
+
+    .electricscooters_hits_purpose {
+        margin-top: 20px;
+        margin-left: 60px;
+    }
+
+    .electricscooters_choice_slider:nth-last-child(4) {
+        display: none;
+    }
+
+    .electricscooters_choice_slider:nth-last-child(3) {
+        display: none;
+    }
+
+    .electricscooters_choice-wrap {
+        justify-content: space-evenly;
+    }
+
+    .electricscooters_choice:nth-child(3) {
+        display: none;
+    }
+
+    .freeShipping_electricscooters {
+        display: none;
+    }
+
+    .selection {
+        display: none;
+    }
+
+    .kogoo_russia {
+        display: none;
+    }
+
+    .popularCategories_cards {
+        display: none;
+    }
+
+    .see_everything {
+        display: none;
+    }
+
+    .manager {
+        display: inline-block;
+        margin-top: 0;
+        margin-left: 250px;
+        margin-bottom: 45px;
+    }
+
+    .order_options {
+        display: none;
+    }
+
+    .manager h3 {
+        display: none;
+    }
+
+    .video_card {
+        width: 700px;
+        height: 350px;
+    }
+
+    #playButton {
+        top: 35%;
+        left: 40%
+    }
+
+    .favorable_prices {
+        display: none;
+    }
+
+    .no-js .owl-carousel, .owl-carousel.owl-loaded {
+        display: none;
+    }
+
+    #uniqueCarousel {
+        display: block;
+    }
+
+    .video_reviews {
+        display: none;
+    }
+
+    .new_articles {
+        display: none;
+    }
+
+    .answer_questions {
+        display: none;
+    }
+
+    .email {
+        width: 100%;
+        padding-left: 30px;
+    }
+
+    .footer {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .footer_contacts_call_shops {
+        flex-direction: column;
+    }
+
+    .footer_info_buyers {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .call_center_titles {
+        margin-top: 20px;
+    }
+
+    .footer_logo {
+        display: none;
+    }
+
+    .footer_logotips {
+        flex-direction: column;
+    }
+
+    .footer_payment {
+        display: none;
+    }
+
+    .social_network {
+        padding-top: 0;
+    }
+
+    .call_center_titles_links {
+        display: block;
+    }
+
+    .call_center_titles_links h6 {
+        margin-bottom: 10px;
+    }
+
+    .email_form_content-btn {
+        margin-top: 10px;
+    }
+
+    .new_articles {
+        display: none;
+    }
+
 }
 
-.header_searc_scooter {
-    width: auto;
+@media (max-width: 600px) {
+    .about_store {
+        display: none;
+    }
+
+    .header_icons {
+        display: none;
+    }
+
+    .manager {
+        margin-left: 0;
+    }
+
+    .video_card {
+        width: 100%;
+        height: 400px;
+    }
 }
 
-.header_searc form {
-    width: auto;
-}
+@media (max-width: 576px) {
 
+    /* Стили для мобильных устройств в портретной ориентации */
+    .header_icons {
+        margin-left: 8px;
+    }
 
-.about_store {
-    width: 100%;
-}
+    .header_icons i:nth-child(2) {
+        display: none;
+    }
 
-.header_board {
-    width: 100%;
-}
-.header_board_container {
-    background: url(../images/velo-back.png) no-repeat 350px 65px;
-    background-size: contain;
-    padding-top: 15px;
-    height: 420px;
-    width: 100%;
-    box-sizing: border-box;
-}
+    .about_store_back { 
+        display: none;
+    }
 
-.header_board_container_content {
-    height: 100%;
-    padding: 25px 40px;
-}
+    .about_store_link_info li:nth-child(2) {
+        display: none;
+    }
 
-.free_btn {
-    margin-left: 0;
-}
+    .about_store_link_info li:nth-child(3) {
+        display: none;
+    }
 
-.testdrive_wrap {
-    margin-top: -26px;
-    margin-left: 0px;
-}
+    .contacts {
+        justify-content: space-around;
+    }
 
-.line_wrap {
-    display: none;
-}
+    .header_icons i:nth-child(1) {
+        display: none;
+    }
 
-.electricscooters_hits {
-    display: block;
-    text-align: center;
-}
+    .dropdown {
+        display: none;
+    }
+    
+    .garant {
+        display: none;
+    }
 
-.electricscooters_hits_purpose {
-    margin-top: 20px;
-    margin-left: 60px;
-}
+    .header {
+        width: 100%;
+    }
 
-.electricscooters_choice_slider:nth-last-child(4) {
-    display: none;
-}
+    .header_searc_scooter {
+        width: auto;
+    }
 
-.electricscooters_choice_slider:nth-last-child(3) {
-    display: none;
-}
+    .header_searc form {
+        width: auto;
+    }
 
-.electricscooters_choice-wrap {
-    justify-content: space-evenly;
-}
+    .about_store {
+        width: 100%;
+    }
 
-.electricscooters_choice:nth-child(3) {
-display: none;
-}
+    .header_board {
+        width: 100%;
+    }
 
-.freeShipping_electricscooters {
-    display: none;
-}
+    .header_board_container {
+        background: url(../images/velo-back.png) no-repeat 350px 65px;
+        background-size: contain;
+        padding-top: 15px;
+        height: 420px;
+        width: 100%;
+        box-sizing: border-box;
+    }
 
-.selection {
-    display: none;
-}
+    .header_board_container_content {
+        height: 100%;
+        padding: 25px 40px;
+    }
 
-.kogoo_russia {
-    display: none;
-}
+    .free_btn {
+        margin-left: 0;
+    }
 
-.popularCategories_cards {
-    display: none;
-}
+    .testdrive_wrap {
+        margin-top: -26px;
+        margin-left: 0px;
+    }
 
-.see_everything {
-display: none;
-}
+    .line_wrap {
+        display: none;
+    }
 
-.manager {
-    display: inline-block;
-    margin-top: 0;
-    margin-left: 250px;
-    margin-bottom: 45px;
-}
+    .electricscooters_hits {
+        display: block;
+        text-align: center;
+    }
 
-.order_options {
-    display: none;
-}
+    .electricscooters_hits_purpose {
+        margin-top: 20px;
+        margin-left: 60px;
+    }
 
-.manager h3 {
-    display: none;
-}
+    .electricscooters_choice_slider:nth-last-child(4) {
+        display: none;
+    }
 
-.video_card {
-    width: 700px;
-    height: 350px;
-}
+    .electricscooters_choice_slider:nth-last-child(3) {
+        display: none;
+    }
 
-#playButton {
-    top: 35%;
-    left: 40%
-}
+    .electricscooters_choice-wrap {
+        justify-content: space-evenly;
+    }
 
- .favorable_prices {
-    display: none;
-}
+    .electricscooters_choice:nth-child(3) {
+        display: none;
+    }
 
-.no-js .owl-carousel .my-unique-carousel .owl-loaded .owl-drag .no-js .owl-carousel, .owl-carousel.owl-loaded {
-    display: none;
-}
+    .freeShipping_electricscooters {
+        display: none;
+    }
 
-.video_reviews {
-    display: none;
-}
+    .selection {
+        display: none;
+    }
 
-.new_articles {
-    display: none;
-}
-.answer_questions {
-    display: none;
-}
-.email {
-    width: 100%;
-    padding-left: 30px;
-}
+    .kogoo_russia {
+        display: none;
+    }
 
-.footer {
-    width: 100%;
-}
+    .popularCategories_cards {
+        display: none;
+    }
 
-.footer_info_buyers {
-    display: none;
-}
+    .see_everything {
+        display: none;
+    }
 
-.footer_logo {
-    display: none;
-}
+    .manager {
+        margin-left: 140px;
+      margin-bottom: 0;
+    }
 
-.footer_payment {
-    display: none;
-}
+    .order_options {
+        display: none;
+    }
 
-.social_network {
-    padding-top: 25px;
-    text-align: center;
-}
+    .manager h3 {
+        display: none;
+    }
 
-.footer {
-    width: 100%;
-}
+    .video_card {
+      display: none;
+    }
 
-.footer_info_buyers {
-    display: none;
-}
+    #playButton {
+        top: 35%;
+        left: 40%
+    }
 
-.footer_logo {
-    display: none;
-}
+    .favorable_prices {
+        display: none;
+    }
 
-.footer_payment {
-    display: none;
-}
+    .no-js .owl-carousel, .owl-carousel.owl-loaded {
+        display: none;
+    }
 
-.social_network {
-    padding-top: 25px;
-    text-align: center;
-}
+    #uniqueCarousel {
+        display: block;
+    }
 
-.email_form_content-btn {
-    margin-top: 10px;
-}
+    .video_reviews {
+        display: none;
+    }
+
+    .new_articles {
+        display: none;
+    }
+
+    .answer_questions {
+        display: none;
+    }
+
+    .email {
+        width: 100%;
+        padding-left: 30px;
+    }
+
+    .footer {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .footer_contacts_call_shops {
+        flex-direction: column;
+    }
+
+    .footer_info_buyers {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .call_center_titles {
+        margin-top: 20px;
+    }
+
+    .footer_logo {
+        display: none;
+    }
+
+    .footer_logotips {
+        flex-direction: column;
+    }
+
+    .footer_payment {
+        display: none;
+    }
+
+    .social_network {
+        padding-top: 0;
+    }
+
+    .call_center_titles_links {
+        display: block;
+    }
+
+    .call_center_titles_links h6 {
+        margin-bottom: 10px;
+    }
+
+    .email_form_content-btn {
+        margin-top: 10px;
+    }
+
+    .email_form {
+        flex-direction: column;
+    }
+
+    .new_articles {
+        display: none;
+    }
+
+    .online_store {
+        display: none;
+    }
 
 }
 
 @media (max-width: 480px) {
+
     /* Стили для мобильных устройств в альбомной ориентации */
     .container {
         max-width: 1100px;
@@ -366,7 +781,7 @@ display: none;
         /* Точное центрирование */
         width: 100%;
         display: flex;
-        justify-content: center;  
+        justify-content: center;
     }
 
     #uniqueCarousel .owl-dot {
@@ -517,26 +932,6 @@ display: none;
         display: none;
     }
 
-    .social_network {
-        padding-top: 25px;
-        text-align: center;
-    }
-
-    .social_network a {
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    .social_network a img:nth-child(1) {
-        margin-bottom: 10px;
-        margin-right: 10px;
-    }
-
-    .social_network a img:nth-child(2) {
-        margin-bottom: 10px;
-        margin-right: 10px;
-    }
-
     .footer_logotips {
         padding-bottom: 14px;
     }
@@ -557,9 +952,11 @@ display: none;
 
     .header_board_container {
         background: url("../images/velo-back.png") no-repeat 205px bottom;
-        background-size: 160px 120px; /* Четко определите размеры изображения */
+        background-size: 160px 120px;
+        /* Четко определите размеры изображения */
         padding-top: 15px;
-        height: 125px; /* Явно задайте высоту */
+        height: 125px;
+        /* Явно задайте высоту */
         width: 100%;
         box-sizing: border-box;
     }
@@ -569,15 +966,37 @@ display: none;
         width: calc(100% - 30px);
         height: auto;
         margin: 0 auto;
-        overflow: visible; 
+        overflow: visible;
     }
 
     .header_board_container_content {
         padding: 0;
     }
+
+    .social_network {
+        padding-top: 25px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .social_network a {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .social_network a img:nth-child(1) {
+        margin-bottom: 10px;
+        margin-right: 10px;
+    }
+
+    .social_network a img:nth-child(2) {
+        margin-bottom: 10px;
+        margin-right: 10px;
+    }
 }
 
 @media (max-width: 320px) {
+
     /* Стили для мобильных устройств в альбомной ориентации */
     .container {
         max-width: 1100px;
@@ -627,19 +1046,19 @@ display: none;
     }
 
     .about_store {
-        display: none;
+        flex-direction: column;
     }
 
     .about_store_back {
-        display: block;
+        flex-direction: column;
     }
 
     .about_store_link {
-        display: block;
+        flex-direction: column;
     }
 
     .about_store_link_info {
-        display: block;
+        flex-direction: column;
     }
 
     .btn_catalog {
@@ -665,7 +1084,7 @@ display: none;
         background: var(--bachground);
         border-radius: 10px;
         margin-bottom: 20px;
-       width: 100%;
+        width: 100%;
     }
 
     .dropbtn {
@@ -735,7 +1154,7 @@ display: none;
         /* Точное центрирование */
         width: 100%;
         display: flex;
-        justify-content: center;  
+        justify-content: center;
     }
 
     #uniqueCarousel .owl-dot {
@@ -889,6 +1308,7 @@ display: none;
     .social_network {
         padding-top: 25px;
         text-align: center;
+        width: 275px;
     }
 
     .social_network a {
@@ -926,9 +1346,11 @@ display: none;
 
     .header_board_container {
         background: url("../images/velo-back.png") no-repeat 205px bottom;
-        background-size: 160px 120px; /* Четко определите размеры изображения */
+        background-size: 160px 120px;
+        /* Четко определите размеры изображения */
         padding-top: 15px;
-        height: 125px; /* Явно задайте высоту */
+        height: 125px;
+        /* Явно задайте высоту */
         width: 100%;
         box-sizing: border-box;
     }
@@ -938,7 +1360,7 @@ display: none;
         width: calc(100% - 30px);
         height: auto;
         margin: 0 auto;
-        overflow: visible; 
+        overflow: visible;
     }
 
     .header_searc form {

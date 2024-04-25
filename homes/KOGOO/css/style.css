@@ -308,44 +308,6 @@ button {
   font-size: 12px;
 }
 
-/*
-.dropdown-content {
-  min-width: 117px;
-  background: var(--bachground);
-  border-radius: 5px;
-  height: 67px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  opacity: 0;
-  padding-top: 1px;
-  z-index: 1;
-  line-height: 30px;
-  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease, transition-delay 0.1s;
-}
-
-.header_dropdown:hover .dropdown-content {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translate(0);
-  transition-delay: 0.1s;
-}
-
-.dropdown-content:hover {
-  display: block;
-}
-
-.dropdown-content a {
-  font-family: var(--font-family);
-  font-weight: 400;
-  font-size: 14px;
-  color: var(--black);
-  text-decoration: none;
-  padding: 9px 44px 38px 14px;
-}
-
-.dropdown-content a:hover {
-  color: var(--purple);
-}*/
-
 .header_searc form {
     display: flex;
     align-items: center;
@@ -416,7 +378,6 @@ button {
   font-weight: 500;
   font-size: 14px;
   color: var(--black);
-
 }
 
 .header_basket_list {
@@ -508,7 +469,6 @@ button {
   font-size: 10px;
 color: var(--white);
 }
-
  /*  
 .about_store_slider {
   margin-top: 10px;
@@ -519,10 +479,8 @@ color: var(--white);
   width: 155px;
 }
 */
-
 .slider:focus {
   outline: none;
- 
 }
 
 .about_store_slider input {
@@ -565,6 +523,7 @@ color: var(--white);
   font-size: 12px;
   cursor: pointer;
 }
+
 
 .slider {
   -webkit-appearance: none;
@@ -672,10 +631,11 @@ color: var(--white);
 
 .header_board {
   border-radius: 10px;
-  width: 1380px;
   height: 421px;
   background: radial-gradient(544.32% 83.35% at 75.14% 62.23%, rgb(166, 169, 255) 0%, rgb(111, 115, 238) 100%);
   margin: 0 auto;
+  width: 1380px;
+  width: calc(1380px - 30px);
 }
 
 .header_board_container {
