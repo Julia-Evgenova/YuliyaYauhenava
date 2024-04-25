@@ -553,7 +553,7 @@ display: none;
 
     .email {
         width: 100%;
-        padding-left: 30px;
+        padding-left: 0;
     }
 
     .footer {
@@ -908,6 +908,8 @@ display: none;
     }
 
     .email_form_content input {
+        margin-right: 0;
+        max-width: 100%;
         width: 100%;
     }
 
@@ -1256,7 +1258,7 @@ display: none;
 
     .email {
         width: 320px;
-        width: calc(100%);
+        width: 100%;
     }
 
     .email_form {

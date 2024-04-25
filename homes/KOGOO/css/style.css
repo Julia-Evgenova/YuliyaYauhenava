@@ -3,6 +3,11 @@
   font-size: 100%;
 }
 
+body  {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 :root {
   --font-family: "Jost", sans-serif;
   --second-family: "Roboto", sans-serif;
