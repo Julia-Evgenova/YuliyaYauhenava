@@ -1,9 +1,136 @@
 @media (max-width: 1290px) {
+
     /* Стили для экранов с максимальной шириной 1440px */
+    .header_board {
+        max-width: 100%;
+        width: calc(100% - 30px);
+    }
+
+    .kogoo_russia_testdrive_moskva-our_goal {
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+
+    .electricscooters_hits {
+        flex-direction: column;
+    }
+
+    .electricscooters_title {
+        margin-bottom: 20px;
+    }
+
+    .freeShipping_electricscooters {
+        width: 100%;
+    }
+
+    .email {
+        width: 100%;
+    }
+
+    .kogoo_russia {
+        max-width: 100%;
+        width: calc(100% - 30px);
+    }
+
+    .kogoo_russia_testdrive_moskva {
+        max-width: 100%;
+        width: calc(100% - 30px);
+        margin: 58px 10px 0 0;
+    }
+
+    .kogoo_russia_testdrive_moskva_brend {
+        padding: 20px 0;
+    }
+
+    .footer {
+        width: 100%;
+    }
+
+    .video_card {
+        max-width: 100%;
+    }
+
+    .freeShipping_electricscooters_text {
+        margin-left: 600px;
+    }
+
+    .kogoo_russia_testdrive_moskva-official {
+        font-size: 30px;
+    }
+
+    .kogoo_russia_testdrive_moskva_brend {
+        font-size: 12px;
+        padding-left: 10px;
+    }
+
+    .about_store {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .background1 .header_board_container_content {
+        padding: 0 20px;
+    }
+
+    .background2 .header_board_container_content {
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 1080px) {
+    .header_searc form {
+        width: 100%;
+    }
+
+    .header_icons {
+        margin-left: 0;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .background1 .header_board_container_content {
+        padding: 0 20px;
+    }
+
+    .background2 .header_board_container_content {
+        padding: 0 20px;
+    }
+
+    .kogoo_russia_testdrive_moskva-official {
+        font-size: 30px;
+    }
 }
 
 @media (max-width: 1024px) {
+
     /* Стили для планшетов */
+    .email_form {
+        padding-left: 20px;
+    }
+
+    .kogoo_russia_testdrive_moskva-our_goal {
+        margin-bottom: 0;
+        font-size: 14px;
+    }
+
+    .footer_info_buyers {
+        padding-left: 20px;
+    }
+
+    .electricscooters_choice-wrap {
+        padding-left: 20px;
+    }
+
+    .footer_logotips {
+        padding-left: 20px;
+    }
+
+    .kogoo_russia_testdrive_moskva-official {
+        font-size: 28px;
+    }
+
     .header_board {
         width: 100%;
         width: calc(100% - 30px);
@@ -19,15 +146,17 @@
 
     .freeShipping_electricscooters {
         width: 100%;
+        display: flex;
+        justify-content: space-between;
     }
 
     .freeShipping_electricscooters_text {
-        margin-left: 570px;
+        margin-left: 270px;
         padding-top: 20px;
     }
 
     .popularCategories_cards_techniques:nth-child(4) {
-display: none;
+        display: none;
     }
 
     .see_everything {
@@ -75,8 +204,22 @@ display: none;
         margin-top: 15px;
     }
 
-    .footer_requisites {
-        flex-direction: column;
+    .footer_requisites_link {
+        padding-left: 20px;
+    }
+
+    .footer_payment-online_chat {
+        padding-right: 20px;
+    }
+
+    .new_articles {
+        max-width: 100%;
+        width: calc(100% - 10px);
+    }
+
+    .popularCategories_cards {
+        max-width: 100%;
+        width: calc(100% - 20px);
     }
 
     .footer_requisites_link {
@@ -125,10 +268,54 @@ display: none;
         width: 100%;
     }
 
+    .item .background1 .header_board_container_content {
+        padding: 0 20px;
+    }
+
+    .item .background2 .header_board_container_content {
+        padding: 0 20px;
+    }
+
 }
 
+@media (max-width: 960px) {
+    .kogoo_russia_testdrive_moskva-our_goal {
+        font-size: 14px;
+        margin-bottom: 0;
+    }
 
-@media (max-width: 768px) {
+    .about_store {
+        width: 100%;
+    }
+
+    .background1 .header_board_container_content {
+        padding: 0 20px;
+    }
+
+    .background2 .header_board_container_content {
+        padding: 0 20px;
+    }
+
+    .dropdown {
+        display: none;
+    }
+
+    .header_searc_scooter {
+        width: auto;
+    }
+
+    .yandex_revies {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .nav_menu,
+    .fa-bars {
+        display: block;
+        /* Показываем меню и иконку бара на мобильных */
+    }
 
     /* Стили для мобильных устройств в портретной ориентации */
     .header_icons {
@@ -150,7 +337,7 @@ display: none;
     .dropdown {
         display: none;
     }
-    
+
     .garant {
         display: none;
     }
@@ -277,7 +464,8 @@ display: none;
         display: none;
     }
 
-    .no-js .owl-carousel, .owl-carousel.owl-loaded {
+    .no-js .owl-carousel,
+    .owl-carousel.owl-loaded {
         display: none;
     }
 
@@ -354,6 +542,15 @@ display: none;
 
 }
 
+@media (min-width: 768px) {
+
+    .fa-bars,
+    .fa-x {
+        display: none;
+        /* Скрываем иконки бара и закрытия на десктопах */
+    }
+}
+
 @media (max-width: 600px) {
     .about_store {
         display: none;
@@ -374,6 +571,9 @@ display: none;
 }
 
 @media (max-width: 576px) {
+    .menu_end {
+        display: flex;
+    }
 
     /* Стили для мобильных устройств в портретной ориентации */
     .header_icons {
@@ -384,7 +584,7 @@ display: none;
         display: none;
     }
 
-    .about_store_back { 
+    .about_store_back {
         display: none;
     }
 
@@ -407,7 +607,7 @@ display: none;
     .dropdown {
         display: none;
     }
-    
+
     .garant {
         display: none;
     }
@@ -507,7 +707,7 @@ display: none;
 
     .manager {
         margin-left: 140px;
-      margin-bottom: 0;
+        margin-bottom: 0;
     }
 
     .order_options {
@@ -519,7 +719,7 @@ display: none;
     }
 
     .video_card {
-      display: none;
+        display: none;
     }
 
     #playButton {
@@ -531,7 +731,8 @@ display: none;
         display: none;
     }
 
-    .no-js .owl-carousel, .owl-carousel.owl-loaded {
+    .no-js .owl-carousel,
+    .owl-carousel.owl-loaded {
         display: none;
     }
 
@@ -614,11 +815,19 @@ display: none;
         display: none;
     }
 
+    .nav_menu {
+        display: block;
+    }
+
 }
 
 @media (max-width: 480px) {
 
     /* Стили для мобильных устройств в альбомной ориентации */
+    .menu_end {
+        display: flex;
+    }
+
     .container {
         max-width: 1100px;
         width: calc(100% - 30px);
@@ -637,10 +846,9 @@ display: none;
     }
 
     .header .container {
-        display: flex;
+        display: block;
         margin-bottom: 0;
-        flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
     }
 
     .header_icons {
@@ -664,24 +872,96 @@ display: none;
     }
 
     .header_logo {
+        display: none;
         width: 70px;
         margin-bottom: 17px;
     }
 
     .about_store {
         display: none;
+        align-items: center;
+        position: relative;
+        flex-direction: column;
+        background-color: white;
+        width: 100%;
+        z-index: 11;
+        height: 100vh;
     }
 
     .about_store_back {
-        display: block;
+        flex-direction: column;
     }
 
     .about_store_link {
-        display: block;
+        flex-direction: column;
+        text-align: center;
+        background-color: white;
     }
 
     .about_store_link_info {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+
+    .about_store_link_info_links {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: white;
+    }
+
+    .about_store_link li:first-child {
+        margin-right: 0;
+        margin-bottom: 20px;
+        margin-top: 35px;
+        border-bottom: 1px solid gray;
+        padding-bottom: 20px;
+    }
+
+    .about_store_link li:nth-child(3) {
+        margin-bottom: 20px;
+        border-bottom: 1px solid gray;
+        padding-bottom: 20px;
+        margin-top: 5px;
+    }
+
+    .about_store_link .about_store_link_installment {
+        margin-left: 0;
+    }
+
+    .about_store_link_info li:nth-child(1) {
+        margin-bottom: 20px;
+        border-bottom: 1px solid gray;
+        padding-bottom: 20px;
+    }
+
+    .about_store_link_info li a {
+        margin-left: 0;
+    }
+
+    .about_store_link_info li:nth-child(2) {
         display: block;
+        margin-bottom: 20px;
+        border-bottom: 1px solid gray;
+        padding-bottom: 20px;
+    }
+
+    .about_store_link_info li:nth-child(3) {
+        display: block;
+        margin-bottom: 20px;
+        border-bottom: 1px solid gray;
+        padding-bottom: 20px;
+    }
+
+    .about_store_link_info li:nth-child(5) {
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+    }
+
+    .about_store_percent {
+        margin-top: 5px;
+        margin-left: 0;
     }
 
     .btn_catalog {
@@ -934,6 +1214,10 @@ display: none;
         display: none;
     }
 
+    .footer_payment-online_chat {
+        margin-left: 30%;
+    }
+
     .footer_logotips {
         padding-bottom: 14px;
     }
@@ -995,11 +1279,26 @@ display: none;
         margin-bottom: 10px;
         margin-right: 10px;
     }
+
+    .service {
+        margin-top: 27px;
+        display: flex;
+        margin-bottom: 15px;
+        justify-content: space-between;
+    }
+
+    .nav_menu {
+        display: block;
+    }
 }
 
 @media (max-width: 320px) {
 
     /* Стили для мобильных устройств в альбомной ориентации */
+    .menu_end {
+        display: flex;
+    }
+
     .container {
         max-width: 1100px;
         width: calc(100% - 30px);
@@ -1018,10 +1317,9 @@ display: none;
     }
 
     .header .container {
-        display: flex;
+        display: block;
         margin-bottom: 0;
-        flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
     }
 
     .header_icons {
@@ -1047,8 +1345,19 @@ display: none;
         margin-bottom: 17px;
     }
 
+    .nav_menu_logo {
+        margin-bottom: 17px;
+    }
+
     .about_store {
+        display: none;
+        align-items: center;
+        position: relative;
         flex-direction: column;
+        background-color: white;
+        width: 100%;
+        z-index: 11;
+        height: 100vh;
     }
 
     .about_store_back {
@@ -1057,11 +1366,85 @@ display: none;
 
     .about_store_link {
         flex-direction: column;
+        text-align: center;
+        background-color: white;
     }
 
     .about_store_link_info {
         flex-direction: column;
+        text-align: center;
+        width: 100%;
     }
+
+    .about_store_link_info_links {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: white;
+    }
+
+    .about_store_link li:first-child {
+        margin-right: 0;
+        margin-bottom: 20px;
+        margin-top: 35px;
+        border-bottom: 1px solid gray;
+        padding-bottom: 20px;
+    }
+
+    .about_store_link li:nth-child(3) {
+        margin-bottom: 20px;
+        border-bottom: 1px solid gray;
+        padding-bottom: 20px;
+        margin-top: 5px;
+    }
+
+    .about_store_link .about_store_link_installment {
+        margin-left: 0;
+    }
+
+    .about_store_link_info li:nth-child(1) {
+        margin-bottom: 20px;
+        border-bottom: 1px solid gray;
+        padding-bottom: 20px;
+    }
+
+    .about_store_link_info li a {
+        margin-left: 0;
+    }
+
+    .about_store_link_info li:nth-child(2) {
+        display: block;
+        margin-bottom: 20px;
+        border-bottom: 1px solid gray;
+        padding-bottom: 20px;
+    }
+
+    .about_store_link_info li:nth-child(3) {
+        display: block;
+        margin-bottom: 20px;
+        border-bottom: 1px solid gray;
+        padding-bottom: 20px;
+    }
+
+    .about_store_link_info li:nth-child(5) {
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+    }
+
+    .about_store_percent {
+        margin-top: 5px;
+        margin-left: 0;
+    }
+
+    .contacts {
+        display: none;
+    }
+
+    .cooperation {
+        display: none;
+        width: 100%;
+    }
+
 
     .btn_catalog {
         display: none;
@@ -1087,6 +1470,21 @@ display: none;
         border-radius: 10px;
         margin-bottom: 20px;
         width: 100%;
+    }
+
+    .header_catalog {
+        display: block;
+    }
+
+    .service {
+        margin-top: 27px;
+        display: flex;
+        margin-bottom: 15px;
+        justify-content: space-between;
+    }
+
+    .service li a {
+        margin-right: 0;
     }
 
     .dropbtn {
@@ -1329,7 +1727,8 @@ display: none;
     }
 
     .footer_logotips {
-        padding-bottom: 14px;
+        padding-bottom: 0px;
+        padding-left: 0;
     }
 
     .footer_requisites_link a {
@@ -1340,6 +1739,7 @@ display: none;
     .footer_requisites_link {
         display: block;
         width: 100%;
+        padding-left: 0;
     }
 
     .footer_requisites_link-spec {
@@ -1367,5 +1767,37 @@ display: none;
 
     .header_searc form {
         width: 100%;
+    }
+
+    .footer_requisites {
+        padding-bottom: 60px;
+        flex-direction: column;
+    }
+
+    .footer {
+        display: block;
+    }
+
+    .footer_payment {
+        display: none;
+        margin: 0 auto;
+    }
+
+    .footer_payment-online_chat {
+        padding-right: 0;
+        margin-left: 20%;
+        margin-bottom: 30px;
+    }
+
+    .nav_menu_logo_icon  {
+        display: block; /* Показываем иконку телефона */
+    }
+    .nav_menu_logo {
+        display: flex; /* Показываем логотип и кнопки управления */
+        justify-content: space-between;
+    }
+
+    .nav_menu_logo_icon {
+        display: flex;
     }
 }

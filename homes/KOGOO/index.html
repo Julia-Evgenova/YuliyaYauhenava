@@ -102,28 +102,80 @@
                 <div class="header_logo">
                     <img src="images/kugoo_logo.gif" alt="logo">
                 </div>
-                <button class="btn_catalog">
-                    <i class="fa-solid fa-bars"></i>
-                    <span>Каталог</span>
-                </button>
-                <div class="header_searc">
-                    <form method="post" action="http://fe.it-academy.by/TestForm.php">
-                        <div class="dropdown">
-                            <select class="dropbtn">
-                                <option value="1" selected>Везде</option>
-                                <option value="2">Cамокаты</option>
-                                <option value="3">Аксессуары</option>
-                            </select>
-                            <i class="fa-solid fa-caret-down"></i>
+
+                <nav class="nav_menu">
+                    <div class="nav_menu_logo">
+                        <img src="images/kugoo_logo.gif" alt="logo">
+                        <div class="nav_menu_logo_icon">
+                            <i class="fa-solid fa-phone"></i>
+                            <i class="fa-solid fa-x"></i>
+                            <i class="fa-solid fa-bars"></i>
                         </div>
-                        <label for="scooter">
-                            <input class="header_searc_scooter" type="text" name="header_searc_scooter" id="scooter"
-                                placeholder="Искать самокат KUGO">
-                        </label>
-                        <button class="header_icon_searc">
-                            <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <ul class="about_store_link container">
+                        <li><a class="about_store_link_first" href="#" title="about-store" target="_blank">О
+                                магазине</a>
+                        </li>
+                        <li><a href="#" title="delivery-payment" target="_blank">Доставка и оплата</a></li>
+                        <li><a href="#" class="about_store_link_installment" title="installment"
+                                target="_blank">Доступна
+                                рассрочка</a></li>
+                    </ul>
+                    <div class="about_store_link_info_links">
+                        <ul class="about_store_link_info">
+                            <li><a href="#" title="test-drive">Тест-драйв</a></li>
+                            <li><a href="#" title="blog" target="_blank">Блог</a></li>
+                            <li><a href="#" title="contacts" target="_blank">Контакты</a></li>
+                            <li><a href="#" title="stock" target="_blank">Акции</a></li>
+                        </ul>
+                        <button class="about_store_percent">
+                            <i class="fa-solid fa-percent"></i>
                         </button>
-                    </form>
+                    </div>
+
+                    <ul class="service">
+                        <li><a href="#">Сервис</a></li>
+                        <li><a href="#">Сотрудничество</a></li>
+                        <li><a href="#">Заказать звонок</a></li>
+                    </ul>
+
+                    <div class="footer_payment-online_chat">
+                        <p class="chat_online">Online чат:</p>
+                        <div class="chats">
+                            <a class="viber" href="#" target="_blank" title="viber"><i
+                                    class="fa-brands fa-viber"></i></a>
+                            <a class="skype" href="#" target="_blank" title="skype"><i
+                                    class="fa-brands fa-skype"></i></a>
+                            <a class="telegram" href="https://t.me/kugoo_by_bot" target="_blank" title="telegram"><i
+                                    class="fa-brands fa-telegram"></i></a>
+                        </div>
+                    </div>
+
+                </nav>
+                <div class="header_catalog">
+                    <button class="btn_catalog">
+                        <i class="fa-solid fa-bars"></i>
+                        <span>Каталог</span>
+                    </button>
+                    <div class="header_searc">
+                        <form method="post" action="http://fe.it-academy.by/TestForm.php">
+                            <div class="dropdown">
+                                <select class="dropbtn">
+                                    <option value="1" selected>Везде</option>
+                                    <option value="2">Cамокаты</option>
+                                    <option value="3">Аксессуары</option>
+                                </select>
+                                <i class="fa-solid fa-caret-down"></i>
+                            </div>
+                            <label for="scooter">
+                                <input class="header_searc_scooter" type="text" name="header_searc_scooter" id="scooter"
+                                    placeholder="Искать самокат KUGO">
+                            </label>
+                            <button class="header_icon_searc">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </form>
+                    </div>
                 </div>
                 <div class="header_icons">
                     <i class="fa-solid fa-scale-balanced"></i>
@@ -1849,9 +1901,31 @@
             </div>
         </div>
     </div>
+    <div class="menu_end">
+        <div class="menu_end_item">
+            <a href="index.html"><i class="fa-solid fa-house"></i></a>
+            <a href="#">Главная</a>
+        </div>
+        <div class="menu_end_item">
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <a href="#">Каталог</a>
+        </div>
+        <div class="menu_end_item">
+            <a href="#"><i class="fa-solid fa-basket-shopping"></i></a>
+            <a href="#">Корзина</a>
+        </div>
+        <div class="menu_end_item">
+            <a href="#"><i class="fa-regular fa-heart"></i></a>
+            <a href="#">Избранное</a>
+        </div>
+        <div class="menu_end_item">
+            <a href="#"><i class="fa-solid fa-scale-balanced"></i></a>
+            <a href="#">Сравнить</a>
+        </div>
+
+    </div>
+
     <script src="https://www.youtube.com/iframe_api"></script>
-
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>

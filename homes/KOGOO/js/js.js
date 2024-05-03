@@ -237,3 +237,27 @@ $(document).ready(function() {
 });
 
 
+$(document).ready(function() {
+    const $menu = $('.nav_menu'); // Работаем с всем блоком меню
+    const $menuItems = $('.nav_menu ul, .nav_menu .about_store_percent, .nav_menu .footer_payment-online_chat'); // Элементы меню
+    const $menuToggleIcon = $('.fa-bars'); // Иконка меню
+    const $closeMenuIcon = $('.fa-x'); // Иконка закрытия
+
+    // Обработчик клика для открытия меню
+    $menuToggleIcon.click(function() {
+        $menuItems.slideDown(); // Показываем элементы меню
+        $closeMenuIcon.show(); // Показываем иконку закрытия
+        $(this).hide(); // Скрываем иконку меню
+        $('.fa-phone').show(); // Убедимся, что телефон виден
+    });
+
+    // Обработчик клика для закрытия меню
+    $closeMenuIcon.click(function() {
+        $menuItems.slideUp(); // Скрываем элементы меню
+        $menuToggleIcon.show(); // Показываем иконку меню
+        $(this).hide(); // Скрываем иконку закрытия
+    });
+});
+
+
+
