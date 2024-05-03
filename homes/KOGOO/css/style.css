@@ -2521,3 +2521,21 @@ button {
 .fa-x {
   display: none;
 }
+
+.fa-bars,
+.nav_menu_logo img,
+.fa-phone {
+  display: block;
+  /* Показываем иконку меню, логотип и телефон */
+}
+
+.nav_menu ul,
+.nav_menu .about_store_percent,
+.nav_menu .footer_payment-online_chat,
+.nav_menu .service,
+/* Добавляем этот класс, если он ещё не включён */
+.nav_menu .footer_payment-online_chat {
+  /* Убедитесь, что этот блок также включен */
+  display: none;
+  /* Устанавливаем начальное состояние как скрытое */
+}

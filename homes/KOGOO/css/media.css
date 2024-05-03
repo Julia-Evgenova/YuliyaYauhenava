@@ -101,6 +101,10 @@
     .kogoo_russia_testdrive_moskva-official {
         font-size: 30px;
     }
+
+    .freeShipping_electricscooters {
+        width: 100%;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -309,13 +313,7 @@
     }
 }
 
-@media (max-width: 767px) {
-
-    .nav_menu,
-    .fa-bars {
-        display: block;
-        /* Показываем меню и иконку бара на мобильных */
-    }
+@media (max-width: 768px) {
 
     /* Стили для мобильных устройств в портретной ориентации */
     .header_icons {
@@ -1216,6 +1214,7 @@
 
     .footer_payment-online_chat {
         margin-left: 30%;
+        margin-bottom: 25px;
     }
 
     .footer_logotips {
@@ -1287,8 +1286,36 @@
         justify-content: space-between;
     }
 
+    .service li {
+        display: inline-block;
+        position: relative;
+        left: 5%;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+
+    .chat_online {
+        display: inline-block;
+    }
+
+    .chats {
+        display: inline-block;
+    }
+
     .nav_menu {
         display: block;
+    }
+
+    .scooter {
+        width: 100%;
+    }
+
+    .nav_menu .about_store_link {
+        display: none;
+    }
+
+    label {
+        width: 100%;
     }
 }
 
@@ -1789,15 +1816,38 @@
         margin-bottom: 30px;
     }
 
-    .nav_menu_logo_icon  {
-        display: block; /* Показываем иконку телефона */
+    .nav_menu_logo_icon {
+        display: block;
+        /* Показываем иконку телефона */
     }
+
     .nav_menu_logo {
-        display: flex; /* Показываем логотип и кнопки управления */
+        display: flex;
+        /* Показываем логотип и кнопки управления */
         justify-content: space-between;
     }
 
     .nav_menu_logo_icon {
         display: flex;
+    }
+
+    .nav_menu .about_store_link {
+        display: none;
+    }
+
+    .service li {
+        display: inline-block;
+        position: relative;
+        left: 5%;
+        margin-right: 5%;
+        margin-left: 0;
+    }
+
+    .chats {
+        display: inline-block;
+    }
+
+    .chat_online {
+        display: inline-block;
     }
 }
