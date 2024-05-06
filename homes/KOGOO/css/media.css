@@ -986,6 +986,7 @@
         border-radius: 10px;
         margin-bottom: 20px;
         width: 100%;
+        margin-top: 50px;
     }
 
     .header_searc form {
@@ -1374,6 +1375,7 @@
 
     .nav_menu_logo {
         margin-bottom: 17px;
+        margin-top: 10px;
     }
 
     .about_store {
@@ -1472,7 +1474,6 @@
         width: 100%;
     }
 
-
     .btn_catalog {
         display: none;
     }
@@ -1497,6 +1498,7 @@
         border-radius: 10px;
         margin-bottom: 20px;
         width: 100%;
+        margin-top: 70px;
     }
 
     .header_catalog {
@@ -1524,7 +1526,7 @@
 
     .header_searc_scooter {
         background: var(--bachground);
-        width: 110%;
+        width: 100%;
     }
 
     .incatalog {
@@ -1850,4 +1852,6 @@
     .chat_online {
         display: inline-block;
     }
+
+
 }

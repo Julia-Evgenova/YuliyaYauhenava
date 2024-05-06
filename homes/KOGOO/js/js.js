@@ -261,3 +261,19 @@ $(document).ready(function() {
 
 
 
+$(document).ready(function() {
+    $('.open-modal').click(function() {
+        $('.modal').fadeIn();
+    });
+
+    $('.modal').click(function(e) {
+        if (e.target === this) {
+            $(this).fadeOut();
+        }
+    });
+});
+
+  
+
+
+
