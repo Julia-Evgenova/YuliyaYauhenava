@@ -181,7 +181,6 @@ function toggleAccordion(element) {
 }
 
 
-
 $(document).ready(function(){
     var myCarousel = $(".about_store_slider .owl-carousel").owlCarousel({
         items: 1, // Показывать по одному слайду
@@ -230,7 +229,7 @@ $(document).ready(function() {
         autoplayTimeout: 5000, // Интервал смены слайдов
         autoplayHoverPause: true,
         animateOut: 'fadeOut', // Эффект исчезновения
-        animateIn: 'fadeIn', // Эффект появления
+        animateIn: 'fadefIn', // Эффект появления
         dots: true, // Показывать точки навигации
         nav: true // Показывать кнопки навигации
     });

@@ -105,6 +105,13 @@
     .freeShipping_electricscooters {
         width: 100%;
     }
+
+    .header_board_container {
+        height: 421px;
+        background: url(../images/velo-back.png) no-repeat 605px bottom,
+            url(../images/shadov.svg) no-repeat 555px bottom,
+            url(../images/kirin.png) no-repeat 225px 233px;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -547,6 +554,10 @@
         display: none;
         /* Скрываем иконки бара и закрытия на десктопах */
     }
+
+    .header_board_container {
+        padding-top: 0;
+    }
 }
 
 @media (max-width: 600px) {
@@ -633,7 +644,7 @@
     .header_board_container {
         background: url(../images/velo-back.png) no-repeat 350px 65px;
         background-size: contain;
-        padding-top: 15px;
+        padding-top: 0px;
         height: 420px;
         width: 100%;
         box-sizing: border-box;
@@ -815,6 +826,16 @@
 
     .nav_menu {
         display: block;
+    }
+
+    .background1 .header_board_container_content {
+        position: absolute;
+        top: 15px;
+    }
+
+    .background2 .header_board_container_content {
+        position: absolute;
+        top: 10px;
     }
 
 }
@@ -1028,6 +1049,14 @@
         background: var(--purple);
     }
 
+    #uniqueCarousel .background1 {
+        padding-top: 0;
+    }
+
+    #uniqueCarousel .background2 {
+        padding-top: 0;
+    }
+
     .testdrive_wrap {
         display: none;
     }
@@ -1053,7 +1082,7 @@
 
     #uniqueCarousel .owl-dots {
         position: absolute;
-        bottom: 10px;
+        bottom: -15px;
         left: 50%;
         /* Центрирование dots */
         transform: translateX(-50%);
@@ -1073,7 +1102,7 @@
     }
 
     #uniqueCarousel .item {
-        height: auto;
+        height: 125px;
     }
 
     .freeshipping {
@@ -1240,7 +1269,7 @@
         background: url("../images/velo-back.png") no-repeat 205px bottom;
         background-size: 160px 120px;
         /* Четко определите размеры изображения */
-        padding-top: 15px;
+        padding-top: 0px;
         height: 125px;
         /* Явно задайте высоту */
         width: 100%;
@@ -1318,6 +1347,17 @@
     label {
         width: 100%;
     }
+
+    .background1 .header_board_container_content {
+        position: absolute;
+        top: 15px;
+    }
+
+    .background2 .header_board_container_content {
+        position: absolute;
+        top: 10px;
+    }
+
 }
 
 @media (max-width: 320px) {
@@ -1576,7 +1616,7 @@
 
     #uniqueCarousel .owl-dots {
         position: absolute;
-        bottom: 10px;
+        bottom: -15px;
         left: 50%;
         /* Центрирование dots */
         transform: translateX(-50%);
@@ -1779,7 +1819,7 @@
         background: url("../images/velo-back.png") no-repeat 205px bottom;
         background-size: 160px 120px;
         /* Четко определите размеры изображения */
-        padding-top: 15px;
+        padding-top: 0px;
         height: 125px;
         /* Явно задайте высоту */
         width: 100%;
@@ -1853,5 +1893,17 @@
         display: inline-block;
     }
 
+    #uniqueCarousel .item {
+        height: 125px;
+    }
 
+    .background1 .header_board_container_content {
+        position: absolute;
+        top: 15px;
+    }
+
+    .background2 .header_board_container_content {
+        position: absolute;
+        top: 10px;
+    }
 }

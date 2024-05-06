@@ -606,7 +606,7 @@ button {
 }
 
 #uniqueCarousel .item {
-  height: 382px;
+  height: 421px;
   /* Высота слайда */
   background-size: cover;
   background-position: center;
@@ -618,14 +618,17 @@ button {
 #uniqueCarousel .background1 {
   background-image: url('image2.jpg');
   position: relative;
+  padding-top: 39px;
 }
 
 #uniqueCarousel .background2 {
   background: url("../images/yellowback.jpg") repeat-y;
+  padding-top: 39px;
 }
 
 #uniqueCarousel .background3 {
   background-image: url("../images/servicemaintenance.jpg");
+  padding-top: 39px;
 }
 
 #uniqueCarousel .owl-nav .owl-prev,
@@ -667,7 +670,6 @@ button {
 
 .header_board_container {
   height: 421px;
-  padding-top: 39px;
   background: url("../images/velo-back.png") no-repeat 810px bottom,
     url("../images/shadov.svg") no-repeat 800px bottom,
     url("../images/kirin.png") no-repeat 560px 233px;
