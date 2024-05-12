@@ -88,7 +88,6 @@
     }
 }
 
-
 @media (max-width: 1024px) {
     .background1 .header_board_container_content {
         padding: 0 20px;
@@ -115,10 +114,26 @@
 }
 
 @media (max-width: 1024px) {
+    .header .container {
+        justify-content: center;
+    }
+.header_logo{
+
+}
+    .contacts {
+        width: 650px;
+    }
+    .garant_list li:first-child {
+        margin-right: 20px;
+    }
 
     /* Стили для планшетов */
     .email_form {
         padding-left: 20px;
+    }
+
+    .garant_list li:nth-child(2) {
+        margin-right: 20px;
     }
 
     .kogoo_russia_testdrive_moskva-our_goal {
@@ -131,7 +146,9 @@
     }
 
     .electricscooters_choice-wrap {
-        padding-left: 20px;
+        padding-left: 10px;
+        max-width: 100%;
+        width: calc(100% - 20px);
     }
 
     .footer_logotips {
@@ -287,6 +304,16 @@
         padding: 0 20px;
     }
 
+}
+
+@media (max-width: 1000px) {
+.about_store {
+        width: 100%;
+    }
+
+    .email {
+        width: 100%;
+    }
 }
 
 @media (max-width: 960px) {

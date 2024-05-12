@@ -2552,7 +2552,6 @@ button {
   /* Устанавливаем начальное состояние как скрытое */
 }
 
-
 .modal {
   display: none;
   position: fixed;
@@ -2560,16 +2559,15 @@ button {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
   /* Полупрозрачный фон */
   z-index: 1000;
-  /* Высокий уровень z-index для модального окна */
 }
 
 .modal-content {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 45%;
   background-color: white;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
